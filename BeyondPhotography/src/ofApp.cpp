@@ -2,17 +2,37 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    // Load images
+    ofxNestedFileLoader loader;
+    vector<string> imagePaths = loader.load("Images");
+    for(int i = 0; i < imagePaths.size(); i++) {
+        ofImage img;
+        img.load(imagePaths[i]);
+        images.push_back(img);
+    }
+    imageIndex.set("Image Index", 0, 0, images.size()-1);
+    
+    resolution.x = ofGetWidth();
+    resolution.y = ofGetHeight();
+    
+    Effect e;
+    e.loadShader("Shaders/test");
+    e.addUniform("inputTexture", &images[0]);
+    e.addUniform("resolution", &resolution);
+    e.width = ofGetWidth();
+    e.height = ofGetHeight();
+    effects.push_back(e);
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    effects[0].applyEffect();
 }
 
 //--------------------------------------------------------------
@@ -57,7 +77,8 @@ void ofApp::mouseExited(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-
+    resolution.x = w;
+    resolution.y = h;
 }
 
 //--------------------------------------------------------------

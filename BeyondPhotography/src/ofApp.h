@@ -1,6 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
+#include "ofxNestedFileLoader.h"
+#include "Effect.hpp"
 
 class ofApp : public ofBaseApp{
 
@@ -20,5 +23,12 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-		
+    
+    ofxPanel panel;
+    ofParameter<int> imageIndex;
+    
+    ofVec2f resolution;
+    
+    vector<ofImage> images;
+    vector<Effect> effects;
 };
