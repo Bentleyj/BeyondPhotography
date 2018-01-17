@@ -25,11 +25,17 @@ void ofApp::setup(){
     
     Effect diagonal;
     diagonal.loadShader("Shaders/diagonal");
-    diagonal.addUniform("inputTexture", &images[0]);
     diagonal.addUniform("resolution", &screenResolution);
     diagonal.width = ofGetWidth();
     diagonal.height = ofGetHeight();
     effects.push_back(diagonal);
+    
+    Effect modulo;
+    modulo.loadShader("Shaders/modulo");
+    modulo.addUniform("resolution", &screenResolution);
+    modulo.width = ofGetWidth();
+    modulo.height = ofGetHeight();
+    effects.push_back(modulo);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
