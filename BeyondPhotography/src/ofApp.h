@@ -24,10 +24,11 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    ofxPanel panel;
+    ofxPanel gui;
     ofParameter<int> imageIndex;
+    ofParameter<int> effectIndex;
     
-    ofVec2f resolution;
+    ofVec2f screenResolution;
     
     vector<ofImage> images;
     vector<Effect> effects;

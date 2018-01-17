@@ -14,8 +14,8 @@ Effect::Effect() {
 void Effect::loadShader(string shaderPath) {
     shader.load(shaderPath);
     name = ofSplitString(shaderPath, ".")[0];
-    int s = ofSplitString(name, "\\").size();
-    name = ofSplitString(name, "\\")[s-1];
+    int s = ofSplitString(name, "/").size();
+    name = ofSplitString(name, "/")[s-1];
     
     button.set(name, false);
 }

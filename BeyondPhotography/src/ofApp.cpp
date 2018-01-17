@@ -12,16 +12,31 @@ void ofApp::setup(){
     }
     imageIndex.set("Image Index", 0, 0, images.size()-1);
     
-    resolution.x = ofGetWidth();
-    resolution.y = ofGetHeight();
+    screenResolution.x = ofGetWidth();
+    screenResolution.y = ofGetHeight();
     
-    Effect e;
-    e.loadShader("Shaders/test");
-    e.addUniform("inputTexture", &images[0]);
-    e.addUniform("resolution", &resolution);
-    e.width = ofGetWidth();
-    e.height = ofGetHeight();
-    effects.push_back(e);
+    Effect test;
+    test.loadShader("Shaders/test");
+    test.addUniform("inputTexture", &images[0]);
+    test.addUniform("resolution", &screenResolution);
+    test.width = ofGetWidth();
+    test.height = ofGetHeight();
+    effects.push_back(test);
+    
+    Effect diagonal;
+    diagonal.loadShader("Shaders/diagonal");
+    diagonal.addUniform("inputTexture", &images[0]);
+    diagonal.addUniform("resolution", &screenResolution);
+    diagonal.width = ofGetWidth();
+    diagonal.height = ofGetHeight();
+    effects.push_back(diagonal);
+    
+    string settingsPath = "settings/settings.xml";
+    gui.setup("Effects", settingsPath);
+    gui.add(imageIndex);
+    gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
+    //gui.add(e.button);
+    gui.loadFromFile(settingsPath);
     
 }
 
@@ -32,7 +47,12 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    effects[0].applyEffect();
+//    for(int i = 0; i < effects.size(); i++) {
+//        if(
+//    }
+    effects[effectIndex].applyEffect();
+    ofDrawBitmapStringHighlight(effects[effectIndex].name, gui.getPosition().x, gui.getPosition().y + gui.getHeight() + 10);
+    gui.draw();
 }
 
 //--------------------------------------------------------------
@@ -77,8 +97,8 @@ void ofApp::mouseExited(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-    resolution.x = w;
-    resolution.y = h;
+    screenResolution.x = w;
+    screenResolution.y = h;
 }
 
 //--------------------------------------------------------------
