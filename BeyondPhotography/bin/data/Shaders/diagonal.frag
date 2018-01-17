@@ -7,12 +7,11 @@ void main() {
     
     vec2 uv = gl_FragCoord.xy / resolution * 10;
     
-    //uv.y = 1.0 - uv.y;
+    uv.y = 1.0 - uv.y;
     
     float b = uv.x + uv.y;
-    //int i = b;
-    float i = floor(b);
-    b = b - i;
+    
+    b = mod(b, 1.0);
     
     //float dx = 20;
     //float dy = 20;
