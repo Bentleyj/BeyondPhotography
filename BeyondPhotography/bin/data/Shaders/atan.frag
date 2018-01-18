@@ -1,15 +1,17 @@
 #version 120
 
+#define PI 3.141592
+
 uniform sampler2DRect inputTexture;
 uniform vec2 resolution;
 
 void main() {
     
-    vec2 uv = gl_FragCoord.xy / resolution * 10;
+    vec2 uv = gl_FragCoord.xy / resolution;
     
-    uv.y = 1.0 - uv.y;
+    //uv.y = 1.0 - uv.y;
     
-    float b = uv.y + sin(uv.x)/2;
+    float b = atan(uv.y - 0.5, uv.x - 0.5) / PI/2;
     
     b = mod(b, 1.0);
     
