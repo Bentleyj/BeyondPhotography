@@ -37,6 +37,20 @@ void ofApp::setup(){
     modulo.height = ofGetHeight();
     effects.push_back(modulo);
     
+    Effect sine;
+    sine.loadShader("Shaders/sine");
+    sine.addUniform("resolution", &screenResolution);
+    sine.width = ofGetWidth();
+    sine.height = ofGetHeight();
+    effects.push_back(sine);
+    
+    Effect atan;
+    atan.loadShader("Shaders/atan");
+    atan.addUniform("resolution", &screenResolution);
+    atan.width = ofGetWidth();
+    atan.height = ofGetHeight();
+    effects.push_back(atan);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
