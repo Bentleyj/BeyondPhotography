@@ -51,6 +51,20 @@ void ofApp::setup(){
     atan.height = ofGetHeight();
     effects.push_back(atan);
     
+    Effect cond1;
+    cond1.loadShader("Shaders/cond1");
+    cond1.addUniform("resolution", &screenResolution);
+    cond1.width = ofGetWidth();
+    cond1.height = ofGetHeight();
+    effects.push_back(cond1);
+    
+    Effect cond2;
+    cond2.loadShader("Shaders/cond2");
+    cond2.addUniform("resolution", &screenResolution);
+    cond2.width = ofGetWidth();
+    cond2.height = ofGetHeight();
+    effects.push_back(cond2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
