@@ -65,6 +65,20 @@ void ofApp::setup(){
     cond2.height = ofGetHeight();
     effects.push_back(cond2);
     
+    Effect pol1;
+    pol1.loadShader("Shaders/pol1");
+    pol1.addUniform("resolution", &screenResolution);
+    pol1.width = ofGetWidth();
+    pol1.height = ofGetHeight();
+    effects.push_back(pol1);
+    
+    Effect pol2;
+    pol2.loadShader("Shaders/pol1");
+    pol2.addUniform("resolution", &screenResolution);
+    pol2.width = ofGetWidth();
+    pol2.height = ofGetHeight();
+    effects.push_back(pol2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
