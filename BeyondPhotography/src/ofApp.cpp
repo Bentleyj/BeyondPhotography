@@ -72,12 +72,12 @@ void ofApp::setup(){
     pol1.height = ofGetHeight();
     effects.push_back(pol1);
     
-    Effect pol2;
-    pol2.loadShader("Shaders/pol1");
-    pol2.addUniform("resolution", &screenResolution);
-    pol2.width = ofGetWidth();
-    pol2.height = ofGetHeight();
-    effects.push_back(pol2);
+    Effect spiral;
+    spiral.loadShader("Shaders/spiral");
+    spiral.addUniform("resolution", &screenResolution);
+    spiral.width = ofGetWidth();
+    spiral.height = ofGetHeight();
+    effects.push_back(spiral);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);

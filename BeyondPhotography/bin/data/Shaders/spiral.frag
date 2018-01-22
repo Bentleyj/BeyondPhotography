@@ -6,12 +6,19 @@ uniform vec2 resolution;
 void main() {
     
     vec2 uv = gl_FragCoord.xy / resolution;
+
     
     vec2 c = vec2(0.5, 0.5);
     vec2 p = uv - c;
+    float x = p.x;
+    float y = p.y;
     float r = sqrt(p.x*p.x + p.y*p.y);
     
-    float b = r;
+    float theta = atan(y, x);
+    
+    float thickness = 0.05;
+    
+    float b = ((mod(theta + r, thickness) - thickness/2) * 1/thickness + 0.5);
     
     //float dx = 20;
     //float dy = 20;
