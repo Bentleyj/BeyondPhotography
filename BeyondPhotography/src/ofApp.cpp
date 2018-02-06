@@ -103,6 +103,23 @@ void ofApp::setup(){
     solarizeFade.height = ofGetHeight();
     effects.push_back(solarizeFade);
     
+    Effect blur;
+    blur.loadShader("Shaders/blur");
+    blur.addUniform("resolution", &screenResolution);
+    blur.addUniform("inputTexture", &images[0]);
+    blur.width = ofGetWidth();
+    blur.height = ofGetHeight();
+    effects.push_back(blur);
+    
+    Effect sharpen;
+    sharpen.loadShader("Shaders/sharpen");
+    sharpen.addUniform("resolution", &screenResolution);
+    sharpen.addUniform("inputTexture", &images[0]);
+    sharpen.width = ofGetWidth();
+    sharpen.height = ofGetHeight();
+    effects.push_back(sharpen);
+    
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
