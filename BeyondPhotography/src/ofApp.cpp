@@ -79,11 +79,26 @@ void ofApp::setup(){
     spiral.height = ofGetHeight();
     effects.push_back(spiral);
     
+    Effect negative;
+    negative.loadShader("Shaders/negative");
+    negative.addUniform("resolution", &screenResolution);
+    negative.addUniform("inputTexture", &images[0]);
+    negative.width = ofGetWidth();
+    negative.height = ofGetHeight();
+    effects.push_back(negative);
+    
+    Effect correction;
+    correction.loadShader("Shaders/correction");
+    correction.addUniform("resolution", &screenResolution);
+    correction.addUniform("inputTexture", &images[0]);
+    correction.width = ofGetWidth();
+    correction.height = ofGetHeight();
+    effects.push_back(correction);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
-    //gui.add(e.button);
     gui.loadFromFile(settingsPath);
     
 }
