@@ -119,7 +119,6 @@ void ofApp::setup(){
     sharpen.height = ofGetHeight();
     effects.push_back(sharpen);
     
-    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
