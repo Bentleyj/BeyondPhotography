@@ -87,13 +87,21 @@ void ofApp::setup(){
     negative.height = ofGetHeight();
     effects.push_back(negative);
     
-    Effect correction;
-    correction.loadShader("Shaders/correction");
-    correction.addUniform("resolution", &screenResolution);
-    correction.addUniform("inputTexture", &images[0]);
-    correction.width = ofGetWidth();
-    correction.height = ofGetHeight();
-    effects.push_back(correction);
+    Effect solarize;
+    solarize.loadShader("Shaders/solarize");
+    solarize.addUniform("resolution", &screenResolution);
+    solarize.addUniform("inputTexture", &images[0]);
+    solarize.width = ofGetWidth();
+    solarize.height = ofGetHeight();
+    effects.push_back(solarize);
+    
+    Effect solarizeFade;
+    solarizeFade.loadShader("Shaders/solarizeFade");
+    solarizeFade.addUniform("resolution", &screenResolution);
+    solarizeFade.addUniform("inputTexture", &images[0]);
+    solarizeFade.width = ofGetWidth();
+    solarizeFade.height = ofGetHeight();
+    effects.push_back(solarizeFade);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
