@@ -127,6 +127,22 @@ void ofApp::setup(){
     relief.height = ofGetHeight();
     effects.push_back(relief);
     
+    Effect mirrorY;
+    mirrorY.loadShader("Shaders/mirrorY");
+    mirrorY.addUniform("resolution", &screenResolution);
+    mirrorY.addUniform("inputTexture", &images[0]);
+    mirrorY.width = ofGetWidth();
+    mirrorY.height = ofGetHeight();
+    effects.push_back(mirrorY);
+    
+    Effect rotate90;
+    rotate90.loadShader("Shaders/rotate90");
+    rotate90.addUniform("resolution", &screenResolution);
+    rotate90.addUniform("inputTexture", &images[0]);
+    rotate90.width = ofGetWidth();
+    rotate90.height = ofGetHeight();
+    effects.push_back(rotate90);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
