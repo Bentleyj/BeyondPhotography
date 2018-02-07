@@ -119,6 +119,14 @@ void ofApp::setup(){
     sharpen.height = ofGetHeight();
     effects.push_back(sharpen);
     
+    Effect relief;
+    relief.loadShader("Shaders/relief");
+    relief.addUniform("resolution", &screenResolution);
+    relief.addUniform("inputTexture", &images[0]);
+    relief.width = ofGetWidth();
+    relief.height = ofGetHeight();
+    effects.push_back(relief);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
