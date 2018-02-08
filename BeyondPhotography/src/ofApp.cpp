@@ -159,6 +159,22 @@ void ofApp::setup(){
     shrink.height = ofGetHeight();
     effects.push_back(shrink);
     
+    Effect mirrorX;
+    mirrorX.loadShader("Shaders/mirrorX");
+    mirrorX.addUniform("resolution", &screenResolution);
+    mirrorX.addUniform("inputTexture", &images[0]);
+    mirrorX.width = ofGetWidth();
+    mirrorX.height = ofGetHeight();
+    effects.push_back(mirrorX);
+    
+    Effect mirrorX2;
+    mirrorX2.loadShader("Shaders/mirrorX2");
+    mirrorX2.addUniform("resolution", &screenResolution);
+    mirrorX2.addUniform("inputTexture", &images[0]);
+    mirrorX2.width = ofGetWidth();
+    mirrorX2.height = ofGetHeight();
+    effects.push_back(mirrorX2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
