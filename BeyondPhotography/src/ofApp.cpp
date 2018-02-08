@@ -143,6 +143,14 @@ void ofApp::setup(){
     rotate90.height = ofGetHeight();
     effects.push_back(rotate90);
     
+    Effect stretchX;
+    stretchX.loadShader("Shaders/stretchX");
+    stretchX.addUniform("resolution", &screenResolution);
+    stretchX.addUniform("inputTexture", &images[0]);
+    stretchX.width = ofGetWidth();
+    stretchX.height = ofGetHeight();
+    effects.push_back(stretchX);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
