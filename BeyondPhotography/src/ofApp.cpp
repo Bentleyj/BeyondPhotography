@@ -151,6 +151,14 @@ void ofApp::setup(){
     stretchX.height = ofGetHeight();
     effects.push_back(stretchX);
     
+    Effect shrink;
+    shrink.loadShader("Shaders/shrink");
+    shrink.addUniform("resolution", &screenResolution);
+    shrink.addUniform("inputTexture", &images[0]);
+    shrink.width = ofGetWidth();
+    shrink.height = ofGetHeight();
+    effects.push_back(shrink);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
