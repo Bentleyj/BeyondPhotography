@@ -175,6 +175,15 @@ void ofApp::setup(){
     mirrorX2.height = ofGetHeight();
     effects.push_back(mirrorX2);
     
+    Effect blend;
+    blend.loadShader("Shaders/blend");
+    blend.addUniform("resolution", &screenResolution);
+    blend.addUniform("inputTexture1", &images[0]);
+    blend.addUniform("inputTexture2", &images[1]);
+    blend.width = ofGetWidth();
+    blend.height = ofGetHeight();
+    effects.push_back(blend);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
