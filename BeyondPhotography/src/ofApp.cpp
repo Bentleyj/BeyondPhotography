@@ -178,8 +178,8 @@ void ofApp::setup(){
     Effect blend;
     blend.loadShader("Shaders/blend");
     blend.addUniform("resolution", &screenResolution);
-    blend.addUniform("inputTexture1", &images[0]);
-    blend.addUniform("inputTexture2", &images[1]);
+    blend.addUniform("inputTexture1", &images[1]);
+    blend.addUniform("inputTexture2", &images[2]);
     blend.width = ofGetWidth();
     blend.height = ofGetHeight();
     effects.push_back(blend);
@@ -187,8 +187,8 @@ void ofApp::setup(){
     Effect blendLinear;
     blendLinear.loadShader("Shaders/blendLinear");
     blendLinear.addUniform("resolution", &screenResolution);
-    blendLinear.addUniform("inputTexture1", &images[0]);
-    blendLinear.addUniform("inputTexture2", &images[1]);
+    blendLinear.addUniform("inputTexture1", &images[1]);
+    blendLinear.addUniform("inputTexture2", &images[2]);
     blendLinear.width = ofGetWidth();
     blendLinear.height = ofGetHeight();
     effects.push_back(blendLinear);
@@ -196,8 +196,8 @@ void ofApp::setup(){
     Effect blendCenter;
     blendCenter.loadShader("Shaders/blendCenter");
     blendCenter.addUniform("resolution", &screenResolution);
-    blendCenter.addUniform("inputTexture1", &images[0]);
-    blendCenter.addUniform("inputTexture2", &images[1]);
+    blendCenter.addUniform("inputTexture1", &images[1]);
+    blendCenter.addUniform("inputTexture2", &images[2]);
     blendCenter.width = ofGetWidth();
     blendCenter.height = ofGetHeight();
     effects.push_back(blendCenter);
