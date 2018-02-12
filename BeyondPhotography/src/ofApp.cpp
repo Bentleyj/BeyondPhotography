@@ -184,6 +184,15 @@ void ofApp::setup(){
     blend.height = ofGetHeight();
     effects.push_back(blend);
     
+    Effect blendLinear;
+    blendLinear.loadShader("Shaders/blendLinear");
+    blendLinear.addUniform("resolution", &screenResolution);
+    blendLinear.addUniform("inputTexture1", &images[0]);
+    blendLinear.addUniform("inputTexture2", &images[1]);
+    blendLinear.width = ofGetWidth();
+    blendLinear.height = ofGetHeight();
+    effects.push_back(blendLinear);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
