@@ -5,9 +5,7 @@ uniform sampler2DRect inputTexture2;
 uniform vec2 resolution;
 
 float map(float v, float minIn, float maxIn, float minOut, float maxOut) {
-    float p = (v - minIn) / (maxIn - minIn);
-    
-    return (p * maxOut) + minOut;
+    return (v - minIn)/(maxIn-minIn) * (maxOut - minOut) + minOut;
     
 }
 
