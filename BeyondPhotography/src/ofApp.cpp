@@ -202,6 +202,15 @@ void ofApp::setup(){
     blendCenter.height = ofGetHeight();
     effects.push_back(blendCenter);
     
+    Effect blendBrightness;
+    blendBrightness.loadShader("Shaders/blendBrightness");
+    blendBrightness.addUniform("resolution", &screenResolution);
+    blendBrightness.addUniform("inputTexture1", &images[1]);
+    blendBrightness.addUniform("inputTexture2", &images[2]);
+    blendBrightness.width = ofGetWidth();
+    blendBrightness.height = ofGetHeight();
+    effects.push_back(blendBrightness);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);

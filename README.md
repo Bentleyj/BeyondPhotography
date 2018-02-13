@@ -45,3 +45,7 @@ Today we did stretching and shrinking of images. We did 3.23 (x Stretch), 3.25 (
 ### Day 8
 
 Today we looked more closely at blending images. I completed 3.30 a linear blend along the X axis from one image to another and also 3.31 which shows a linear blend that starts at 0.333 and goes to 0.666. To achieve this effect I wronte a small "map" function which linearly remaps the values from one range to another. Something seems a bit funky with it though but it might just be the images I've chosen. Need to go back and have a look at it!
+
+### Day [9]
+
+Today I fixed the Blend center effect from 3.31. There was a bug with my mapping code which made it not map properly and resulted in a line in the image.
