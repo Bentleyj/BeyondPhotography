@@ -211,6 +211,23 @@ void ofApp::setup(){
     blendBrightness.height = ofGetHeight();
     effects.push_back(blendBrightness);
     
+    Effect blendBrightnessSmooth;
+    blendBrightnessSmooth.loadShader("Shaders/blendBrightnessSmooth");
+    blendBrightnessSmooth.addUniform("resolution", &screenResolution);
+    blendBrightnessSmooth.addUniform("inputTexture1", &images[1]);
+    blendBrightnessSmooth.addUniform("inputTexture2", &images[2]);
+    blendBrightnessSmooth.width = ofGetWidth();
+    blendBrightnessSmooth.height = ofGetHeight();
+    effects.push_back(blendBrightnessSmooth);
+    
+    Effect sinStretch;
+    sinStretch.loadShader("Shaders/sinStretch");
+    sinStretch.addUniform("resolution", &screenResolution);
+    sinStretch.addUniform("inputTexture", &images[0]);
+    sinStretch.width = ofGetWidth();
+    sinStretch.height = ofGetHeight();
+    effects.push_back(sinStretch);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
