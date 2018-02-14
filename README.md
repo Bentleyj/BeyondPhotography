@@ -5,6 +5,12 @@ Reading Gerard J. Holzmann's book Beyond Photography and trying out the examples
 
 working with oF_0.9.7
 
+#### Required Addons
+
+ofxGui - comes with oF
+
+[ofxNestedFileLoader](https://github.com/Bentleyj/ofxNestedFileLoader_)
+
 
 ### Day 0
 
