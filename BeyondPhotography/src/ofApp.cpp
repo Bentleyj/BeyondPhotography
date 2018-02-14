@@ -236,6 +236,14 @@ void ofApp::setup(){
     cone.height = ofGetHeight();
     effects.push_back(cone);
     
+    Effect shear;
+    shear.loadShader("Shaders/shear");
+    shear.addUniform("resolution", &screenResolution);
+    shear.addUniform("inputTexture", &images[0]);
+    shear.width = ofGetWidth();
+    shear.height = ofGetHeight();
+    effects.push_back(shear);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
