@@ -228,6 +228,14 @@ void ofApp::setup(){
     sinStretch.height = ofGetHeight();
     effects.push_back(sinStretch);
     
+    Effect cone;
+    cone.loadShader("Shaders/cone");
+    cone.addUniform("resolution", &screenResolution);
+    cone.addUniform("inputTexture", &images[0]);
+    cone.width = ofGetWidth();
+    cone.height = ofGetHeight();
+    effects.push_back(cone);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
