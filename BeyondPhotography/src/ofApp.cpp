@@ -252,6 +252,14 @@ void ofApp::setup(){
     Bentley.height = ofGetHeight();
     effects.push_back(Bentley);
     
+    Effect BentleyRand;
+    BentleyRand.loadShader("Shaders/BentleyRand");
+    BentleyRand.addUniform("resolution", &screenResolution);
+    BentleyRand.addUniform("inputTexture", &images[0]);
+    BentleyRand.width = ofGetWidth();
+    BentleyRand.height = ofGetHeight();
+    effects.push_back(BentleyRand);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
