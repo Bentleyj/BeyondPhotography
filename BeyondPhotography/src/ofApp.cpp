@@ -244,6 +244,14 @@ void ofApp::setup(){
     shear.height = ofGetHeight();
     effects.push_back(shear);
     
+    Effect Bentley;
+    Bentley.loadShader("Shaders/Bentley");
+    Bentley.addUniform("resolution", &screenResolution);
+    Bentley.addUniform("inputTexture", &images[0]);
+    Bentley.width = ofGetWidth();
+    Bentley.height = ofGetHeight();
+    effects.push_back(Bentley);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
