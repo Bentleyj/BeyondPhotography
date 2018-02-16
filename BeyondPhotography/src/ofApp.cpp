@@ -268,6 +268,22 @@ void ofApp::setup(){
     Melt.height = ofGetHeight();
     effects.push_back(Melt);
     
+    Effect Split;
+    Split.loadShader("Shaders/Split");
+    Split.addUniform("resolution", &screenResolution);
+    Split.addUniform("inputTexture", &images[0]);
+    Split.width = ofGetWidth();
+    Split.height = ofGetHeight();
+    effects.push_back(Split);
+    
+    Effect IBM;
+    IBM.loadShader("Shaders/IBM");
+    IBM.addUniform("resolution", &screenResolution);
+    IBM.addUniform("inputTexture", &images[0]);
+    IBM.width = ofGetWidth();
+    IBM.height = ofGetHeight();
+    effects.push_back(IBM);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
