@@ -69,3 +69,7 @@ OK I had to do another image today because I came up with a cool idea. I did the
 ### Day 12
 
 Today I tackled three images (yay!) from page 42, 43 and one of my own invension. Firsltyu I did the melting effect on page 43 which I generated mostly by cheating but still got a really nice effect! Then I set about building the IBM logo creator on page 42 which turned out really nicely. I also made a cool splitting one along the way when testing the IBM logo piece. Loads of fun!
+
+### Day 13
+
+Today I did just one simple effect because we're busy at work. Did the swirl effect from pages 44 and 45. I could get some really fun effects and this is an example of a really basic but effective "trigonometric" effect.
