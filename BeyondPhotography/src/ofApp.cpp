@@ -284,6 +284,14 @@ void ofApp::setup(){
     IBM.height = ofGetHeight();
     effects.push_back(IBM);
     
+    Effect Swirl;
+    Swirl.loadShader("Shaders/Swirl");
+    Swirl.addUniform("resolution", &screenResolution);
+    Swirl.addUniform("inputTexture", &images[0]);
+    Swirl.width = ofGetWidth();
+    Swirl.height = ofGetHeight();
+    effects.push_back(Swirl);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
