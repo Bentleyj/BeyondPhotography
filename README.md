@@ -73,3 +73,7 @@ Today I tackled three images (yay!) from page 42, 43 and one of my own invension
 ### Day 13
 
 Today I did just one simple effect because we're busy at work. Did the swirl effect from pages 44 and 45. I could get some really fun effects and this is an example of a really basic but effective "trigonometric" effect.
+
+### Day 14
+
+Today I tackled the Oil painting effect from page 46 and 47. I think this one has come off really really well. I almost gave uop on it at first because I thought it would be too complicated but instead of giving up I persevered and ended up recreating the effect with my own histogram algorithm. My algorithm may not be perfect but I think it's pretty clear. Unfortunately at the moment it only works efficiently with a Black and White image. I would have to create a much large 3D histogram for all the colors which I think would be extremely inefficient. Black and white will have to do for now!
