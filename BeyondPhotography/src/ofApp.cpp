@@ -292,6 +292,14 @@ void ofApp::setup(){
     Swirl.height = ofGetHeight();
     effects.push_back(Swirl);
     
+    Effect oilPaint;
+    oilPaint.loadShader("Shaders/oilPaint");
+    oilPaint.addUniform("resolution", &screenResolution);
+    oilPaint.addUniform("inputTexture", &images[0]);
+    oilPaint.width = ofGetWidth();
+    oilPaint.height = ofGetHeight();
+    effects.push_back(oilPaint);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
