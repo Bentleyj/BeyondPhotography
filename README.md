@@ -77,3 +77,7 @@ Today I did just one simple effect because we're busy at work. Did the swirl eff
 ### Day 14
 
 Today I tackled the Oil painting effect from page 46 and 47. I think this one has come off really really well. I almost gave uop on it at first because I thought it would be too complicated but instead of giving up I persevered and ended up recreating the effect with my own histogram algorithm. My algorithm may not be perfect but I think it's pretty clear. Unfortunately at the moment it only works efficiently with a Black and White image. I would have to create a much large 3D histogram for all the colors which I think would be extremely inefficient. Black and white will have to do for now!
+
+### Day 15
+
+Today I tacked a much simpler animation than the day before. This involced projecting the polar coordinates of the image directly in to the cartesian plane. Instead of converting them correctly you just scale them directly in to the range which gives this weird effect which looks a lot like those images which you put a cylinder in the middle of and see an undistorted image. This is why I've called it CylinderProj, however I haven't actually tested it so I might just be dead wrong, but my gut tells me this is what would happen. I had a funny learning today which is that the value output by my CartToPol function for Theta is not a value between 0 and 2PI as I would have expected but instead a value between -PI and PI. This seems to me to be quite odd and I will need to investigate further to see whether my thinking or my algorithm is incorrect.
