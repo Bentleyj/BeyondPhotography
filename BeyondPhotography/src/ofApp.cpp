@@ -300,6 +300,14 @@ void ofApp::setup(){
     oilPaint.height = ofGetHeight();
     effects.push_back(oilPaint);
     
+    Effect CylinderProj;
+    CylinderProj.loadShader("Shaders/CylinderProj");
+    CylinderProj.addUniform("resolution", &screenResolution);
+    CylinderProj.addUniform("inputTexture", &images[0]);
+    CylinderProj.width = ofGetWidth();
+    CylinderProj.height = ofGetHeight();
+    effects.push_back(CylinderProj);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
