@@ -178,7 +178,7 @@ void ofApp::setup(){
     Effect blend;
     blend.loadShader("Shaders/blend");
     blend.addUniform("resolution", &screenResolution);
-    blend.addUniform("inputTexture1", &images[1]);
+    blend.addUniform("inputTexture1", &images[0]);
     blend.addUniform("inputTexture2", &images[2]);
     blend.width = ofGetWidth();
     blend.height = ofGetHeight();
@@ -187,7 +187,7 @@ void ofApp::setup(){
     Effect blendLinear;
     blendLinear.loadShader("Shaders/blendLinear");
     blendLinear.addUniform("resolution", &screenResolution);
-    blendLinear.addUniform("inputTexture1", &images[1]);
+    blendLinear.addUniform("inputTexture1", &images[0]);
     blendLinear.addUniform("inputTexture2", &images[2]);
     blendLinear.width = ofGetWidth();
     blendLinear.height = ofGetHeight();
@@ -196,7 +196,7 @@ void ofApp::setup(){
     Effect blendCenter;
     blendCenter.loadShader("Shaders/blendCenter");
     blendCenter.addUniform("resolution", &screenResolution);
-    blendCenter.addUniform("inputTexture1", &images[1]);
+    blendCenter.addUniform("inputTexture1", &images[0]);
     blendCenter.addUniform("inputTexture2", &images[2]);
     blendCenter.width = ofGetWidth();
     blendCenter.height = ofGetHeight();
@@ -205,7 +205,7 @@ void ofApp::setup(){
     Effect blendBrightness;
     blendBrightness.loadShader("Shaders/blendBrightness");
     blendBrightness.addUniform("resolution", &screenResolution);
-    blendBrightness.addUniform("inputTexture1", &images[1]);
+    blendBrightness.addUniform("inputTexture1", &images[0]);
     blendBrightness.addUniform("inputTexture2", &images[2]);
     blendBrightness.width = ofGetWidth();
     blendBrightness.height = ofGetHeight();
@@ -214,7 +214,7 @@ void ofApp::setup(){
     Effect blendBrightnessSmooth;
     blendBrightnessSmooth.loadShader("Shaders/blendBrightnessSmooth");
     blendBrightnessSmooth.addUniform("resolution", &screenResolution);
-    blendBrightnessSmooth.addUniform("inputTexture1", &images[1]);
+    blendBrightnessSmooth.addUniform("inputTexture1", &images[0]);
     blendBrightnessSmooth.addUniform("inputTexture2", &images[2]);
     blendBrightnessSmooth.width = ofGetWidth();
     blendBrightnessSmooth.height = ofGetHeight();
@@ -327,7 +327,7 @@ void ofApp::draw(){
 //        if(
 //    }
     effects[effectIndex].applyEffect();
-    ofDrawBitmapStringHighlight(effects[effectIndex].name, gui.getPosition().x, gui.getPosition().y + gui.getHeight() + 10);
+    ofDrawBitmapStringHighlight(effects[effectIndex].name, gui.getPosition().x + 5, gui.getPosition().y + gui.getHeight() + 15);
     gui.draw();
 }
 
