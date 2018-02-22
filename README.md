@@ -54,7 +54,7 @@ Today we looked more closely at blending images. I completed 3.30 a linear blend
 
 ### Day [9]
 
-Today I fixed the Blend center effect from 3.31. There was a bug with my mapping code which made it not map properly and resulted in a line in the image. I also did 3.33 an effect whcihb uses the brightness of one image as a conditional for the blend percentage. I also did this smoothly on my own (not in the book). Finall I did 3.34 which is an awesome images and warps the image with a wonky sin curve wobble!
+Today I fixed the Blend center effect from 3.31. There was a bug with my mapping code which made it not map properly and resulted in a line in the image. I also did 3.33 an effect which uses the brightness of one image as a conditional for the blend percentage. I also did this smoothly on my own (not in the book). Finally I did 3.34 which is an awesome images and warps the image with a wonky sin curve wobble!
 
 ### Day 10
 
