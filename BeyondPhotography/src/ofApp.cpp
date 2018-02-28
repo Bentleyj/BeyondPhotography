@@ -308,6 +308,14 @@ void ofApp::setup(){
     CylinderProj.height = ofGetHeight();
     effects.push_back(CylinderProj);
     
+    Effect BlockShift;
+    BlockShift.loadShader("Shaders/BlockShift");
+    BlockShift.addUniform("resolution", &screenResolution);
+    BlockShift.addUniform("inputTexture", &images[0]);
+    BlockShift.width = ofGetWidth();
+    BlockShift.height = ofGetHeight();
+    effects.push_back(BlockShift);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
