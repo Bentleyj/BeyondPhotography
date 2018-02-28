@@ -59,10 +59,8 @@ void main() {
         }
     }
     
-    if(cx)
-        uvAbs.y += (0.5 - noise(xSeed)) * 200.0;
-    if(cy)
-        uvAbs.x += (0.5 - noise(ySeed)) * 200.0;
+        uvAbs.y += (0.5 - noise(xSeed * 50.0)) * 100.0;
+        uvAbs.x += (0.5 - noise(ySeed * 50.0)) * 100.0;
 
     vec3 tc = texture2DRect(inputTexture, uvAbs).rgb;
     
