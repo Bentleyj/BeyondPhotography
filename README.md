@@ -85,3 +85,7 @@ Today I tackled a much simpler effect than the day before. This involved project
 ### Day 16
 
 Had a cold so took a short break. Came back to work today to do the block shift image from pages 50 and 51. This was a fun effect which actually took me a little white to get right. Basically I had to shift blocks of pixels by equal amounts without actually knowing what block they were in. Because I'm using glsl I can't keep track of things like how many shifts I've already done between pixels. To solve this I started by using a thresholded noise function to create the blocks to shift in the X and the Y. Then I took each pixel and determined which block it was in, then stepped backwards through the image until I found the next pixel that was outside of the block and used that pixel to seed the random shift for the block. This way I got a really nice random block shift effect.
+
+### Day 17
+
+Today I looked at the warp effect of warping the x values of one image by another which makes some super crazy effects. Using figurative images gets really creepy looking faces and things. I want to try plugging in a pair of cameras snd having one warp the other in real-time. That would be sick!
