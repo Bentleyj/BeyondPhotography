@@ -316,6 +316,15 @@ void ofApp::setup(){
     BlockShift.height = ofGetHeight();
     effects.push_back(BlockShift);
     
+    Effect warp;
+    warp.loadShader("Shaders/warp");
+    warp.addUniform("resolution", &screenResolution);
+    warp.addUniform("inputTexture1", &images[0]);
+    warp.addUniform("inputTexture2", &images[2]);
+    warp.width = ofGetWidth();
+    warp.height = ofGetHeight();
+    effects.push_back(warp);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
