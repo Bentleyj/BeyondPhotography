@@ -325,6 +325,14 @@ void ofApp::setup(){
     warp.height = ofGetHeight();
     effects.push_back(warp);
     
+    Effect LSD;
+    LSD.loadShader("Shaders/LSD");
+    LSD.addUniform("resolution", &screenResolution);
+    LSD.addUniform("inputTexture", &images[0]);
+    LSD.width = ofGetWidth();
+    LSD.height = ofGetHeight();
+    effects.push_back(LSD);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
