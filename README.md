@@ -89,3 +89,7 @@ Had a cold so took a short break. Came back to work today to do the block shift 
 ### Day 17
 
 Today I looked at the warp effect of warping the x values of one image by another which makes some super crazy effects. Using figurative images gets really creepy looking faces and things. I want to try plugging in a pair of cameras snd having one warp the other in real-time. That would be sick!
+
+### Day 18
+
+Today I did the effect from page 54 and 55 whcih looks liek a psychedelic effect. This would have been a really easy effect to reproduce but for me it wasn't! Why? because GLSL v1.20 doesn't have support for bitwise operators! So I had to write my own. What joy! Actually I did manage to learn a lot about bitwise operators which was brilliant and about binary to decimal conversion etc. so this was a really educational one. The final effect I ended up with I'm not a huge fan of but some of the intermediate effects along the way I think came out really nicely. so I'm putting them all up online (I even made a commit of one of the earlier ones that I liked a lot and may spin it in to it's own effect soon!).
