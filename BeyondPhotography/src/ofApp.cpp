@@ -333,6 +333,14 @@ void ofApp::setup(){
     LSD.height = ofGetHeight();
     effects.push_back(LSD);
     
+    Effect stretchXY;
+    stretchXY.loadShader("Shaders/stretchXY");
+    stretchXY.addUniform("resolution", &screenResolution);
+    stretchXY.addUniform("inputTexture", &images[0]);
+    stretchXY.width = ofGetWidth();
+    stretchXY.height = ofGetHeight();
+    effects.push_back(stretchXY);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
