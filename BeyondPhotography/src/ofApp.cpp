@@ -341,6 +341,14 @@ void ofApp::setup(){
     stretchXY.height = ofGetHeight();
     effects.push_back(stretchXY);
     
+    Effect glassVertical;
+    glassVertical.loadShader("Shaders/glassVertical");
+    glassVertical.addUniform("resolution", &screenResolution);
+    glassVertical.addUniform("inputTexture", &images[0]);
+    glassVertical.width = ofGetWidth();
+    glassVertical.height = ofGetHeight();
+    effects.push_back(glassVertical);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
