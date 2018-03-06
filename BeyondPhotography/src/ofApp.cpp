@@ -349,6 +349,14 @@ void ofApp::setup(){
     glassVertical.height = ofGetHeight();
     effects.push_back(glassVertical);
     
+    Effect glassSpiral;
+    glassSpiral.loadShader("Shaders/glassSpiral");
+    glassSpiral.addUniform("resolution", &screenResolution);
+    glassSpiral.addUniform("inputTexture", &images[0]);
+    glassSpiral.width = ofGetWidth();
+    glassSpiral.height = ofGetHeight();
+    effects.push_back(glassSpiral);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
