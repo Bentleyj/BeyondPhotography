@@ -97,3 +97,7 @@ Today I did the effect from page 54 and 55 whcih looks liek a psychedelic effect
 ### Day 19
 
 Really quick one today. I recreated the stretch effect on pages 56 and 57. This is basically a repeat of the sinStretch effect but split over X and Y. I did a bit of a cheat to get it as we are busy today but had some fiun playing around wit the parameters. Will probably revisit this one to do it properly one day!
+
+### Day 20
+
+Did two effects today from pages 58 and 59. This was actually a repeat of the effect I used to create the IBM logo effect. I started with that example and flipped it in y. I also did it as a spiral effect but this effect looked really lame with the image I chose. :(
