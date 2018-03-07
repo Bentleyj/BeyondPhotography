@@ -104,4 +104,4 @@ Did two effects today from pages 58 and 59. This was actually a repeat of the ef
 
 ### Day 21
 
-Short one today as we are again very busy. I'm heading to NYC next week and so will need to take the week off from producing these most likely! Today I made a simple fisheye effect by squareing the radius in polar coordinates. I've actually used a similar effect to make our [Morph Mirror](https://github.com/Bentleyj/ofxNestedFileLoader_)(https://github.com/Hellicar-Studio/MorphFace) project a while ago which uses a Kinect to do face tracking and then apply a fisheye effect to peoples faces that it finds.
+Short one today as we are again very busy. I'm heading to NYC next week and so will need to take the week off from producing these most likely! Today I made a simple fisheye effect by squareing the radius in polar coordinates. I've actually used a similar effect to make our [Morph Mirror](https://github.com/Bentleyj/ofxNestedFileLoader_) project a while ago which uses a Kinect to do face tracking and then apply a fisheye effect to peoples faces that it finds.
