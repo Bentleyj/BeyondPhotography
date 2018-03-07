@@ -101,3 +101,7 @@ Really quick one today. I recreated the stretch effect on pages 56 and 57. This 
 ### Day 20
 
 Did two effects today from pages 58 and 59. This was actually a repeat of the effect I used to create the IBM logo effect. I started with that example and flipped it in y. I also did it as a spiral effect but this effect looked really lame with the image I chose. :(
+
+### Day 21
+
+Short one today as we are again very busy. I'm heading to NYC next week and so will need to take the week off from producing these most likely! Today I made a simple fisheye effect by squareing the radius in polar coordinates. I've actually used a similar effect to make our [Morph Mirror] (https://github.com/Hellicar-Studio/MorphFace) project a while ago which uses a Kinect to do face tracking and then apply a fisheye effect to peoples faces that it finds.
