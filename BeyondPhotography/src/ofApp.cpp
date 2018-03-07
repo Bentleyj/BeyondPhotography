@@ -357,6 +357,14 @@ void ofApp::setup(){
     glassSpiral.height = ofGetHeight();
     effects.push_back(glassSpiral);
     
+    Effect fishEye;
+    fishEye.loadShader("Shaders/fishEye");
+    fishEye.addUniform("resolution", &screenResolution);
+    fishEye.addUniform("inputTexture", &images[0]);
+    fishEye.width = ofGetWidth();
+    fishEye.height = ofGetHeight();
+    effects.push_back(fishEye);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
