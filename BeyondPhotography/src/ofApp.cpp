@@ -365,6 +365,14 @@ void ofApp::setup(){
     fishEye.height = ofGetHeight();
     effects.push_back(fishEye);
     
+    Effect randomPixels;
+    randomPixels.loadShader("Shaders/randomPixels");
+    randomPixels.addUniform("resolution", &screenResolution);
+    randomPixels.addUniform("inputTexture", &images[0]);
+    randomPixels.width = ofGetWidth();
+    randomPixels.height = ofGetHeight();
+    effects.push_back(randomPixels);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
