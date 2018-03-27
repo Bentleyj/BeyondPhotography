@@ -373,6 +373,14 @@ void ofApp::setup(){
     randomPixels.height = ofGetHeight();
     effects.push_back(randomPixels);
     
+    Effect pixelate;
+    pixelation.loadShader("Shaders/pixelation");
+    pixelation.addUniform("resolution", &screenResolution);
+    pixelation.addUniform("inputTexture", &images[0]);
+    pixelation.width = ofGetWidth();
+    pixelation.height = ofGetHeight();
+    effects.push_back(pixelation);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
