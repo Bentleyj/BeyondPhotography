@@ -108,4 +108,8 @@ Short one today as we are again very busy. I'm heading to NYC next week and so w
 
 ### Day 22
 
-Got to go on a trip to NYC for work so took some time off from this. Still busy with that same project so didn't have time to complete a full sketch today so I decided to work on image 15 from pages 62 and 63 and just see if I found anything cool. As luck would have it I managed to stumble upon something cool almost instantly and created a pixelation efect but with randomly sized pixels which looks very 8-bit. Remonds me of the art in this game A Song of Swords and Sworcery (or something like that, really fun game for iOS!). Anyway that's enough for today.!
+Got to go on a trip to NYC for work so took some time off from this. Still busy with that same project so didn't have time to complete a full sketch today so I decided to work on image 15 from pages 62 and 63 and just see if I found anything cool. As luck would have it I managed to stumble upon something cool almost instantly and created a pixelation efect but with randomly sized pixels which looks very 8-bit. Remonds me of the art in this game A Song of Swords and Sworcery (or something like that, really fun game for iOS!). Anyway that's enough for today!
+
+### Day 23
+
+Still a short day as still busy. Modified the random pixelation to effect to be a regular pixelation effect! Quick and simple today!
