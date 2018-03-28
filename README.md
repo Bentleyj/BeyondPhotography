@@ -113,3 +113,7 @@ Got to go on a trip to NYC for work so took some time off from this. Still busy 
 ### Day 23
 
 Still a short day as still busy. Modified the random pixelation to effect to be a regular pixelation effect! Quick and simple today!
+
+### Day 24
+
+Kind of a mistake effect today but I'm really pleased with the way it's come out. Really simple effect which creates quite a compelling result! Weave it up! I used a random shift  but in a pixelated kind of way and went for really straight up and down shifts. Still in pursuit of the tile explode effect. I think I have a good idea of how to proceed now which is awesome!
