@@ -374,12 +374,20 @@ void ofApp::setup(){
     effects.push_back(randomPixels);
     
     Effect pixelate;
-    pixelation.loadShader("Shaders/pixelation");
-    pixelation.addUniform("resolution", &screenResolution);
-    pixelation.addUniform("inputTexture", &images[0]);
-    pixelation.width = ofGetWidth();
-    pixelation.height = ofGetHeight();
-    effects.push_back(pixelation);
+    pixelate.loadShader("Shaders/pixelate");
+    pixelate.addUniform("resolution", &screenResolution);
+    pixelate.addUniform("inputTexture", &images[0]);
+    pixelate.width = ofGetWidth();
+    pixelate.height = ofGetHeight();
+    effects.push_back(pixelate);
+    
+    Effect weave;
+    weave.loadShader("Shaders/weave");
+    weave.addUniform("resolution", &screenResolution);
+    weave.addUniform("inputTexture", &images[0]);
+    weave.width = ofGetWidth();
+    weave.height = ofGetHeight();
+    effects.push_back(weave);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
