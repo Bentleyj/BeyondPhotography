@@ -117,3 +117,7 @@ Still a short day as still busy. Modified the random pixelation to effect to be 
 ### Day 24
 
 Kind of a mistake effect today but I'm really pleased with the way it's come out. Really simple effect which creates quite a compelling result! Weave it up! I used a random shift  but in a pixelated kind of way and went for really straight up and down shifts. Still in pursuit of the tile explode effect. I think I have a good idea of how to proceed now which is awesome!
+
+### Day 25
+
+Getting much closer to my tile explode effect that I'm looking for! I figured out the best way to tile my image which is really exciting and I did it without using uniforms. The effect is just the color component of the effect in the cool at the moment and I have a hunch it will look even better in black and white. I have a plan for how to shift the tiles as well but that will need to be kept for next week!
