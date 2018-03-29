@@ -389,6 +389,14 @@ void ofApp::setup(){
     weave.height = ofGetHeight();
     effects.push_back(weave);
     
+    Effect tileFlip;
+    tileFlip.loadShader("Shaders/tileFlip");
+    tileFlip.addUniform("resolution", &screenResolution);
+    tileFlip.addUniform("inputTexture", &images[0]);
+    tileFlip.width = ofGetWidth();
+    tileFlip.height = ofGetHeight();
+    effects.push_back(tileFlip);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
