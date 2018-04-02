@@ -121,3 +121,7 @@ Kind of a mistake effect today but I'm really pleased with the way it's come out
 ### Day 25
 
 Getting much closer to my tile explode effect that I'm looking for! I figured out the best way to tile my image which is really exciting and I did it without using uniforms. The effect is just the color component of the effect in the cool at the moment and I have a hunch it will look even better in black and white. I have a plan for how to shift the tiles as well but that will need to be kept for next week!
+
+### Day 26
+
+Finally finished this effect (kind of). I've made it so that the pieces shift around but at the moment they are taken out of a random grid rather than out of a regular grid. I think I know how to build it but that will be for another day!
