@@ -124,4 +124,8 @@ Getting much closer to my tile explode effect that I'm looking for! I figured ou
 
 ### Day 26
 
-Finally finished this effect (kind of). I've made it so that the pieces shift around but at the moment they are taken out of a random grid rather than out of a regular grid. I think I know how to build it but that will be for another day! Actually it won't be for another day, it's for today! I managed to achieve this by laying my squares out in the grid and then giving them random offsets. I still think this would look better in black and white than in RGB, or maybe with an image with less stark blacks in the background. But I'm quite pleased with the result today!
+Finally finished this effect (kind of). I've made it so that the pieces shift around but at the moment they are taken out of a random grid rather than out of a regular grid. I think I know how to build it but that will be for another day! Actually it won't be for another day, it's for today! I managed to achieve this by laying my squares out in the grid and then giving them random offsets. I still think this would look better in black and white than in RGB, or maybe with an image with less stark blacks in the background. But I'm quite pleased with the result today! I should note that these effects over the last few days would be sped up dramatically by using uniforms, however I kind of like the purity of doing all these effects within GLSL with as few uniforms as possible. 
+
+I did another effect today I'm calling "color threshold" I think it could be fruitful to explore! basically I'm just thresholding different colors individually. I think it can be really effective.
+
+
