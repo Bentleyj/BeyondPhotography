@@ -124,4 +124,4 @@ Getting much closer to my tile explode effect that I'm looking for! I figured ou
 
 ### Day 26
 
-Finally finished this effect (kind of). I've made it so that the pieces shift around but at the moment they are taken out of a random grid rather than out of a regular grid. I think I know how to build it but that will be for another day!
+Finally finished this effect (kind of). I've made it so that the pieces shift around but at the moment they are taken out of a random grid rather than out of a regular grid. I think I know how to build it but that will be for another day! Actually it won't be for another day, it's for today! I managed to achieve this by laying my squares out in the grid and then giving them random offsets. I still think this would look better in black and white than in RGB, or maybe with an image with less stark blacks in the background. But I'm quite pleased with the result today!
