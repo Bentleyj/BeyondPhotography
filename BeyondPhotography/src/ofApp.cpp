@@ -397,6 +397,14 @@ void ofApp::setup(){
     tileFlip.height = ofGetHeight();
     effects.push_back(tileFlip);
     
+    Effect tileExplode;
+    tileExplode.loadShader("Shaders/tileExplode");
+    tileExplode.addUniform("resolution", &screenResolution);
+    tileExplode.addUniform("inputTexture", &images[0]);
+    tileExplode.width = ofGetWidth();
+    tileExplode.height = ofGetHeight();
+    effects.push_back(tileExplode);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
