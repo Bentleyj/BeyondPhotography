@@ -405,6 +405,14 @@ void ofApp::setup(){
     tileExplode.height = ofGetHeight();
     effects.push_back(tileExplode);
     
+    Effect gridExplode;
+    gridExplode.loadShader("Shaders/gridExplode");
+    gridExplode.addUniform("resolution", &screenResolution);
+    gridExplode.addUniform("inputTexture", &images[0]);
+    gridExplode.width = ofGetWidth();
+    gridExplode.height = ofGetHeight();
+    effects.push_back(gridExplode);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
