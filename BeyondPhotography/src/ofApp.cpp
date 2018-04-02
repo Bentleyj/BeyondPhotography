@@ -413,6 +413,14 @@ void ofApp::setup(){
     gridExplode.height = ofGetHeight();
     effects.push_back(gridExplode);
     
+    Effect thresholdRGB;
+    thresholdRGB.loadShader("Shaders/thresholdRGB");
+    thresholdRGB.addUniform("resolution", &screenResolution);
+    thresholdRGB.addUniform("inputTexture", &images[0]);
+    thresholdRGB.width = ofGetWidth();
+    thresholdRGB.height = ofGetHeight();
+    effects.push_back(thresholdRGB);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
