@@ -421,6 +421,14 @@ void ofApp::setup(){
     thresholdRGB.height = ofGetHeight();
     effects.push_back(thresholdRGB);
     
+    Effect thresholdRGBSwizzle;
+    thresholdRGBSwizzle.loadShader("Shaders/thresholdRGBSwizzle");
+    thresholdRGBSwizzle.addUniform("resolution", &screenResolution);
+    thresholdRGBSwizzle.addUniform("inputTexture", &images[0]);
+    thresholdRGBSwizzle.width = ofGetWidth();
+    thresholdRGBSwizzle.height = ofGetHeight();
+    effects.push_back(thresholdRGBSwizzle);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
