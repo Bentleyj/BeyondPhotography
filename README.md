@@ -128,4 +128,8 @@ Finally finished this effect (kind of). I've made it so that the pieces shift ar
 
 I did another effect today I'm calling "color threshold" I think it could be fruitful to explore! basically I'm just thresholding different colors individually. I think it can be really effective.
 
+### Day 27
+
+Took a little break but now I'm back again. Today I I am finally moving on to the next effect in the book, the "Rubber Sheet" effect on pages 64 and 65. This should be a pretty straightforward effect but I got stopped on the way by a lovely random pixelation effect with different resolutions in x and y. Did perfect Y resolution today with randomly pixelated x resolution today. Tomorrow we'll try the other way around and see which is better!
+
 
