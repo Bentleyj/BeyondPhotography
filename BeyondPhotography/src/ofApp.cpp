@@ -429,13 +429,23 @@ void ofApp::setup(){
     thresholdRGBSoft.height = ofGetHeight();
     effects.push_back(thresholdRGBSoft);
     
-    Effect yPixelsRand;
-    yPixelsRand.loadShader("Shaders/yPixelsRand");
-    yPixelsRand.addUniform("resolution", &screenResolution);
-    yPixelsRand.addUniform("inputTexture", &images[0]);
-    yPixelsRand.width = ofGetWidth();
-    yPixelsRand.height = ofGetHeight();
-    effects.push_back(yPixelsRand);
+    Effect pixelsRandY;
+    pixelsRandY.loadShader("Shaders/pixelsRandY");
+    pixelsRandY.addUniform("resolution", &screenResolution);
+    pixelsRandY.addUniform("inputTexture", &images[0]);
+    pixelsRandY.width = ofGetWidth();
+    pixelsRandY.height = ofGetHeight();
+    effects.push_back(pixelsRandY);
+    
+    Effect pixelsRandX;
+    pixelsRandX.loadShader("Shaders/pixelsRandX");
+    pixelsRandX.addUniform("resolution", &screenResolution);
+    pixelsRandX.addUniform("inputTexture", &images[0]);
+    pixelsRandX.width = ofGetWidth();
+    pixelsRandX.height = ofGetHeight();
+    effects.push_back(pixelsRandX);
+    
+    
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
