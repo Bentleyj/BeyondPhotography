@@ -132,4 +132,8 @@ I did another effect today I'm calling "color threshold" I think it could be fru
 
 Took a little break but now I'm back again. Today I I am finally moving on to the next effect in the book, the "Rubber Sheet" effect on pages 64 and 65. This should be a pretty straightforward effect but I got stopped on the way by a lovely random pixelation effect with different resolutions in x and y. Did perfect Y resolution today with randomly pixelated x resolution today. Tomorrow we'll try the other way around and see which is better!
 
+### Day 28
+
+Flipped it today to do the perfect resolution in X with randomly distributed pixels in X. I think I can make some really nice effects by playing around with this idea more, but I'm busy so that will have to wait until tomorrow!
+
 
