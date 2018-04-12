@@ -36,28 +36,19 @@ void main() {
     
     vec2 uvAbs = uv * resolution;
     
-    bool cx = getShift(uvAbs.x, scale);
-//    bool cy = getShift(uvAbs.y, scale);
+    bool cy = getShift(uvAbs.y, scale);
     
     float xSeed = uvAbs.x;
+    
+    float ySeed = uvAbs.y;
     for(int i = 0; i < 500; i++) {
-        bool oldC = cx;
-        cx = getShift(uvAbs.x - i, scale);
-        if(cx != oldC) {
-            xSeed = uvAbs.x - i;
+        bool oldC = cy;
+        cy = getShift(uvAbs.y - i, scale);
+        if(cy != oldC) {
+            ySeed = uvAbs.y - i;
             break;
         }
     }
-    
-    float ySeed = uvAbs.y;
-//    for(int i = 0; i < 500; i++) {
-//        bool oldC = cy;
-//        cy = getShift(uvAbs.y - i, scale);
-//        if(cy != oldC) {
-//            ySeed = uvAbs.y - i;
-//            break;
-//        }
-//    }
     
 
 
