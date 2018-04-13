@@ -136,4 +136,6 @@ Took a little break but now I'm back again. Today I I am finally moving on to th
 
 Flipped it today to do the perfect resolution in X with randomly distributed pixels in X. I think I can make some really nice effects by playing around with this idea more, but I'm busy so that will have to wait until tomorrow!
 
+### Day 29
 
+Added a slanted pixelation effect today. Not what I really wanted to do today but I have no time! It is interesting to see, but I want to do more compicated pixelation patterns.
