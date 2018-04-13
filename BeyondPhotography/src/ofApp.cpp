@@ -445,7 +445,13 @@ void ofApp::setup(){
     pixelsRandX.height = ofGetHeight();
     effects.push_back(pixelsRandX);
     
-    
+    Effect pixelsSlant;
+    pixelsSlant.loadShader("Shaders/pixelsSlant");
+    pixelsSlant.addUniform("resolution", &screenResolution);
+    pixelsSlant.addUniform("inputTexture", &images[0]);
+    pixelsSlant.width = ofGetWidth();
+    pixelsSlant.height = ofGetHeight();
+    effects.push_back(pixelsSlant);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
