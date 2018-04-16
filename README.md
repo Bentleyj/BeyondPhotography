@@ -139,3 +139,7 @@ Flipped it today to do the perfect resolution in X with randomly distributed pix
 ### Day 29
 
 Added a slanted pixelation effect today. Not what I really wanted to do today but I have no time! It is interesting to see, but I want to do more compicated pixelation patterns.
+
+### Day 30
+
+30 Days of 2D shaders! Today I'm trying to build a effect where the pixelation fades in over time. This is actually abit trickier than I thought and right now my pixels are all a weird size and her body seems to be in upside-down chunks but I'll figure it out tomorrow and resolve.
