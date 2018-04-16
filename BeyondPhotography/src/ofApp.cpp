@@ -453,6 +453,14 @@ void ofApp::setup(){
     pixelsSlant.height = ofGetHeight();
     effects.push_back(pixelsSlant);
     
+    Effect pixelsStep;
+    pixelsStep.loadShader("Shaders/pixelsStep");
+    pixelsStep.addUniform("resolution", &screenResolution);
+    pixelsStep.addUniform("inputTexture", &images[0]);
+    pixelsStep.width = ofGetWidth();
+    pixelsStep.height = ofGetHeight();
+    effects.push_back(pixelsStep);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
