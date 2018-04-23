@@ -143,3 +143,7 @@ Added a slanted pixelation effect today. Not what I really wanted to do today bu
 ### Day 30
 
 30 Days of 2D shaders! Today I'm trying to build a effect where the pixelation fades in over time. This is actually abit trickier than I thought and right now my pixels are all a weird size and her body seems to be in upside-down chunks but I'll figure it out tomorrow and resolve.
+
+### Day 31
+
+Today I finally got down to the nitty gritty and build the fading pixelation shader that I wanted to build! Very excited about it. I made one example where the pixelations fades in and then back out again. This is actually not the best image for it because it's so dark but I think you can still get the idea. I also learned a lot about how to do linear remapping from this [link](https://squircleart.github.io/math/value-remapping.html). Really great info! I want to use that much much more!
