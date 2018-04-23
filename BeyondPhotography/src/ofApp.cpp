@@ -461,6 +461,14 @@ void ofApp::setup(){
     pixelsStep.height = ofGetHeight();
     effects.push_back(pixelsStep);
     
+    Effect pixelsFade;
+    pixelsFade.loadShader("Shaders/pixelsFade");
+    pixelsFade.addUniform("resolution", &screenResolution);
+    pixelsFade.addUniform("inputTexture", &images[0]);
+    pixelsFade.width = ofGetWidth();
+    pixelsFade.height = ofGetHeight();
+    effects.push_back(pixelsFade);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
