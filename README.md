@@ -147,3 +147,7 @@ Added a slanted pixelation effect today. Not what I really wanted to do today bu
 ### Day 31
 
 Today I finally got down to the nitty gritty and build the fading pixelation shader that I wanted to build! Very excited about it. I made one example where the pixelations fades in and then back out again. This is actually not the best image for it because it's so dark but I think you can still get the idea. I also learned a lot about how to do linear remapping from this [link](https://squircleart.github.io/math/value-remapping.html). Really great info! I want to use that much much more!
+
+### Day 32
+
+Went back to my old oil painting effect from day 14 because I posted it on instagram and got some feedback. I created kind of a weird version which works but also creates some funny colored edges around things. Quite cool actually!
