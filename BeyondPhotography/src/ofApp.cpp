@@ -469,6 +469,14 @@ void ofApp::setup(){
     pixelsFade.height = ofGetHeight();
     effects.push_back(pixelsFade);
     
+    Effect oilPaintColor;
+    oilPaintColor.loadShader("Shaders/oilPaintColor");
+    oilPaintColor.addUniform("resolution", &screenResolution);
+    oilPaintColor.addUniform("inputTexture", &images[0]);
+    oilPaintColor.width = ofGetWidth();
+    oilPaintColor.height = ofGetHeight();
+    effects.push_back(oilPaintColor);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
