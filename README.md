@@ -151,3 +151,7 @@ Today I finally got down to the nitty gritty and build the fading pixelation sha
 ### Day 32
 
 Went back to my old oil painting effect from day 14 because I posted it on instagram and got some feedback. I created kind of a weird version which works but also creates some funny colored edges around things. Quite cool actually!
+
+### Day 33
+
+Long break again due to work in NYC so I made a little test with pixelation fading in and out. Not sure happy with the results but I did learn a lot about how to manipulate sin curves in to an effect that I want. This one reminds me of Lego.
