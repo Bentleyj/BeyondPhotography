@@ -11,6 +11,12 @@ ofxGui - comes with oF
 
 [ofxNestedFileLoader](https://github.com/Bentleyj/ofxNestedFileLoader_)
 
+#### Documentation
+
+I am taking screenshots of my effects and putting them on instagram. I'm using the following command to take centered screenshots each time.
+
+`date=$(date '+%Y%m%dT%H%M%S'); screencapture -x -R0,127,712,626 ~/Desktop/BeyondPhotographyEffects/screen_${date}.png`
+
 
 ### Day 0
 
@@ -64,7 +70,7 @@ Today I started on Chapter 4 with page 34 - 37. The first effect I added was the
 
 Just one image today as I'm quite busy at work at the moment. But today's image is a very special one because it's the Bentley Effect from pages 40 and 41! basically you just shift the pixels of the image down based on their brightness. I also tried with shifting the image up based on brightness and you get a really freaky effect! Big fan of this one!
 
-OK I had to do another image today because I came up with a cool idea. I did the Bentley effect but offset the pixels in a random direction instead of doing it in the negative or positive y. This makes a really wonky fuzzy effect which highlights the bright parts of the image. Very cool! Also I've started taking screenshots of my progress and posting them [here](https://hellicarstudio.com/beyond-photography/). I want to document my screenshot command line prompt so that I can use it more easily so I'll put it here: `date=$(date '+%Y%m%dT%H%M%S'); screencapture -x -R0,127,712,626 ~/Desktop/BeyondPhotographyEffects/screen_${date}.png`
+OK I had to do another image today because I came up with a cool idea. I did the Bentley effect but offset the pixels in a random direction instead of doing it in the negative or positive y. This makes a really wonky fuzzy effect which highlights the bright parts of the image. Very cool! Also I've started taking screenshots of my progress and posting them [here](https://hellicarstudio.com/beyond-photography/).
 
 ### Day 12
 
