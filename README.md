@@ -161,3 +161,7 @@ Went back to my old oil painting effect from day 14 because I posted it on insta
 ### Day 33
 
 Long break again due to work in NYC so I made a little test with pixelation fading in and out. Not sure happy with the results but I did learn a lot about how to manipulate sin curves in to an effect that I want. This one reminds me of Lego.
+
+### Day 34
+
+Starting to play with my wood texture (does that sound weird?). Getting some cool results already! I'm starting by offsettings the radius in polar coordinates by the brightness of the wood texture which gets some awesome looks! And I'm also spinning the pixels around the center by the amount of their brightness in the wood texture which is also quite groovy (wood pun?).
