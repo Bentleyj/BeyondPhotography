@@ -165,3 +165,7 @@ Long break again due to work in NYC so I made a little test with pixelation fadi
 ### Day 34
 
 Starting to play with my wood texture (does that sound weird?). Getting some cool results already! I'm starting by offsettings the radius in polar coordinates by the brightness of the wood texture which gets some awesome looks! And I'm also spinning the pixels around the center by the amount of their brightness in the wood texture which is also quite groovy (wood pun?).
+
+### Day 35
+
+Started working on doing swirls without the wood texture and realized all my wood was up-side down because I had only flipped the texture AFTER calculating the uvAbs value. Have you go back and re-do the wood ones so I don't get confused later. I'm now applying the swirl a polar stretch effects to an image using its own texture which is a lot of fun!
