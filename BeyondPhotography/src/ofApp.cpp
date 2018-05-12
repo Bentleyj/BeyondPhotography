@@ -485,6 +485,15 @@ void ofApp::setup(){
     pixelsLegoFade.height = ofGetHeight();
     effects.push_back(pixelsLegoFade);
     
+    Effect woodWarp;
+    woodWarp.loadShader("Shaders/woodWarp");
+    woodWarp.addUniform("resolution", &screenResolution);
+    woodWarp.addUniform("inputTexture1", &images[2]);
+    woodWarp.addUniform("inputTexture2", &images[1]);
+    woodWarp.width = ofGetWidth();
+    woodWarp.height = ofGetHeight();
+    effects.push_back(woodWarp);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
