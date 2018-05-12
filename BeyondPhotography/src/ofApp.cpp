@@ -494,6 +494,15 @@ void ofApp::setup(){
     woodWarp.height = ofGetHeight();
     effects.push_back(woodWarp);
     
+    Effect woodSwirl;
+    woodSwirl.loadShader("Shaders/woodSwirl");
+    woodSwirl.addUniform("resolution", &screenResolution);
+    woodSwirl.addUniform("inputTexture1", &images[2]);
+    woodSwirl.addUniform("inputTexture2", &images[1]);
+    woodSwirl.width = ofGetWidth();
+    woodSwirl.height = ofGetHeight();
+    effects.push_back(woodSwirl);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
