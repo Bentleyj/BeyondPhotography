@@ -503,6 +503,14 @@ void ofApp::setup(){
     woodSwirl.height = ofGetHeight();
     effects.push_back(woodSwirl);
     
+    Effect selfSwirl;
+    selfSwirl.loadShader("Shaders/selfSwirl");
+    selfSwirl.addUniform("resolution", &screenResolution);
+    selfSwirl.addUniform("inputTexture", &images[2]);
+    selfSwirl.width = ofGetWidth();
+    selfSwirl.height = ofGetHeight();
+    effects.push_back(selfSwirl);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
