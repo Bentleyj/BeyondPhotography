@@ -169,3 +169,7 @@ Starting to play with my wood texture (does that sound weird?). Getting some coo
 ### Day 35
 
 Started working on doing swirls without the wood texture and realized all my wood was up-side down because I had only flipped the texture AFTER calculating the uvAbs value. Have you go back and re-do the wood ones so I don't get confused later. I'm now applying the swirl a polar stretch effects to an image using its own texture which is a lot of fun!
+
+### Day 36
+
+Today I went back to basics with some really simple color effects. I did some simple swizzling to make a Shrek effect and cubed some values to make a nice darkened black and white effect. I was suprised how hard it was to create interesting looks with swizzling and I intend to think of something cooler to do with it because it is a really nice feature of GLSL.
