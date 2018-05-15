@@ -5,13 +5,15 @@ uniform vec2 resolution;
 
 void main() {
     
+    // Find the Position of my pixel
     vec2 uv = gl_FragCoord.xy / resolution;
     
+    // Flip the position upside-down (because computers suck and bring in texture flipped)
     uv.y = 1.0 - uv.y;
-    
-    //float dx = 20;
-    //float dy = 20;
-    //vec2 coord = vec2(dx*floor(uv.x/dx), dy*floor(uv.y/dy));
+
+    // given where my pixel is, find what color I shoul be from GWPE
     vec3 tc = texture2DRect(inputTexture, uv * resolution).rgb;
+
+    // Display that color on screen
     gl_FragColor = vec4(tc, 1.0);
 }

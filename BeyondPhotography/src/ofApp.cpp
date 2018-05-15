@@ -511,6 +511,30 @@ void ofApp::setup(){
     selfSwirl.height = ofGetHeight();
     effects.push_back(selfSwirl);
     
+    Effect selfWarp;
+    selfWarp.loadShader("Shaders/selfWarp");
+    selfWarp.addUniform("resolution", &screenResolution);
+    selfWarp.addUniform("inputTexture", &images[2]);
+    selfWarp.width = ofGetWidth();
+    selfWarp.height = ofGetHeight();
+    effects.push_back(selfWarp);
+    
+    Effect swizzleI;
+    swizzleI.loadShader("Shaders/swizzleI");
+    swizzleI.addUniform("resolution", &screenResolution);
+    swizzleI.addUniform("inputTexture", &images[2]);
+    swizzleI.width = ofGetWidth();
+    swizzleI.height = ofGetHeight();
+    effects.push_back(swizzleI);
+    
+    Effect cubed;
+    cubed.loadShader("Shaders/cubed");
+    cubed.addUniform("resolution", &screenResolution);
+    cubed.addUniform("inputTexture", &images[2]);
+    cubed.width = ofGetWidth();
+    cubed.height = ofGetHeight();
+    effects.push_back(cubed);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
