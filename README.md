@@ -176,4 +176,4 @@ Today I went back to basics with some really simple color effects. I did some si
 
 ### Day 37
 
-Back to the book! Today I ended by excursion in to the realm of self-directed creation and went back to the Beyond Photography book to look at the Rubber Sheet effect on pages 64 and 65 (effect 16). I don't want to look at the interactivity of this effect but instead using just a static peak effect in the middle. I've built some variables we can easily adjust in it for now and I will look at extending this effect to have more slants at different angles.
+Back to the book! Today I ended by excursion in to the realm of self-directed creation and went back to the Beyond Photography book to look at the Rubber Sheet effect on pages 64 and 65 (effect 16). I don't want to look at the interactivity of this effect but instead using just a static peak effect in the middle. I've built some variables we can easily adjust in it for now and I will look at extending this effect to have more slants at different angles. Also did a little extra effect today and added the 'Modulo Background' effect which I think could have a lot of promise is a lot of different ways.
