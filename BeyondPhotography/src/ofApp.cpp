@@ -543,6 +543,14 @@ void ofApp::setup(){
     peak.height = ofGetHeight();
     effects.push_back(peak);
     
+    Effect moduloBackground;
+    moduloBackground.loadShader("Shaders/moduloBackground");
+    moduloBackground.addUniform("resolution", &screenResolution);
+    moduloBackground.addUniform("inputTexture", &images[2]);
+    moduloBackground.width = ofGetWidth();
+    moduloBackground.height = ofGetHeight();
+    effects.push_back(moduloBackground);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
