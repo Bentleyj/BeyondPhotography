@@ -535,6 +535,14 @@ void ofApp::setup(){
     cubed.height = ofGetHeight();
     effects.push_back(cubed);
     
+    Effect peak;
+    peak.loadShader("Shaders/peak");
+    peak.addUniform("resolution", &screenResolution);
+    peak.addUniform("inputTexture", &images[2]);
+    peak.width = ofGetWidth();
+    peak.height = ofGetHeight();
+    effects.push_back(peak);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
