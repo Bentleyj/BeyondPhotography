@@ -177,3 +177,7 @@ Today I went back to basics with some really simple color effects. I did some si
 ### Day 37
 
 Back to the book! Today I ended by excursion in to the realm of self-directed creation and went back to the Beyond Photography book to look at the Rubber Sheet effect on pages 64 and 65 (effect 16). I don't want to look at the interactivity of this effect but instead using just a static peak effect in the middle. I've built some variables we can easily adjust in it for now and I will look at extending this effect to have more slants at different angles. Also did a little extra effect today and added the 'Modulo Background' effect which I think could have a lot of promise is a lot of different ways.
+
+### Day 38
+
+Today I took apart the rough Peak effect I had made last time and turned it in to a contained a clean method which could be applied at different strengths over different intervals. This was really fun and allowed me to experiment a ton! I got 2 really nice effects which I've saved and a bunch more which I just took screenshots of simply by playing around with the width of the slant regions and amount of slant. My favorite effect is really zigzag x with really small interval width but large slant amounts!
