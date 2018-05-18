@@ -551,6 +551,22 @@ void ofApp::setup(){
     moduloBackground.height = ofGetHeight();
     effects.push_back(moduloBackground);
     
+    Effect zigzag;
+    zigzag.loadShader("Shaders/zigzag");
+    zigzag.addUniform("resolution", &screenResolution);
+    zigzag.addUniform("inputTexture", &images[2]);
+    zigzag.width = ofGetWidth();
+    zigzag.height = ofGetHeight();
+    effects.push_back(zigzag);
+    
+    Effect zigzagX;
+    zigzagX.loadShader("Shaders/zigzagX");
+    zigzagX.addUniform("resolution", &screenResolution);
+    zigzagX.addUniform("inputTexture", &images[2]);
+    zigzagX.width = ofGetWidth();
+    zigzagX.height = ofGetHeight();
+    effects.push_back(zigzagX);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(imageIndex);
