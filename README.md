@@ -181,3 +181,7 @@ Back to the book! Today I ended by excursion in to the realm of self-directed cr
 ### Day 38
 
 Today I took apart the rough Peak effect I had made last time and turned it in to a contained a clean method which could be applied at different strengths over different intervals. This was really fun and allowed me to experiment a ton! I got 2 really nice effects which I've saved and a bunch more which I just took screenshots of simply by playing around with the width of the slant regions and amount of slant. My favorite effect is really zigzag x with really small interval width but large slant amounts!
+
+### Day 39
+
+Tackled another effect from the book today which proved beautifule as I knew it would. Today we did The Lincoln Transform which is a polar coordinates pixelation effect. To do this you first convert to polar coordinates, then do a pixelation in both radius and angle and finally convert back in to cartesian coordinates. Really neat effect!
