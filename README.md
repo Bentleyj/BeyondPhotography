@@ -185,3 +185,7 @@ Today I took apart the rough Peak effect I had made last time and turned it in t
 ### Day 39
 
 Tackled another effect from the book today which proved beautifule as I knew it would. Today we did The Lincoln Transform which is a polar coordinates pixelation effect. To do this you first convert to polar coordinates, then do a pixelation in both radius and angle and finally convert back in to cartesian coordinates. Really neat effect!
+
+### Day 40
+
+Iterating further with the polar pixelation doing polar pixelated rings. I also decided that I wanted to remove the dependency on ofxNestedFileLoader because it was causing problems where my images were not loaded in any reasonable order so on multiple computers I needed to keep changing my settings. Now I've made the images fixed so they will always load. I'm also adding the images to the git repo so it's easier to redistribute.
