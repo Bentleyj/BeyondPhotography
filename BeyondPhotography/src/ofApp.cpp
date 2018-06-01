@@ -3,14 +3,11 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     // Load images
-    ofxNestedFileLoader loader;
-    vector<string> imagePaths = loader.load("Images");
-    for(int i = 0; i < imagePaths.size(); i++) {
-        ofImage img;
-        img.load(imagePaths[i]);
-        images.push_back(img);
-    }
-    imageIndex.set("Image Index", 0, 0, images.size()-1);
+    images.resize(2);
+    images[0].load("images/Girl_With_A_Pearl_Earring.jpg");
+    images[1].load("images/MonaLisa.jpg");
+    images[1].load("images/wood.jpg");
+
     
     screenResolution.x = ofGetWidth();
     screenResolution.y = ofGetHeight();
@@ -575,9 +572,16 @@ void ofApp::setup(){
     polarPixel.height = ofGetHeight();
     effects.push_back(polarPixel);
     
+    Effect polarPixel2;
+    polarPixel2.loadShader("Shaders/polarPixel2");
+    polarPixel2.addUniform("resolution", &screenResolution);
+    polarPixel2.addUniform("inputTexture", &images[0]);
+    polarPixel2.width = ofGetWidth();
+    polarPixel2.height = ofGetHeight();
+    effects.push_back(polarPixel2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
-    gui.add(imageIndex);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
     gui.loadFromFile(settingsPath);
     
