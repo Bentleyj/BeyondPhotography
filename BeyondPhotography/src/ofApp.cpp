@@ -3,11 +3,10 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     // Load images
-    images.resize(2);
-    images[0].load("images/Girl_With_A_Pearl_Earring.jpg");
-    images[1].load("images/MonaLisa.jpg");
-    images[1].load("images/wood.jpg");
-
+    images.resize(3);
+    images[0].load("Images/Girl_With_A_Pearl_Earring.jpg");
+    images[1].load("Images/MonaLisa.jpg");
+    images[2].load("Images/wood.jpg");
     
     screenResolution.x = ofGetWidth();
     screenResolution.y = ofGetHeight();
@@ -176,7 +175,7 @@ void ofApp::setup(){
     blend.loadShader("Shaders/blend");
     blend.addUniform("resolution", &screenResolution);
     blend.addUniform("inputTexture1", &images[0]);
-    blend.addUniform("inputTexture2", &images[0]);
+    blend.addUniform("inputTexture2", &images[1]);
     blend.width = ofGetWidth();
     blend.height = ofGetHeight();
     effects.push_back(blend);
@@ -185,7 +184,7 @@ void ofApp::setup(){
     blendLinear.loadShader("Shaders/blendLinear");
     blendLinear.addUniform("resolution", &screenResolution);
     blendLinear.addUniform("inputTexture1", &images[0]);
-    blendLinear.addUniform("inputTexture2", &images[0]);
+    blendLinear.addUniform("inputTexture2", &images[1]);
     blendLinear.width = ofGetWidth();
     blendLinear.height = ofGetHeight();
     effects.push_back(blendLinear);
@@ -194,7 +193,7 @@ void ofApp::setup(){
     blendCenter.loadShader("Shaders/blendCenter");
     blendCenter.addUniform("resolution", &screenResolution);
     blendCenter.addUniform("inputTexture1", &images[0]);
-    blendCenter.addUniform("inputTexture2", &images[0]);
+    blendCenter.addUniform("inputTexture2", &images[1]);
     blendCenter.width = ofGetWidth();
     blendCenter.height = ofGetHeight();
     effects.push_back(blendCenter);
@@ -203,7 +202,7 @@ void ofApp::setup(){
     blendBrightness.loadShader("Shaders/blendBrightness");
     blendBrightness.addUniform("resolution", &screenResolution);
     blendBrightness.addUniform("inputTexture1", &images[0]);
-    blendBrightness.addUniform("inputTexture2", &images[0]);
+    blendBrightness.addUniform("inputTexture2", &images[1]);
     blendBrightness.width = ofGetWidth();
     blendBrightness.height = ofGetHeight();
     effects.push_back(blendBrightness);
@@ -212,7 +211,7 @@ void ofApp::setup(){
     blendBrightnessSmooth.loadShader("Shaders/blendBrightnessSmooth");
     blendBrightnessSmooth.addUniform("resolution", &screenResolution);
     blendBrightnessSmooth.addUniform("inputTexture1", &images[0]);
-    blendBrightnessSmooth.addUniform("inputTexture2", &images[0]);
+    blendBrightnessSmooth.addUniform("inputTexture2", &images[1]);
     blendBrightnessSmooth.width = ofGetWidth();
     blendBrightnessSmooth.height = ofGetHeight();
     effects.push_back(blendBrightnessSmooth);
@@ -317,7 +316,7 @@ void ofApp::setup(){
     warp.loadShader("Shaders/warp");
     warp.addUniform("resolution", &screenResolution);
     warp.addUniform("inputTexture1", &images[0]);
-    warp.addUniform("inputTexture2", &images[0]);
+    warp.addUniform("inputTexture2", &images[1]);
     warp.width = ofGetWidth();
     warp.height = ofGetHeight();
     effects.push_back(warp);
@@ -486,7 +485,7 @@ void ofApp::setup(){
     woodWarp.loadShader("Shaders/woodWarp");
     woodWarp.addUniform("resolution", &screenResolution);
     woodWarp.addUniform("inputTexture1", &images[0]);
-    woodWarp.addUniform("inputTexture2", &images[1]);
+    woodWarp.addUniform("inputTexture2", &images[2]);
     woodWarp.width = ofGetWidth();
     woodWarp.height = ofGetHeight();
     effects.push_back(woodWarp);
@@ -495,7 +494,7 @@ void ofApp::setup(){
     woodSwirl.loadShader("Shaders/woodSwirl");
     woodSwirl.addUniform("resolution", &screenResolution);
     woodSwirl.addUniform("inputTexture1", &images[0]);
-    woodSwirl.addUniform("inputTexture2", &images[1]);
+    woodSwirl.addUniform("inputTexture2", &images[2]);
     woodSwirl.width = ofGetWidth();
     woodSwirl.height = ofGetHeight();
     effects.push_back(woodSwirl);
