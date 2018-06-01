@@ -188,4 +188,4 @@ Tackled another effect from the book today which proved beautifule as I knew it 
 
 ### Day 40
 
-Iterating further with the polar pixelation doing polar pixelated rings. I also decided that I wanted to remove the dependency on ofxNestedFileLoader because it was causing problems where my images were not loaded in any reasonable order so on multiple computers I needed to keep changing my settings. Now I've made the images fixed so they will always load. I'm also adding the images to the git repo so it's easier to redistribute.
+Iterating further with the polar pixelation doing polar pixelated rings and stripes. I also decided that I wanted to remove the dependency on ofxNestedFileLoader because it was causing problems where my images were not loaded in any reasonable order so on multiple computers I needed to keep changing my settings. Now I've made the images fixed so they will always load. I'm also adding the images to the git repo so it's easier to redistribute.
