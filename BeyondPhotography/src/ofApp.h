@@ -2,7 +2,6 @@
 
 #include "ofMain.h"
 #include "ofxGui.h"
-#include "ofxNestedFileLoader.h"
 #include "Effect.hpp"
 
 class ofApp : public ofBaseApp{
