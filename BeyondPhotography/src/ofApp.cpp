@@ -579,6 +579,14 @@ void ofApp::setup(){
     polarPixel2.height = ofGetHeight();
     effects.push_back(polarPixel2);
     
+    Effect polarPixel3;
+    polarPixel3.loadShader("Shaders/polarPixel3");
+    polarPixel3.addUniform("resolution", &screenResolution);
+    polarPixel3.addUniform("inputTexture", &images[0]);
+    polarPixel3.width = ofGetWidth();
+    polarPixel3.height = ofGetHeight();
+    effects.push_back(polarPixel3);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
