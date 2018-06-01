@@ -1,5 +1,5 @@
 /bin/*  
-!/bin/data/   
+!/bin/data/
 [Bb]uild/ 
 [Oo]bj/    
 *.o     
@@ -94,10 +94,9 @@ Desktop.ini
 # Content
 *.mov
 *.mp3
-*.jpg
 *.png
 *.jpeg
-*.jpg
+# *.jpg
 *.gif
 *.avi
 
