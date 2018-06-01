@@ -611,7 +611,16 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+    if(key == OF_KEY_RIGHT) {
+        effectIndex++;
+        if(effectIndex >= effects.size())
+            effectIndex = effects.size() - 1;
+    }
+    if(key == OF_KEY_LEFT) {
+        effectIndex--;
+        if(effectIndex < 0)
+            effectIndex = 0;
+    }
 }
 
 //--------------------------------------------------------------
