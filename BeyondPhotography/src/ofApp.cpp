@@ -587,6 +587,15 @@ void ofApp::setup(){
     polarPixel3.height = ofGetHeight();
     effects.push_back(polarPixel3);
     
+    Effect lenticular;
+    lenticular.loadShader("Shaders/lenticular");
+    lenticular.addUniform("resolution", &screenResolution);
+    lenticular.addUniform("inputTexture1", &images[0]);
+    lenticular.addUniform("inputTexture2", &images[1]);
+    lenticular.width = ofGetWidth();
+    lenticular.height = ofGetHeight();
+    effects.push_back(lenticular);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
