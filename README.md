@@ -189,3 +189,7 @@ Tackled another effect from the book today which proved beautifule as I knew it 
 ### Day 40
 
 Iterating further with the polar pixelation doing polar pixelated rings and stripes. I also decided that I wanted to remove the dependency on ofxNestedFileLoader because it was causing problems where my images were not loaded in any reasonable order so on multiple computers I needed to keep changing my settings. Now I've made the images fixed so they will always load. I'm also adding the images to the git repo so it's easier to redistribute.
+
+### Day 41
+
+Today I was inspired by my grandmother Nina Bentley who gifted me a lenticular (thanks Grandma!). A Lenticular is a way of preparing two images so that they alternate back and forth when you walk by them as described [here](https://en.wikipedia.org/wiki/Lenticular_printing_). Of course I wanted to try it here so I've started out by creating an image that is a lenticular of 2 images by using the mod method to alternate strips of the image one after the other. I want ultimately to be able to control the width of these strips.
