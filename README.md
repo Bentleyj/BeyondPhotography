@@ -193,3 +193,7 @@ Iterating further with the polar pixelation doing polar pixelated rings and stri
 ### Day 41
 
 Today I was inspired by my grandmother Nina Bentley who gifted me a lenticular (thanks Grandma!). A Lenticular is a way of preparing two images so that they alternate back and forth when you walk by them as described [here](https://en.wikipedia.org/wiki/Lenticular_printing_). Of course I wanted to try it here so I've started out by creating an image that is a lenticular of 2 images by using the mod method to alternate strips of the image one after the other. I want ultimately to be able to control the width of these strips.
+
+### Day 42
+
+Made the strips thicker and have variable thickness even. I thought this was going to be much trickier than it was but the mod function swooped in to save the day. Really digging what I can do with this effect.
