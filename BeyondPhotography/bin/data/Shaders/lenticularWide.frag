@@ -19,10 +19,5 @@ void main() {
     else
         tc = texture2DRect(inputTexture2, uvAbs).rgb;
 
-//    vec3 tc2 = texture2DRect(inputTexture2, uvAbs).rgb;
-    
-//    vec3 tc = (tc1 + tc2) / 2.0;
-
-    
     gl_FragColor = vec4(tc, 1.0);
 }
