@@ -596,6 +596,15 @@ void ofApp::setup(){
     lenticular.height = ofGetHeight();
     effects.push_back(lenticular);
     
+    Effect lenticularWide;
+    lenticularWide.loadShader("Shaders/lenticularWide");
+    lenticularWide.addUniform("resolution", &screenResolution);
+    lenticularWide.addUniform("inputTexture1", &images[0]);
+    lenticularWide.addUniform("inputTexture2", &images[1]);
+    lenticularWide.width = ofGetWidth();
+    lenticularWide.height = ofGetHeight();
+    effects.push_back(lenticularWide);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
