@@ -197,3 +197,7 @@ Today I was inspired by my grandmother Nina Bentley who gifted me a lenticular (
 ### Day 42
 
 Made the strips thicker and have variable thickness even. I thought this was going to be much trickier than it was but the mod function swooped in to save the day. Really digging what I can do with this effect.
+
+### Day 43
+
+Running out today so had very little time. Decided to try flipping the axis of my lenticular effect so now it's in the X direction. For some reason this is much less effective visually! Wouldn't have suspected that.
