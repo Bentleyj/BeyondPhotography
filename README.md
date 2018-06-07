@@ -201,3 +201,7 @@ Made the strips thicker and have variable thickness even. I thought this was goi
 ### Day 43
 
 Running out today so had very little time. Decided to try flipping the axis of my lenticular effect so now it's in the X direction. For some reason this is much less effective visually! Wouldn't have suspected that.
+
+### Day 44
+
+Creased a checker effect today based on the lenticular work I had done before. It took me a little while to work out the logic but I finally sorted it. I'm not sure about this effect and I think I need to experiment with different step sizes to get somewthing interesting.
