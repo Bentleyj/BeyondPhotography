@@ -614,6 +614,15 @@ void ofApp::setup(){
     lenticularX.height = ofGetHeight();
     effects.push_back(lenticularX);
     
+    Effect checker;
+    checker.loadShader("Shaders/checker");
+    checker.addUniform("resolution", &screenResolution);
+    checker.addUniform("inputTexture1", &images[0]);
+    checker.addUniform("inputTexture2", &images[1]);
+    checker.width = ofGetWidth();
+    checker.height = ofGetHeight();
+    effects.push_back(checker);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
