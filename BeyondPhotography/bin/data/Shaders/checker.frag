@@ -28,12 +28,6 @@ void main() {
             tc = texture2DRect(inputTexture1, uvAbs).rgb;
         }
     }
-//
-//    if(mod(uvAbs.y, stepSize*2) < stepSize) {
-//        tc = texture2DRect(inputTexture1, uvAbs).rgb;
-//    } else {
-//
-//    }
 
     gl_FragColor = vec4(tc, 1.0);
 }
