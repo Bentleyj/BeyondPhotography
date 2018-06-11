@@ -205,3 +205,7 @@ Running out today so had very little time. Decided to try flipping the axis of m
 ### Day 44
 
 Creased a checker effect today based on the lenticular work I had done before. It took me a little while to work out the logic but I finally sorted it. I'm not sure about this effect and I think I need to experiment with different step sizes to get somewthing interesting.
+
+### Day 45
+
+Today started out by looking at a checkered negative effect. This proved to look pretty crappy because there was so much contrast between the black and white backgrounds. Then I tried doing something with smoothsetp which created a really interesting effect. The effect is presently very glitchy but I think it looks cool and very bridget riley esque who of course I greatly enjoy so I'm rather pleased with it. For some reason it looks like my smoothstep is overflowing or underflowing I suspect whcih is causing the extreme colors.
