@@ -631,6 +631,14 @@ void ofApp::setup(){
     checkerNegative.height = ofGetHeight();
     effects.push_back(checkerNegative);
     
+    Effect opArt1;
+    opArt1.loadShader("Shaders/opArt1");
+    opArt1.addUniform("resolution", &screenResolution);
+    opArt1.addUniform("inputTexture", &images[0]);
+    opArt1.width = ofGetWidth();
+    opArt1.height = ofGetHeight();
+    effects.push_back(opArt1);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
