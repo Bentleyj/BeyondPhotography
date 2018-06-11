@@ -623,6 +623,14 @@ void ofApp::setup(){
     checker.height = ofGetHeight();
     effects.push_back(checker);
     
+    Effect checkerNegative;
+    checkerNegative.loadShader("Shaders/checkerNegative");
+    checkerNegative.addUniform("resolution", &screenResolution);
+    checkerNegative.addUniform("inputTexture", &images[0]);
+    checkerNegative.width = ofGetWidth();
+    checkerNegative.height = ofGetHeight();
+    effects.push_back(checkerNegative);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
