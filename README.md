@@ -209,3 +209,7 @@ Creased a checker effect today based on the lenticular work I had done before. I
 ### Day 45
 
 Today started out by looking at a checkered negative effect. This proved to look pretty crappy because there was so much contrast between the black and white backgrounds. Then I tried doing something with smoothsetp which created a really interesting effect. The effect is presently very glitchy but I think it looks cool and very bridget riley esque who of course I greatly enjoy so I'm rather pleased with it. For some reason it looks like my smoothstep is overflowing or underflowing I suspect whcih is causing the extreme colors. Actually I just did some research and I think the reason might be the following: Results are undefined if edge0 ≥ edge1. from the folloriwng [link](https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml). Need to experiment.
+
+### Day 46
+
+Experimented today with creating more op-art effects but instead I ended up with something really uite groovy creating a sort of sin-city like effect. Looks like she is looking through a shuttered window with some bright lights outside of it and shadows are very stark. To do this I predominantly used a thresholding effect which I think I should experiment with much more!
