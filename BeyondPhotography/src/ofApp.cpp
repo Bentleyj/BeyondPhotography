@@ -639,6 +639,14 @@ void ofApp::setup(){
     opArt1.height = ofGetHeight();
     effects.push_back(opArt1);
     
+    Effect sinCity;
+    sinCity.loadShader("Shaders/sinCity");
+    sinCity.addUniform("resolution", &screenResolution);
+    sinCity.addUniform("inputTexture", &images[0]);
+    sinCity.width = ofGetWidth();
+    sinCity.height = ofGetHeight();
+    effects.push_back(sinCity);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
