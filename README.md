@@ -213,3 +213,7 @@ Today started out by looking at a checkered negative effect. This proved to look
 ### Day 46
 
 Experimented today with creating more op-art effects but instead I ended up with something really uite groovy creating a sort of sin-city like effect. Looks like she is looking through a shuttered window with some bright lights outside of it and shadows are very stark. To do this I predominantly used a thresholding effect which I think I should experiment with much more!
+
+### Day 47
+
+Today I really wanted to experiment further with thsi Sin city look but I did not have much success. I realized what I liekd about the last one was the thresholding so I wanted to threshold on a single color ie red, this would pick out the redest bits I thought to myself. I ended up being wrong and it picked out a lot of white bits too (obviously). I need to experiment with this more.
