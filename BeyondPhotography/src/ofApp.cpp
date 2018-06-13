@@ -647,13 +647,21 @@ void ofApp::setup(){
     sinCity.height = ofGetHeight();
     effects.push_back(sinCity);
     
-    Effect sinCityRed;
-    sinCityRed.loadShader("Shaders/sinCityRed");
-    sinCityRed.addUniform("resolution", &screenResolution);
-    sinCityRed.addUniform("inputTexture", &images[0]);
-    sinCityRed.width = ofGetWidth();
-    sinCityRed.height = ofGetHeight();
-    effects.push_back(sinCityRed);
+    Effect rThresh;
+    rThresh.loadShader("Shaders/rThresh");
+    rThresh.addUniform("resolution", &screenResolution);
+    rThresh.addUniform("inputTexture", &images[0]);
+    rThresh.width = ofGetWidth();
+    rThresh.height = ofGetHeight();
+    effects.push_back(rThresh);
+    
+    Effect hsvMix;
+    hsvMix.loadShader("Shaders/hsvMix");
+    hsvMix.addUniform("resolution", &screenResolution);
+    hsvMix.addUniform("inputTexture", &images[0]);
+    hsvMix.width = ofGetWidth();
+    hsvMix.height = ofGetHeight();
+    effects.push_back(hsvMix);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
