@@ -217,3 +217,7 @@ Experimented today with creating more op-art effects but instead I ended up with
 ### Day 47
 
 Today I really wanted to experiment further with thsi Sin city look but I did not have much success. I realized what I liekd about the last one was the thresholding so I wanted to threshold on a single color ie red, this would pick out the redest bits I thought to myself. I ended up being wrong and it picked out a lot of white bits too (obviously). I need to experiment with this more.
+
+### Day 48
+
+More or less a failed attempt at highlighting red parts of the image. I keep picking up yellows as well! booo. Will try again tomorrow.
