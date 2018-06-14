@@ -663,6 +663,14 @@ void ofApp::setup(){
     hsvMix.height = ofGetHeight();
     effects.push_back(hsvMix);
     
+    Effect redWeight;
+    redWeight.loadShader("Shaders/redWeight");
+    redWeight.addUniform("resolution", &screenResolution);
+    redWeight.addUniform("inputTexture", &images[0]);
+    redWeight.width = ofGetWidth();
+    redWeight.height = ofGetHeight();
+    effects.push_back(redWeight);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
