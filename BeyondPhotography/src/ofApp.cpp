@@ -671,6 +671,14 @@ void ofApp::setup(){
     redWeight.height = ofGetHeight();
     effects.push_back(redWeight);
     
+    Effect sobel;
+    sobel.loadShader("Shaders/sobel");
+    sobel.addUniform("resolution", &screenResolution);
+    sobel.addUniform("inputTexture", &images[0]);
+    sobel.width = ofGetWidth();
+    sobel.height = ofGetHeight();
+    effects.push_back(sobel);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
