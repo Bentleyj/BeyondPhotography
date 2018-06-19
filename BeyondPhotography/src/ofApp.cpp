@@ -679,6 +679,14 @@ void ofApp::setup(){
     sobel.height = ofGetHeight();
     effects.push_back(sobel);
     
+    Effect sobelColor;
+    sobelColor.loadShader("Shaders/sobelColor");
+    sobelColor.addUniform("resolution", &screenResolution);
+    sobelColor.addUniform("inputTexture", &images[0]);
+    sobelColor.width = ofGetWidth();
+    sobelColor.height = ofGetHeight();
+    effects.push_back(sobelColor);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
@@ -693,9 +701,6 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-//    for(int i = 0; i < effects.size(); i++) {
-//        if(
-//    }
     effects[effectIndex].applyEffect();
     ofDrawBitmapStringHighlight(effects[effectIndex].name, gui.getPosition().x + 5, gui.getPosition().y + gui.getHeight() + 15);
     gui.draw();
