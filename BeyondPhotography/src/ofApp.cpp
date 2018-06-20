@@ -687,13 +687,13 @@ void ofApp::setup(){
     sobelColor.height = ofGetHeight();
     effects.push_back(sobelColor);
     
-    Effect sobelDirectional;
-    sobelDirectional.loadShader("Shaders/sobelDirectional");
-    sobelDirectional.addUniform("resolution", &screenResolution);
-    sobelDirectional.addUniform("inputTexture", &images[0]);
-    sobelDirectional.width = ofGetWidth();
-    sobelDirectional.height = ofGetHeight();
-    effects.push_back(sobelDirectional);
+    Effect sobelStretch;
+    sobelStretch.loadShader("Shaders/sobelStretch");
+    sobelStretch.addUniform("resolution", &screenResolution);
+    sobelStretch.addUniform("inputTexture", &images[0]);
+    sobelStretch.width = ofGetWidth();
+    sobelStretch.height = ofGetHeight();
+    effects.push_back(sobelStretch);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
