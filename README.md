@@ -224,8 +224,12 @@ More or less a failed attempt at highlighting red parts of the image. I keep pic
 
 ### Day 49
 
-Backing away from crazy colors I'm doing Sobel edge detection today. I repurposed an old shader that I used for a Cartoon Network project which was written in HLSL and converted it to GLSL. Standard find and replace stuff aside the conversion had one tricky bit which was the return value from the sobel method. in HLSL I wanted to calculate the length of the sobel vector and so did: `vertical squared times horizontal squared square rooted` and that returned a float value. In GLSL I had to explicitly call `length(vertical + horizontal)` which is actually much better. I don't know how the HLSL one worked in the first place, Is there an implicit conversion from vec4 to the length of vec4 when casting a vec4 as a float in HLSL? I did some googling but couldn't work it out. Will need to investigate more. In the meantime I'm excited to have a new toy to play with and will experiment with that I can do with edge detection!
+Backing away from crazy colors I'm doing Sobel edge detection today. I repurposed an old shader that I used for a Cartoon Network project which was written in HLSL and converted it to GLSL. Standard find and replace stuff aside, the conversion had one tricky bit which was the return value from the sobel method. in HLSL I wanted to calculate the length of the sobel vector and so did: `vertical squared times horizontal squared square rooted` and that returned a float value. In GLSL I had to explicitly call `length(vertical + horizontal)` which is actually much better. I don't know how the HLSL one worked in the first place, Is there an implicit conversion from vec4 to the length of vec4 when casting a vec4 as a float in HLSL? I did some googling but couldn't work it out. Will need to investigate more. In the meantime I'm excited to have a new toy to play with and will experiment with that I can do with edge detection!
 
 ### Day 50
 
 Day 50! what a milestone! I kept going with Sobel edge detection today and used the edges as a mask for the existing colors in the image. Will try the reverse mast tomorrow.
+
+### Day 51
+
+I did not try the reverse today but instead tried to use the edges as a pixelation effect and what success! I took each pixel and stepped to the right until I found a pixel that was  a sobel edge the sampled the color from that edge. It was really a futuristic result! I called it Sobel Stretch.
