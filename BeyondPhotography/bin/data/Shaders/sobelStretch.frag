@@ -48,9 +48,16 @@ void main() {
     uv.y = 1.0 - uv.y;
     
     vec2 uvAbs = uv * resolution;
-
-    float s = sobel(inputTexture, uvAbs);
-    vec3 tc = smoothstep(vec3(0), vec3(1), vec3(s));
+    vec3 tc;
     
+    int maxSteps = 100;
+    
+    for(int i = 0; i < maxSteps; i++) {
+        float s = sobel(inputTexture, uvAbs);
+        uvAbs.x++;
+        if(s > 0.5) {
+            tc = texture2DRect(inputTexture, uvAbs).rgb;
+        }
+    }
     gl_FragColor = vec4(tc, 1.0);
 }

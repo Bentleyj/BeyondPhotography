@@ -687,6 +687,14 @@ void ofApp::setup(){
     sobelColor.height = ofGetHeight();
     effects.push_back(sobelColor);
     
+    Effect sobelDirectional;
+    sobelDirectional.loadShader("Shaders/sobelDirectional");
+    sobelDirectional.addUniform("resolution", &screenResolution);
+    sobelDirectional.addUniform("inputTexture", &images[0]);
+    sobelDirectional.width = ofGetWidth();
+    sobelDirectional.height = ofGetHeight();
+    effects.push_back(sobelDirectional);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
