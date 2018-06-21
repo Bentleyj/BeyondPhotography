@@ -233,3 +233,7 @@ Day 50! what a milestone! I kept going with Sobel edge detection today and used 
 ### Day 51
 
 I did not try the reverse today but instead tried to use the edges as a pixelation effect and what success! I took each pixel and stepped to the right until I found a pixel that was  a sobel edge the sampled the color from that edge. It was really a futuristic result! I called it Sobel Stretch.
+
+### Day 52
+
+Continuing witht he sobel edge stretching I went ahead and applied the effect in both X and Y and then averaged the values. Actually I was slightly more clever than that as I only averaged the colors if neither color was black. If one was black I just selected the other color which made for a much brighter (but not blown out!) image.
