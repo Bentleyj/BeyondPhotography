@@ -53,11 +53,13 @@ void main() {
     
     int maxSteps = 100;
     
+    tc = vec3(0, 0, 0);
+    
     for(int i = 0; i < maxSteps; i++) {
         float s = sobel(inputTexture, uvAbs);
         uvAbs.x++;
         if(s > 0.5) {
-            tc = texture2DRect(inputTexture, uvAbs).rgb * 0.5;
+            tc = texture2DRect(inputTexture, uvAbs).rgb;
         }
     }
 //    uvAbs = uvAbsSaved;
@@ -65,7 +67,11 @@ void main() {
         float s = sobel(inputTexture, uvAbs);
         uvAbs.y++;
         if(s > 0.5) {
-            tc += texture2DRect(inputTexture, uvAbs).rgb * 0.5;
+            if(tc == vec3(0, 0, 0))
+                tc = texture2DRect(inputTexture, uvAbs).rgb * 0.5;
+            else {
+               tc = tc * 0.5 + texture2DRect(inputTexture, uvAbs).rgb * 0.5;
+            }
         }
     }
     gl_FragColor = vec4(tc, 1.0);
