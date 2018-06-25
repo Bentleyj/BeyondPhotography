@@ -703,6 +703,14 @@ void ofApp::setup(){
     sobelStretchXY.height = ofGetHeight();
     effects.push_back(sobelStretchXY);
     
+    Effect sobelStretchCenter;
+    sobelStretchCenter.loadShader("Shaders/sobelStretchCenter");
+    sobelStretchCenter.addUniform("resolution", &screenResolution);
+    sobelStretchCenter.addUniform("inputTexture", &images[0]);
+    sobelStretchCenter.width = ofGetWidth();
+    sobelStretchCenter.height = ofGetHeight();
+    effects.push_back(sobelStretchCenter);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
