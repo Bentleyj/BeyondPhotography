@@ -68,8 +68,10 @@ void main() {
 //    uvAbs = uvAbsSaved;
 //    for(int i = 0; i < maxSteps; i++) {
 //        float s = sobel(inputTexture, uvAbs);
-//        uvAbs.y++;
-//        if(s > 0.5) {
+//        if(mod(i, 2) == 0)
+//            uvAbs.y += i;
+//        else
+//            uvAbs.y -= i;        if(s > 0.5) {
 //            if(tc == vec3(0, 0, 0))
 //                tc = texture2DRect(inputTexture, uvAbs).rgb * 0.5;
 //            else {
