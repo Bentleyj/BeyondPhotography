@@ -55,17 +55,6 @@ void main() {
     
     tc = vec3(0, 0, 0);
     
-//    for(int i = 0; i < maxSteps; i++) {
-//        float s = sobel(inputTexture, uvAbs);
-//        if(mod(i, 2) == 0)
-//            uvAbs.x += i;
-//        else
-//            uvAbs.x -= i;
-//        if(s > 0.5) {
-//            tc = texture2DRect(inputTexture, uvAbs).rgb;
-//        }
-//    }
-//    uvAbs = uvAbsSaved;
     for(int i = 0; i < maxSteps; i++) {
         float s = sobel(inputTexture, uvAbs);
         if(mod(i, 2) == 0)
