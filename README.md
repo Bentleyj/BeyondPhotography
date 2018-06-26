@@ -241,3 +241,7 @@ Continuing witht he sobel edge stretching I went ahead and applied the effect in
 ### Day 53
 
 Made the Sobel algorithm search in both directions which I think is a big improvement on the effect. Also did added a comment for up-down searching as well as side-to-side. I want to try just up-down alone next. I suspect it will look really cool! Also today I learned that in GLSL if statements only evaluate bool values not int values as bools. in C++ and C this is different: You can pass an int to an if statement and it will evaluate to true if the int is non-zero and false if it is zero. to get around this I did the obvious and just checked if the int returned by my function was equal to zero explicitly by writing `if(mod(i, 2) == 0)` instead of `if(mod(i, 2))` as I would in C or C++.
+
+### Day 54
+
+Tried just up and down alone which actually wasn't as interesting as I had hoped :-( . Perhaps Radial will be interesting?
