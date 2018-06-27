@@ -719,6 +719,14 @@ void ofApp::setup(){
     sobelStretchY.height = ofGetHeight();
     effects.push_back(sobelStretchY);
     
+    Effect sobelNegative;
+    sobelNegative.loadShader("Shaders/sobelNegative");
+    sobelNegative.addUniform("resolution", &screenResolution);
+    sobelNegative.addUniform("inputTexture", &images[0]);
+    sobelNegative.width = ofGetWidth();
+    sobelNegative.height = ofGetHeight();
+    effects.push_back(sobelNegative);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
