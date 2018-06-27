@@ -245,3 +245,7 @@ Made the Sobel algorithm search in both directions which I think is a big improv
 ### Day 54
 
 Tried just up and down alone which actually wasn't as interesting as I had hoped :-( . Perhaps Radial will be interesting?
+
+### Day 55
+
+Might try radial tomorrow but today I went back to colors! Can't help myself with these colors! I'm attached the sobelm amount to a blend between negative and positive values. Quite cool if you jack the sobel up really high!
