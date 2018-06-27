@@ -49,11 +49,11 @@ void main() {
     
     vec2 uvAbs = uv * resolution;
     
-    float s1 = sobel(inputTexture, uvAbs) * 10.0;
+    float s1 = sobel(inputTexture, uvAbs) * 10.0; // modufy this for differet interesting effects.
     vec3 tcNeg = vec3(1.0) - texture2DRect(inputTexture, uvAbs).rgb;
     vec3 tcPos = texture2DRect(inputTexture, uvAbs).rgb;
 
-    vec3 tc = tcNeg * s1 + tcPos * (1.0 - s1);//smoothstep(tcPos, tcNeg, vec3(s1));
+    vec3 tc = tcNeg * s1 + tcPos * (1.0 - s1);
     
     gl_FragColor = vec4(tc, 1.0);
 }

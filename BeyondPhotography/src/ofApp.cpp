@@ -731,7 +731,6 @@ void ofApp::setup(){
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
     gui.loadFromFile(settingsPath);
-    
 }
 
 //--------------------------------------------------------------
