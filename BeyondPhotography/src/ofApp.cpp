@@ -727,6 +727,22 @@ void ofApp::setup(){
     sobelNegative.height = ofGetHeight();
     effects.push_back(sobelNegative);
     
+    Effect sobelStretchRadial;
+    sobelStretchRadial.loadShader("Shaders/sobelStretchRadial");
+    sobelStretchRadial.addUniform("resolution", &screenResolution);
+    sobelStretchRadial.addUniform("inputTexture", &images[0]);
+    sobelStretchRadial.width = ofGetWidth();
+    sobelStretchRadial.height = ofGetHeight();
+    effects.push_back(sobelStretchRadial);
+    
+    Effect LogarithmicCorrection;
+    LogarithmicCorrection.loadShader("Shaders/LogarithmicCorrection");
+    LogarithmicCorrection.addUniform("resolution", &screenResolution);
+    LogarithmicCorrection.addUniform("inputTexture", &images[0]);
+    LogarithmicCorrection.width = ofGetWidth();
+    LogarithmicCorrection.height = ofGetHeight();
+    effects.push_back(LogarithmicCorrection);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
