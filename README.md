@@ -248,4 +248,8 @@ Tried just up and down alone which actually wasn't as interesting as I had hoped
 
 ### Day 55
 
-Might try radial tomorrow but today I went back to colors! Can't help myself with these colors! I'm attached the sobelm amount to a blend between negative and positive values. Quite cool if you jack the sobel up really high!
+Might try radial tomorrow but today I went back to colors! Can't help myself with these colors! I'm attached the sobel amount to a blend between negative and positive values. Quite cool if you jack the sobel up really high!
+
+### Day 56
+
+Added a Logarithmic Correction effect today which came out very weird. My problem is that my max brightness is 1.0 and I'm required to divide b the log of that value which, obviously, menas I'm dividing by 0 which isn't good! Kinda cool result in the end I guess!
