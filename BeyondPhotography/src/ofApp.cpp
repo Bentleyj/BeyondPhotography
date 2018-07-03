@@ -743,6 +743,14 @@ void ofApp::setup(){
     LogarithmicCorrection.height = ofGetHeight();
     effects.push_back(LogarithmicCorrection);
     
+    Effect drawingCircle;
+    drawingCircle.loadShader("Shaders/drawingCircle");
+    drawingCircle.addUniform("resolution", &screenResolution);
+    drawingCircle.addUniform("inputTexture", &images[0]);
+    drawingCircle.width = ofGetWidth();
+    drawingCircle.height = ofGetHeight();
+    effects.push_back(drawingCircle);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
