@@ -252,4 +252,8 @@ Might try radial tomorrow but today I went back to colors! Can't help myself wit
 
 ### Day 56
 
-Added a Logarithmic Correction effect today which came out very weird. My problem is that my max brightness is 1.0 and I'm required to divide b the log of that value which, obviously, menas I'm dividing by 0 which isn't good! Kinda cool result in the end I guess!
+Added a Logarithmic Correction effect today which came out very weird. My problem is that my max brightness is 1.0 and I'm required to divide by the log of that value which, obviously, menas I'm dividing by 0 which isn't good! Kinda cool result in the end I guess!
+
+### Day 57
+
+Started doing some straight up drawing. Going to keep it simple at first by just doing a circle. I want to make more complex drawings soon! My plan is to build a up a lirary of shapes and then try to select interesting places to draw them. I'm using two smoothstep functions subreacted from one another to get this effect.
