@@ -751,6 +751,14 @@ void ofApp::setup(){
     drawingCircle.height = ofGetHeight();
     effects.push_back(drawingCircle);
     
+    Effect drawingLine;
+    drawingLine.loadShader("Shaders/drawingLine");
+    drawingLine.addUniform("resolution", &screenResolution);
+    drawingLine.addUniform("inputTexture", &images[0]);
+    drawingLine.width = ofGetWidth();
+    drawingLine.height = ofGetHeight();
+    effects.push_back(drawingLine);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
