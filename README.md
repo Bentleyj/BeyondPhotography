@@ -257,3 +257,7 @@ Added a Logarithmic Correction effect today which came out very weird. My proble
 ### Day 57
 
 Started doing some straight up drawing. Going to keep it simple at first by just doing a circle. I want to make more complex drawings soon! My plan is to build a up a lirary of shapes and then try to select interesting places to draw them. I'm using two smoothstep functions subreacted from one another to get this effect.
+
+### Day 58
+
+Adding a line drawing algorithm to draw a line between two points. I used the algorithm from [here](https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line) which was extremely helpful. I then added my own boolean checks because that algorithm works for an infinite line but I only wanted a line segment defined by two points. I then made an effect that merged the lines and the circles together for a cool design.
