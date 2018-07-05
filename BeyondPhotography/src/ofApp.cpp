@@ -759,6 +759,14 @@ void ofApp::setup(){
     drawingLine.height = ofGetHeight();
     effects.push_back(drawingLine);
     
+    Effect HypnoTarget;
+    HypnoTarget.loadShader("Shaders/HypnoTarget");
+    HypnoTarget.addUniform("resolution", &screenResolution);
+    HypnoTarget.addUniform("inputTexture", &images[0]);
+    HypnoTarget.width = ofGetWidth();
+    HypnoTarget.height = ofGetHeight();
+    effects.push_back(HypnoTarget);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
