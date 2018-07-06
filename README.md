@@ -265,3 +265,7 @@ Adding a line drawing algorithm to draw a line between two points. I used the al
 ### Day 59
 
 Added Hypno Target effect which makes a radial pixelation but instead of pixelating radially we swap between positive and negative images!
+
+### Day 60
+
+Today I took the Hypno Target and did a Hypno Fan instead which is the same logic but applied to the angle rather than the radius. At angular widths of around PI/4 you get stuff that looks a lot like the old japanese flag. At higher angle widths like PI you get stuff a lot closer to medieval heraldry and at really really small angle widths, like PI/100 you get some very abstract looks.
