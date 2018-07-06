@@ -767,6 +767,14 @@ void ofApp::setup(){
     HypnoTarget.height = ofGetHeight();
     effects.push_back(HypnoTarget);
     
+    Effect HypnoFan;
+    HypnoFan.loadShader("Shaders/HypnoFan");
+    HypnoFan.addUniform("resolution", &screenResolution);
+    HypnoFan.addUniform("inputTexture", &images[0]);
+    HypnoFan.width = ofGetWidth();
+    HypnoFan.height = ofGetHeight();
+    effects.push_back(HypnoFan);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
