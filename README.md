@@ -269,3 +269,7 @@ Added Hypno Target effect which makes a radial pixelation but instead of pixelat
 ### Day 60
 
 Today I took the Hypno Target and did a Hypno Fan instead which is the same logic but applied to the angle rather than the radius. At angular widths of around PI/4 you get stuff that looks a lot like the old japanese flag. At higher angle widths like PI you get stuff a lot closer to medieval heraldry and at really really small angle widths, like PI/100 you get some very abstract looks.
+
+### Day 61
+
+Today I went back to the sobel edge detection and looked at combining it with pixelation. The result is some really interesting effects. I will look at doing a more binary approach next time but I'm generally quite pleased with the look. Basically I pixelate the picture based on whether it's a sobel edge or not. So aread with low edges are mofe pixelated than parts with edges.
