@@ -783,6 +783,14 @@ void ofApp::setup(){
     sobelPix.height = ofGetHeight();
     effects.push_back(sobelPix);
     
+    Effect sobelPixBlocks;
+    sobelPixBlocks.loadShader("Shaders/sobelPixBlocks");
+    sobelPixBlocks.addUniform("resolution", &screenResolution);
+    sobelPixBlocks.addUniform("inputTexture", &images[0]);
+    sobelPixBlocks.width = ofGetWidth();
+    sobelPixBlocks.height = ofGetHeight();
+    effects.push_back(sobelPixBlocks);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
