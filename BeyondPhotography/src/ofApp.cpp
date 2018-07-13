@@ -767,6 +767,30 @@ void ofApp::setup(){
     HypnoTarget.height = ofGetHeight();
     effects.push_back(HypnoTarget);
     
+    Effect HypnoFan;
+    HypnoFan.loadShader("Shaders/HypnoFan");
+    HypnoFan.addUniform("resolution", &screenResolution);
+    HypnoFan.addUniform("inputTexture", &images[0]);
+    HypnoFan.width = ofGetWidth();
+    HypnoFan.height = ofGetHeight();
+    effects.push_back(HypnoFan);
+    
+    Effect sobelPix;
+    sobelPix.loadShader("Shaders/sobelPix");
+    sobelPix.addUniform("resolution", &screenResolution);
+    sobelPix.addUniform("inputTexture", &images[0]);
+    sobelPix.width = ofGetWidth();
+    sobelPix.height = ofGetHeight();
+    effects.push_back(sobelPix);
+    
+    Effect sobelPixBlocks;
+    sobelPixBlocks.loadShader("Shaders/sobelPixBlocks");
+    sobelPixBlocks.addUniform("resolution", &screenResolution);
+    sobelPixBlocks.addUniform("inputTexture", &images[0]);
+    sobelPixBlocks.width = ofGetWidth();
+    sobelPixBlocks.height = ofGetHeight();
+    effects.push_back(sobelPixBlocks);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));

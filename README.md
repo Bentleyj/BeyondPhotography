@@ -265,3 +265,15 @@ Adding a line drawing algorithm to draw a line between two points. I used the al
 ### Day 59
 
 Added Hypno Target effect which makes a radial pixelation but instead of pixelating radially we swap between positive and negative images!
+
+### Day 60
+
+Today I took the Hypno Target and did a Hypno Fan instead which is the same logic but applied to the angle rather than the radius. At angular widths of around PI/4 you get stuff that looks a lot like the old japanese flag. At higher angle widths like PI you get stuff a lot closer to medieval heraldry and at really really small angle widths, like PI/100 you get some very abstract looks.
+
+### Day 61
+
+Today I went back to the sobel edge detection and looked at combining it with pixelation. The result is some really interesting effects. I will look at doing a more binary approach next time but I'm generally quite pleased with the look. Basically I pixelate the picture based on whether it's a sobel edge or not. So aread with low edges are mofe pixelated than parts with edges.
+
+### Day 62
+
+Bit more complicated today. I built a system that for each point calculates the average sobel level in a region around it and then uses that to determine how pixelated the point is. Worked out quite nicely when you play with the parameters. I got several very unique effects and took screenshots of all of them.
