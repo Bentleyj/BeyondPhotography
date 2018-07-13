@@ -204,7 +204,7 @@ Running out today so had very little time. Decided to try flipping the axis of m
 
 ### Day 44
 
-Creased a checker effect today based on the lenticular work I had done before. It took me a little while to work out the logic but I finally sorted it. I'm not sure about this effect and I think I need to experiment with different step sizes to get somewthing interesting.
+Created a checker effect today based on the lenticular work I had done before. It took me a little while to work out the logic but I finally sorted it. I'm not sure about this effect and I think I need to experiment with different step sizes to get somewthing interesting.
 
 ### Day 45
 
@@ -212,11 +212,11 @@ Today started out by looking at a checkered negative effect. This proved to look
 
 ### Day 46
 
-Experimented today with creating more op-art effects but instead I ended up with something really uite groovy creating a sort of sin-city like effect. Looks like she is looking through a shuttered window with some bright lights outside of it and shadows are very stark. To do this I predominantly used a thresholding effect which I think I should experiment with much more!
+Experimented today with creating more op-art effects but instead I ended up with something really quite groovy creating a sort of sin-city like effect. Looks like she is looking through a shuttered window with some bright lights outside of it and shadows are very stark. To do this I predominantly used a thresholding effect which I think I should experiment with much more!
 
 ### Day 47
 
-Today I really wanted to experiment further with thsi Sin city look but I did not have much success. I realized what I liekd about the last one was the thresholding so I wanted to threshold on a single color ie red, this would pick out the redest bits I thought to myself. I ended up being wrong and it picked out a lot of white bits too (obviously). I need to experiment with this more.
+Today I really wanted to experiment further with thsi Sin City look but I did not have much success. I realized what I liked about the last one was the thresholding so I wanted to threshold on a single color ie red, this would pick out the redest bits I thought to myself. I ended up being wrong and it picked out a lot of white bits too (obviously). I need to experiment with this more.
 
 ### Day 48
 
