@@ -277,3 +277,7 @@ Today I went back to the sobel edge detection and looked at combining it with pi
 ### Day 62
 
 Bit more complicated today. I built a system that for each point calculates the average sobel level in a region around it and then uses that to determine how pixelated the point is. Worked out quite nicely when you play with the parameters. I got several very unique effects and took screenshots of all of them.
+
+### Day 63
+
+Simple one today, went back in to the hsvMix effect and added some comments around different cooky effects. I haven't documented which is which though so posts on IG will need to be a bit cryptic to hide my disorganization. Thanks to HackPoetic for inspiring me!
