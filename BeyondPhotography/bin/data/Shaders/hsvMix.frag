@@ -27,7 +27,13 @@ void main() {
     
     vec3 tc = texture2DRect(inputTexture, uvAbs).rgb;
     tc = rgb2hsv(tc);
-//    tc = hsv2rgb(tc);
+    tc = hsv2rgb(tc.xxx);
+    // tc = hsv2rgb(tc.yyy);
+    // tc = hsv2rgb(tc.zzz);
+    // tc = hsv2rgb(tc.zyx);
+    // tc = hsv2rgb(tc.zzy);
+
+    // tc = hsv2rgb(tc.zzx*tc.zzx);
 
     gl_FragColor = vec4(tc, 1.0);
 }
