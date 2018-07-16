@@ -281,3 +281,7 @@ Bit more complicated today. I built a system that for each point calculates the 
 ### Day 63
 
 Simple one today, went back in to the hsvMix effect and added some comments around different cooky effects. I haven't documented which is which though so posts on IG will need to be a bit cryptic to hide my disorganization. Thanks to HackPoetic for inspiring me!
+
+### Day 64
+
+Tried doing the same pixelation effect I did before but with color rather than sobel edges. Got some cool results but I'm a bit confused by them. Probably worthwhile doing this with HSV values instead of RGB.
