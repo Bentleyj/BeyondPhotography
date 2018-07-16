@@ -272,7 +272,7 @@ Today I took the Hypno Target and did a Hypno Fan instead which is the same logi
 
 ### Day 61
 
-Today I went back to the sobel edge detection and looked at combining it with pixelation. The result is some really interesting effects. I will look at doing a more binary approach next time but I'm generally quite pleased with the look. Basically I pixelate the picture based on whether it's a sobel edge or not. So aread with low edges are mofe pixelated than parts with edges.
+Today I went back to the sobel edge detection and looked at combining it with pixelation. The result is some really interesting effects. I will look at doing a more binary approach next time but I'm generally quite pleased with the look. Basically I pixelate the picture based on whether it's a sobel edge or not. So areas with low edges are more pixelated than parts with edges.
 
 ### Day 62
 
