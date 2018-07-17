@@ -807,13 +807,13 @@ void ofApp::setup(){
     brightnessPix.height = ofGetHeight();
     effects.push_back(brightnessPix);
     
-    Effect drawingCircleGrid;
-    drawingCircleGrid.loadShader("Shaders/drawingCircleGrid");
-    drawingCircleGrid.addUniform("resolution", &screenResolution);
-    drawingCircleGrid.addUniform("inputTexture", &images[0]);
-    drawingCircleGrid.width = ofGetWidth();
-    drawingCircleGrid.height = ofGetHeight();
-    effects.push_back(drawingCircleGrid);
+    Effect drawingArcGrid;
+    drawingArcGrid.loadShader("Shaders/drawingArcGrid");
+    drawingArcGrid.addUniform("resolution", &screenResolution);
+    drawingArcGrid.addUniform("inputTexture", &images[0]);
+    drawingArcGrid.width = ofGetWidth();
+    drawingArcGrid.height = ofGetHeight();
+    effects.push_back(drawingArcGrid);
     
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
