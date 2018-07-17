@@ -285,3 +285,7 @@ Simple one today, went back in to the hsvMix effect and added some comments arou
 ### Day 64
 
 Tried doing the same pixelation effect I did before but with color rather than sobel edges. Got some cool results but I'm a bit confused by them. Probably worthwhile doing this with HSV values instead of RGB.
+
+### Day 65
+
+Went back to doing pixelation based on brightness but the effects I got erre pretty plain. Still not sure exactly what's wrong with my algorithm. I instead looked at doing arcs as pixels which turns out to look super super cool! Really pleased to be able to apply the drawing effects I developed to some image features in GLSL and get some interesting looks. Basically all I did was pixelate the image and use the pixelation sample pixels (ie the top left corner of each pixel from which the color for the rest of the pixel is sampled) as the center of an arc that goes through the circle. Plaing with different circle sizes and pixel grid sizes has proved very rewarding!
