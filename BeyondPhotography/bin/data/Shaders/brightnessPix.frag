@@ -21,7 +21,7 @@ void main() {
 
     float dx = 10;
     float dy = 10;
-
+    
     vec2 coord = vec2(dx*floor(uvAbs.x/dx), dy*floor(uvAbs.y/dy));
     
     float b;
