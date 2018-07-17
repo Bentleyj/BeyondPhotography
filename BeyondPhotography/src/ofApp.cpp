@@ -799,6 +799,14 @@ void ofApp::setup(){
     colorPix.height = ofGetHeight();
     effects.push_back(colorPix);
     
+    Effect brightnessPix;
+    brightnessPix.loadShader("Shaders/brightnessPix");
+    brightnessPix.addUniform("resolution", &screenResolution);
+    brightnessPix.addUniform("inputTexture", &images[0]);
+    brightnessPix.width = ofGetWidth();
+    brightnessPix.height = ofGetHeight();
+    effects.push_back(brightnessPix);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
