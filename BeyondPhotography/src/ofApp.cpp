@@ -815,6 +815,14 @@ void ofApp::setup(){
     drawingArcGrid.height = ofGetHeight();
     effects.push_back(drawingArcGrid);
     
+    Effect circleCrochette;
+    circleCrochette.loadShader("Shaders/circleCrochette");
+    circleCrochette.addUniform("resolution", &screenResolution);
+    circleCrochette.addUniform("inputTexture", &images[0]);
+    circleCrochette.width = ofGetWidth();
+    circleCrochette.height = ofGetHeight();
+    effects.push_back(circleCrochette);
+    
     Effect circleGrid;
     circleGrid.loadShader("Shaders/circleGrid");
     circleGrid.addUniform("resolution", &screenResolution);

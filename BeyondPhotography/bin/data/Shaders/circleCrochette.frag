@@ -37,23 +37,15 @@ void main() {
     
     vec2 coord1 = vec2(dx*floor(uvAbs.x/dx), dy*floor(uvAbs.y/dy));
     vec2 coord2 = vec2(dx*ceil(uvAbs.x/dx), dy*ceil(uvAbs.y/dy));
-    vec2 coord3 = vec2(dx*floor(uvAbs.x/dx), dy*ceil(uvAbs.y/dy));
-    vec2 coord4 = vec2(dx*ceil(uvAbs.x/dx), dy*floor(uvAbs.y/dy));
 
     vec3 tc1 = texture2DRect(inputTexture, coord1).rgb;
     vec3 tc2 = texture2DRect(inputTexture, coord2).rgb;
-    vec3 tc3 = texture2DRect(inputTexture, coord3).rgb;
-    vec3 tc4 = texture2DRect(inputTexture, coord4).rgb;
 
-
-    float radius = dx * 6;
+    float radius = dx * 10;
     float width = radius;
     tc1 *= vec3(drawCircle(uvAbs, coord1, radius, width));
     tc2 *= vec3(drawCircle(uvAbs, coord2, radius, width));
-    tc3 *= vec3(drawCircle(uvAbs, coord3, radius, width));
-    tc4 *= vec3(drawCircle(uvAbs, coord4, radius, width));
-
-    vec3 tc = tc1 + tc2 + tc3 + tc4;
+    vec3 tc = tc1 + tc2;
 
     
     gl_FragColor = vec4(tc, 1.0);
