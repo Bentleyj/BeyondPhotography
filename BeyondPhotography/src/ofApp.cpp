@@ -815,6 +815,14 @@ void ofApp::setup(){
     drawingArcGrid.height = ofGetHeight();
     effects.push_back(drawingArcGrid);
     
+    Effect circleGrid;
+    circleGrid.loadShader("Shaders/circleGrid");
+    circleGrid.addUniform("resolution", &screenResolution);
+    circleGrid.addUniform("inputTexture", &images[0]);
+    circleGrid.width = ofGetWidth();
+    circleGrid.height = ofGetHeight();
+    effects.push_back(circleGrid);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
