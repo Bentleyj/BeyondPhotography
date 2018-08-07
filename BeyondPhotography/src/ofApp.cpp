@@ -831,6 +831,14 @@ void ofApp::setup(){
     circleGrid.height = ofGetHeight();
     effects.push_back(circleGrid);
     
+    Effect crossGrid;
+    crossGrid.loadShader("Shaders/crossGrid");
+    crossGrid.addUniform("resolution", &screenResolution);
+    crossGrid.addUniform("inputTexture", &images[0]);
+    crossGrid.width = ofGetWidth();
+    crossGrid.height = ofGetHeight();
+    effects.push_back(crossGrid);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
