@@ -294,3 +294,7 @@ Went back to doing pixelation based on brightness but the effects I got erre pre
 
 Doubled up on my circles today, this creates and interesting crochette effect. I also expanded this to make a really awesome circled effect which almost looks like an ordered Boche effect. Super pleased with todays work.
 
+### Day 67
+
+Back from summer vacation! Today I went back to the circle drawing effects but replaces the circles with lines to get a cool cross-hatching effect. Really digging these looks. I'm drawing a line between the top left and bottom right points of each pixel that is colored for the pixels. It creates a really cool natural looking cloth effect when the width of the lines is similar to the size of the pixels and a really cool grid-like effect when the line width is much smaller. I should make some more drawing functions.
+
