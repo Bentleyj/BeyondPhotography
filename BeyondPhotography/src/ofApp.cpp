@@ -839,6 +839,14 @@ void ofApp::setup(){
     crossGrid.height = ofGetHeight();
     effects.push_back(crossGrid);
     
+    Effect drawingSquare;
+    drawingSquare.loadShader("Shaders/drawingSquare");
+    drawingSquare.addUniform("resolution", &screenResolution);
+    drawingSquare.addUniform("inputTexture", &images[0]);
+    drawingSquare.width = ofGetWidth();
+    drawingSquare.height = ofGetHeight();
+    effects.push_back(drawingSquare);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));

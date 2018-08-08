@@ -63,8 +63,8 @@ void main() {
     vec3 tc2 = texture2DRect(inputTexture, coord2).rgb;
 
     
-    tc1 *= vec3(drawLine(uvAbs, coord1, coord2, dx/2)); // Try dx/6 for smaller lines.
-    tc2 *= vec3(drawLine(uvAbs, coord3, coord4, dx/2));
+    tc1 *= vec3(drawLine(uvAbs, coord1, coord2, dx/6)); // Try dx/6 for smaller lines.
+    tc2 *= vec3(drawLine(uvAbs, coord3, coord4, dx/6));
 
     vec3 tc = tc1 + tc2;
 
