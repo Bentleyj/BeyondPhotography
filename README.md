@@ -298,3 +298,7 @@ Doubled up on my circles today, this creates and interesting crochette effect. I
 
 Back from summer vacation! Today I went back to the circle drawing effects but replaces the circles with lines to get a cool cross-hatching effect. Really digging these looks. I'm drawing a line between the top left and bottom right points of each pixel that is colored for the pixels. It creates a really cool natural looking cloth effect when the width of the lines is similar to the size of the pixels and a really cool grid-like effect when the line width is much smaller. I should make some more drawing functions.
 
+### Day 68
+
+Busy at work so short one today. I added an effect that crops a square of the image. most importantly I defined a function that determined whether a pixel is within a square or not. It's really simple but should allow me to make some fun effects. Just test if the X value is between two values and if the Y is also between two values and return 0 or 1,
+
