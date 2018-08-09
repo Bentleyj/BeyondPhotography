@@ -300,5 +300,9 @@ Back from summer vacation! Today I went back to the circle drawing effects but r
 
 ### Day 68
 
-Busy at work so short one today. I added an effect that crops a square of the image. most importantly I defined a function that determined whether a pixel is within a square or not. It's really simple but should allow me to make some fun effects. Just test if the X value is between two values and if the Y is also between two values and return 0 or 1,
+Busy at work so short one today. I added an effect that crops a square of the image. most importantly I defined a function that determined whether a pixel is within a square or not. It's really simple but should allow me to make some fun effects. Just test if the X value is between two values and if the Y is also between two values and return 0 or 1.
+
+### Day 69
+
+Didn't actually make an effect today but instead attached the camera to the computer and made a system so you can switch between images and a live feed! It's really cool to play with these effects and animation!
 
