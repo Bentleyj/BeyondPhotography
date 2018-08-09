@@ -10,6 +10,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+        void onCamToggle(bool& b);
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -26,8 +27,10 @@ class ofApp : public ofBaseApp{
     ofxPanel gui;
     ofParameter<int> imageIndex;
     ofParameter<int> effectIndex;
+    ofParameter<bool> camOn;
     
     ofVec2f screenResolution;
+    ofVideoGrabber grabber;
     
     vector<ofImage> images;
     vector<Effect> effects;

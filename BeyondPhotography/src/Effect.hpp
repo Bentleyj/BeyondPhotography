@@ -22,6 +22,7 @@ public:
     void loadShader(string shaderPath);
     
     void applyEffect();
+    void applyEffect(ofVideoGrabber *grabber);
     
     vector< pair<string, float*> > uniformFloats;
     vector< pair<string, ofTexture*> > uniformTextures;
