@@ -14,6 +14,8 @@ void ofApp::setup(){
     screenResolution.x = images[0].getWidth();
     screenResolution.y = images[0].getHeight();
     
+    ofSetWindowShape(images[0].getWidth(), images[0].getHeight());
+    
     Effect test;
     test.loadShader("Shaders/test");
     test.addUniform("inputTexture", &images[0]);
@@ -891,18 +893,20 @@ void ofApp::keyPressed(int key){
 //--------------------------------------------------------------
 void ofApp::onCamToggle(bool& b) {
     if(b) {
-//        screenResolution = ofVec2f(grabber.getWidth(), grabber.getHeight());
+        screenResolution = ofVec2f(grabber.getWidth(), grabber.getHeight());
         for(int i =0; i < effects.size(); i++) {
             effects[i].width = grabber.getWidth();
             effects[i].height = grabber.getHeight();
         }
+        ofSetWindowShape(grabber.getWidth(), grabber.getHeight());
     } else {
         images[0].load("Images/Girl_With_A_Pearl_Earring.jpg");
-//        screenResolution = ofVec2f(images[0].getWidth(), images[0].getHeight());
+        screenResolution = ofVec2f(images[0].getWidth(), images[0].getHeight());
         for(int i =0; i < effects.size(); i++) {
             effects[i].width = images[0].getWidth();
             effects[i].height = images[0].getHeight();
         }
+        ofSetWindowShape(images[0].getWidth(), images[0].getHeight());
     }
 }
 
@@ -943,8 +947,7 @@ void ofApp::mouseExited(int x, int y){
 
 //--------------------------------------------------------------
 void ofApp::windowResized(int w, int h){
-    screenResolution.x = w;
-    screenResolution.y = h;
+    
 }
 
 //--------------------------------------------------------------
