@@ -866,6 +866,7 @@ void ofApp::update(){
     if(camOn) {
         grabber.update();
         images[0].setFromPixels(grabber.getPixels());
+        images[0].mirror(false, true);
     }
 }
 
