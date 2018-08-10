@@ -306,3 +306,7 @@ Busy at work so short one today. I added an effect that crops a square of the im
 
 Didn't actually make an effect today but instead attached the camera to the computer and made a system so you can switch between images and a live feed! It's really cool to play with these effects and animation!
 
+### Day 70
+
+Made the circles grid but with triangles instead. Also on the way there made some really nice line effects. I call this one Tirangle Grid. It's really pretty boring looking I think because the triangles don't overlap the same way the circled did (which I should probably look to build ASAP!). Got some reall nice line effects on the other hand which I'm pleased about and took some screenshots of. These can be achieved by pixelating the image and then drawing lines that lerp from the color of one corner of the pixel to the corner of the other. Reall efficient algorithm and nice to look at.
+
