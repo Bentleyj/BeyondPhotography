@@ -852,6 +852,14 @@ void ofApp::setup(){
     drawingSquare.height = images[0].getHeight();
     effects.push_back(drawingSquare);
     
+    Effect triangleGrid;
+    triangleGrid.loadShader("Shaders/triangleGrid");
+    triangleGrid.addUniform("resolution", &screenResolution);
+    triangleGrid.addUniform("inputTexture", &images[0]);
+    triangleGrid.width = images[0].getWidth();
+    triangleGrid.height = images[0].getHeight();
+    effects.push_back(triangleGrid);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
