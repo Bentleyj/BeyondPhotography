@@ -310,3 +310,7 @@ Didn't actually make an effect today but instead attached the camera to the comp
 
 Made the circles grid but with triangles instead. Also on the way there made some really nice line effects. I call this one Tirangle Grid. It's really pretty boring looking I think because the triangles don't overlap the same way the circled did (which I should probably look to build ASAP!). Got some reall nice line effects on the other hand which I'm pleased about and took some screenshots of. These can be achieved by pixelating the image and then drawing lines that lerp from the color of one corner of the pixel to the corner of the other. Really efficient algorithm and nice to look at.
 
+### Day 71
+
+Added Quad Smudge effect by taking the brightest of 4 pixels with a peritcular offset. Although very simple I actually think the effect gets some quite interesting results wiht step size around 40-50. I'm interested in sampling more points, and maybe doing it with the dark points as well.
+
