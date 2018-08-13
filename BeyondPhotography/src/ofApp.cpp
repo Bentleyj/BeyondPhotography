@@ -860,6 +860,14 @@ void ofApp::setup(){
     triangleGrid.height = images[0].getHeight();
     effects.push_back(triangleGrid);
     
+    Effect quadSmudge;
+    quadSmudge.loadShader("Shaders/quadSmudge");
+    quadSmudge.addUniform("resolution", &screenResolution);
+    quadSmudge.addUniform("inputTexture", &images[0]);
+    quadSmudge.width = images[0].getWidth();
+    quadSmudge.height = images[0].getHeight();
+    effects.push_back(quadSmudge);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
