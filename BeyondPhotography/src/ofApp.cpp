@@ -868,6 +868,14 @@ void ofApp::setup(){
     quadSmudge.height = images[0].getHeight();
     effects.push_back(quadSmudge);
     
+    Effect searchSmudge;
+    searchSmudge.loadShader("Shaders/searchSmudge");
+    searchSmudge.addUniform("resolution", &screenResolution);
+    searchSmudge.addUniform("inputTexture", &images[0]);
+    searchSmudge.width = images[0].getWidth();
+    searchSmudge.height = images[0].getHeight();
+    effects.push_back(searchSmudge);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
