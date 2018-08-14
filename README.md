@@ -314,3 +314,7 @@ Made the circles grid but with triangles instead. Also on the way there made som
 
 Added Quad Smudge effect by taking the brightest of 4 pixels with a peritcular offset. Although very simple I actually think the effect gets some quite interesting results wiht step size around 40-50. I'm interested in sampling more points, and maybe doing it with the dark points as well.
 
+### Day 72
+
+Made my smudge effect into "Search Smudge" which searches the entire nearby square region to each pixel for the brightest pixel and replaces it with that one. At high search ranges (ie 40 pixels) it looks really abstract but runs very slowly. At lower pixel search ranges (ie 10) it runs fast but looks kind of boring. It gets really interesting effects around particularly bright bits like eyes etc.
+
