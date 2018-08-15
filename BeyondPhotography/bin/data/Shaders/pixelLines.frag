@@ -59,6 +59,7 @@ void main() {
     float m = 0;
     float m2 = 0;
     int step = 5;
+    vec3 col;
     for(int i = -step; i < step; i++) {
         for(int j = -step; j < step; j++) {
             vec2 p = uvAbs + vec2(i, j);
@@ -67,6 +68,7 @@ void main() {
             if(n > m) {
                 m = n;
                 pos = p;
+                col = c;
             } else if(n > m2) {
                 m2 = n;
                 pos2 = p;
@@ -74,7 +76,7 @@ void main() {
         }
     }
     
-    vec3 tc = vec3(drawLine(uvAbs, pos, pos2, 2));
+    vec3 tc = col * vec3(drawLine(uvAbs, pos, pos2, 2));
     
     gl_FragColor = vec4(tc, 1.0);
 }
