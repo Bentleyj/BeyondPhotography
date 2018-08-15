@@ -35,21 +35,6 @@ void main() {
             }
         }
     }
-//    pos[0] = vec2(uvAbs.x+step, uvAbs.y);
-//    pos[1] = vec2(uvAbs.x-step, uvAbs.y);
-//    pos[2] = vec2(uvAbs.x, uvAbs.y+step);
-//    pos[3] = vec2(uvAbs.x, uvAbs.y-step);
-//    vec3 s[4];
-//    for(int i = 0; i < 4; i++) {
-//        s[i] = texture2DRect(inputTexture, pos[i]).rgb;
-//    }
-//
-//    int m = 0;
-//    for(int i = 0; i < 4; i++) {
-//        if(length(s[m]) < length(s[i])) {
-//            m = i;
-//        }
-//    }
     
     vec3 tc = col;
     
