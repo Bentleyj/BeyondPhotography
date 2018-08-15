@@ -876,6 +876,14 @@ void ofApp::setup(){
     searchSmudge.height = images[0].getHeight();
     effects.push_back(searchSmudge);
     
+    Effect pixelLines;
+    pixelLines.loadShader("Shaders/pixelLines");
+    pixelLines.addUniform("resolution", &screenResolution);
+    pixelLines.addUniform("inputTexture", &images[0]);
+    pixelLines.width = images[0].getWidth();
+    pixelLines.height = images[0].getHeight();
+    effects.push_back(pixelLines);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
