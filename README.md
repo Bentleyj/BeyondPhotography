@@ -318,3 +318,7 @@ Added Quad Smudge effect by taking the brightest of 4 pixels with a peritcular o
 
 Made my smudge effect into "Search Smudge" which searches the entire nearby square region to each pixel for the brightest pixel and replaces it with that one. At high search ranges (ie 40 pixels) it looks really abstract but runs very slowly. At lower pixel search ranges (ie 10) it runs fast but looks kind of boring. It gets really interesting effects around particularly bright bits like eyes etc.
 
+### Day 83
+
+Today I used the same search algorithm to find the two brightest points nearby each pixel and then draw a line between thoese two points. It's really interesting to draw lines like this because they are totally diffuse, IE you need multiple points to have the same "brightest" points in order to get the lines to show up. If you use a small enough search space you actually do get a fairly accurate representation of the image which makes some sense but is also interesting to me. Drawing lines like this where the endpoints are not defined continuously it really interesting.
+
