@@ -89,7 +89,7 @@ void main() {
     vec2 pos, pos2;
     float m = 0;
     float m2 = 0;
-    int step = 2;
+    int step = 4;
     vec3 col;
     for(int i = -step; i < step; i++) {
         for(int j = -step; j < step; j++) {

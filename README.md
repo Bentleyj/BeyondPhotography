@@ -322,3 +322,6 @@ Made my smudge effect into "Search Smudge" which searches the entire nearby squa
 
 Today I used the same search algorithm to find the two brightest points nearby each pixel and then draw a line between thoese two points. It's really interesting to draw lines like this because they are totally diffuse, IE you need multiple points to have the same "brightest" points in order to get the lines to show up. If you use a small enough search space you actually do get a fairly accurate representation of the image which makes some sense but is also interesting to me. Drawing lines like this where the endpoints are not defined continuously it really interesting.
 
+### Day 74
+
+Replicated the lines effect from yesterday but instead of using the brightest pixels I used the "most sobelly" pixels (ie the most edgy pixels). This created an interesting effect which looks a bit like a disolve but where the edges are clearly defined.
