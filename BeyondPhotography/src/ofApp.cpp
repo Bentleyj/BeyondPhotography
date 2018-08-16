@@ -884,6 +884,14 @@ void ofApp::setup(){
     pixelLines.height = images[0].getHeight();
     effects.push_back(pixelLines);
     
+    Effect sobelLines;
+    sobelLines.loadShader("Shaders/sobelLines");
+    sobelLines.addUniform("resolution", &screenResolution);
+    sobelLines.addUniform("inputTexture", &images[0]);
+    sobelLines.width = images[0].getWidth();
+    sobelLines.height = images[0].getHeight();
+    effects.push_back(sobelLines);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
