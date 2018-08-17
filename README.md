@@ -325,3 +325,7 @@ Today I used the same search algorithm to find the two brightest points nearby e
 ### Day 74
 
 Replicated the lines effect from yesterday but instead of using the brightest pixels I used the "most sobelly" pixels (ie the most edgy pixels). This created an interesting effect which looks a bit like a disolve but where the edges are clearly defined.
+
+### Day 75
+
+Jumped in to Shadertoy today and looked around for cool effects. Managed to find (this)[https://www.shadertoy.com/view/Xlt3R7] by (roywig)[https://www.shadertoy.com/user/roywig] and copied it pretty much verbatim. He calls it a Droste effect but I don't know what that means. He's got lots of cool effects like this so excited to learn more about them. It looks like M.C. Escher to me!
