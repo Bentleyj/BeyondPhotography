@@ -328,4 +328,4 @@ Replicated the lines effect from yesterday but instead of using the brightest pi
 
 ### Day 75
 
-Jumped in to Shadertoy today and looked around for cool effects. Managed to find (this)[https://www.shadertoy.com/view/Xlt3R7] by (roywig)[https://www.shadertoy.com/user/roywig] and copied it pretty much verbatim. He calls it a Droste effect but I don't know what that means. He's got lots of cool effects like this so excited to learn more about them. It looks like M.C. Escher to me!
+Jumped in to Shadertoy today and looked around for cool effects. Managed to find [this](https://www.shadertoy.com/view/Xlt3R7) by [roywig](https://www.shadertoy.com/user/roywig) and copied it pretty much verbatim. He calls it a Droste effect but I don't know what that means. He's got lots of cool effects like this so excited to learn more about them. It looks like M.C. Escher to me!
