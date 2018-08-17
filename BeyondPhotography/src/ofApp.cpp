@@ -892,6 +892,14 @@ void ofApp::setup(){
     sobelLines.height = images[0].getHeight();
     effects.push_back(sobelLines);
     
+    Effect droste;
+    droste.loadShader("Shaders/droste");
+    droste.addUniform("resolution", &screenResolution);
+    droste.addUniform("inputTexture", &images[0]);
+    droste.width = images[0].getWidth();
+    droste.height = images[0].getHeight();
+    effects.push_back(droste);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
