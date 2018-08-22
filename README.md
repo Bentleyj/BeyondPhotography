@@ -329,3 +329,7 @@ Replicated the lines effect from yesterday but instead of using the brightest pi
 ### Day 75
 
 Jumped in to Shadertoy today and looked around for cool effects. Managed to find [this](https://www.shadertoy.com/view/Xlt3R7) by [roywig](https://www.shadertoy.com/user/roywig) and copied it pretty much verbatim. He calls it a Droste effect but I don't know what that means. He's got lots of cool effects like this so excited to learn more about them. It looks like M.C. Escher to me!
+
+### Day 76
+
+Starting to play around with this Droste effect. Turns out Droste refers to the dutch effect of putting an image within an image in an infinite loop. In face the name is based on Droste's Cacao which was a brand of Cacao from 1904 which featured a woman holding a tin of cacao which had the woman on it again, etc. etc. So this implementation that I got off of shadertoy is really just one example of it working well. I can imediately imagine a few other ways to make this effect. For now I've made "Droste2" where I'm just messing around with the effect I already have.
