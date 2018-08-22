@@ -900,6 +900,14 @@ void ofApp::setup(){
     droste.height = images[0].getHeight();
     effects.push_back(droste);
     
+    Effect droste2;
+    droste2.loadShader("Shaders/droste2");
+    droste2.addUniform("resolution", &screenResolution);
+    droste2.addUniform("inputTexture", &images[0]);
+    droste2.width = images[0].getWidth();
+    droste2.height = images[0].getHeight();
+    effects.push_back(droste2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
