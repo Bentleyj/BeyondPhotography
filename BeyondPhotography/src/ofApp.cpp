@@ -908,6 +908,14 @@ void ofApp::setup(){
     droste2.height = images[0].getHeight();
     effects.push_back(droste2);
     
+    Effect warhol;
+    warhol.loadShader("Shaders/warhol");
+    warhol.addUniform("resolution", &screenResolution);
+    warhol.addUniform("inputTexture", &images[0]);
+    warhol.width = images[0].getWidth();
+    warhol.height = images[0].getHeight();
+    effects.push_back(warhol);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
