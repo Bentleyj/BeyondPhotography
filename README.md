@@ -333,3 +333,7 @@ Jumped in to Shadertoy today and looked around for cool effects. Managed to find
 ### Day 76
 
 Starting to play around with this Droste effect. Turns out Droste refers to the dutch effect of putting an image within an image in an infinite loop. In face the name is based on Droste's Cacao which was a brand of Cacao from 1904 which featured a woman holding a tin of cacao which had the woman on it again, etc. etc. So this implementation that I got off of shadertoy is really just one example of it working well. I can imediately imagine a few other ways to make this effect. For now I've made "Droste2" where I'm just messing around with the effect I already have.
+
+### Day 77 & 78
+
+Inspired by some any Warhol paintings I have started trying to split up my image in to HSV chunks and then assigning them different flat colors. HSV comes out very pixelated though so I need to adjust accordingly (basically blur). Really cool effects when mixed with Sobel Edge Detection. I'm aiming for something like his "detail of a renaissance painting".
