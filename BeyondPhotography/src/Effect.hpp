@@ -14,6 +14,7 @@ class Effect {
 public:
     Effect();
     void addUniform(string s, float* f);
+    void addUniform(string s, ofParameter<float>* f);
     void addUniform(string s, ofTexture* tex);
     void addUniform(string s, ofVec2f* v);
     void addUniform(string s, ofBaseHasTexture* tex);
@@ -25,6 +26,7 @@ public:
     void applyEffect(ofVideoGrabber *grabber);
     
     vector< pair<string, float*> > uniformFloats;
+    vector< pair<string, ofParameter<float>*> > uniformFloatParameters;
     vector< pair<string, ofTexture*> > uniformTextures;
     vector< pair<string, ofVec2f*> > uniformVec2fs;
     vector< pair<string, ofVec3f*> > uniformVec3fs;

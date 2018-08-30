@@ -916,10 +916,20 @@ void ofApp::setup(){
     warhol.height = images[0].getHeight();
     effects.push_back(warhol);
     
+    Effect warhol2;
+    warhol2.loadShader("Shaders/warhol2");
+    warhol2.addUniform("resolution", &screenResolution);
+    warhol2.addUniform("inputTexture", &images[0]);
+    warhol2.addUniform("thresh", &thresh);
+    warhol2.width = images[0].getWidth();
+    warhol2.height = images[0].getHeight();
+    effects.push_back(warhol2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
     gui.add(camOn.set("Camera On", false));
+    gui.add(thresh.set("Thresh", 0.0, 0.0, 1.0));
     gui.loadFromFile(settingsPath);
     
     camOn.addListener(this, &ofApp::onCamToggle);

@@ -28,6 +28,7 @@ class ofApp : public ofBaseApp{
     ofParameter<int> imageIndex;
     ofParameter<int> effectIndex;
     ofParameter<bool> camOn;
+    ofParameter<float> thresh;
     
     ofVec2f screenResolution;
     ofVideoGrabber grabber;

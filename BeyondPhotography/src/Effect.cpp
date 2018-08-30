@@ -26,6 +26,10 @@ void Effect::applyEffect() {
     for(int i = 0; i < uniformFloats.size(); i++) {
         shader.setUniform1f(uniformFloats[i].first, *uniformFloats[i].second);
     }
+    // Set the float parameters
+    for(int i = 0; i < uniformFloatParameters.size(); i++) {
+        shader.setUniform1f(uniformFloatParameters[i].first, *uniformFloatParameters[i].second);
+    }
     // set the Vec2fs
     for(int i = 0; i < uniformVec2fs.size(); i++) {
         shader.setUniform2f(uniformVec2fs[i].first, uniformVec2fs[i].second->x, uniformVec2fs[i].second->y);
@@ -61,6 +65,16 @@ void Effect::addUniform(string s, float* f) {
         }
     }
     uniformFloats.push_back(make_pair(s, f));
+}
+
+void Effect::addUniform(string s, ofParameter<float>* f) {
+    for(int i = 0; i < uniformFloatParameters.size(); i++) {
+        if(uniformFloatParameters[i].first == s) {
+            uniformFloatParameters[i].second = f;
+            return;
+        }
+    }
+    uniformFloatParameters.push_back(make_pair(s, f));
 }
 
 void Effect::addUniform(string s, ofVec2f* f) {
