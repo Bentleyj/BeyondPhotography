@@ -925,6 +925,15 @@ void ofApp::setup(){
     warhol2.height = images[0].getHeight();
     effects.push_back(warhol2);
     
+    Effect warhol3;
+    warhol3.loadShader("Shaders/warhol3");
+    warhol3.addUniform("resolution", &screenResolution);
+    warhol3.addUniform("inputTexture", &images[0]);
+    warhol3.addUniform("thresh", &thresh);
+    warhol3.width = images[0].getWidth();
+    warhol3.height = images[0].getHeight();
+    effects.push_back(warhol3);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
