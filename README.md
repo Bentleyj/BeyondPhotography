@@ -337,3 +337,7 @@ Starting to play around with this Droste effect. Turns out Droste refers to the 
 ### Day 77 & 78
 
 Inspired by some any Warhol paintings I have started trying to split up my image in to HSV chunks and then assigning them different flat colors. HSV comes out very pixelated though so I need to adjust accordingly (basically blur). Really cool effects when mixed with Sobel Edge Detection. I'm aiming for something like his "detail of a renaissance painting".
+
+### Day 79
+
+Tried some different colors for the warhol effect today and I also changed so the sobel effect so it wasn't additive. I'd like to create a system of "color priority" to mimic screen printing. This might be next time!
