@@ -43,9 +43,12 @@ void main() {
     
     vec2 uvAbs = uv * resolution;
     
-    vec3 col = texture2DRect(inputTexture, uvAbs).rgb;
-    
     vec3 mandel = mandelBrot(uv, -2.5, 1., -1., 1.);
+    
+    float v = map(mandel.r, 0., 2.0, 0., resolution.x);
+    
+    vec3 col = texture2DRect(inputTexture, vec2(uvAbs.x + v, uvAbs.y)).rgb * 5.0;
+    
     
     vec3 tc = mandel*col;//smoothstep(outline, col, vec3(outline.b));
     
