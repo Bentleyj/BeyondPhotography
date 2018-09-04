@@ -934,6 +934,15 @@ void ofApp::setup(){
     warhol3.height = images[0].getHeight();
     effects.push_back(warhol3);
     
+    Effect mandelbrot;
+    mandelbrot.loadShader("Shaders/mandelbrot");
+    mandelbrot.addUniform("resolution", &screenResolution);
+    mandelbrot.addUniform("inputTexture", &images[0]);
+    mandelbrot.addUniform("thresh", &thresh);
+    mandelbrot.width = images[0].getWidth();
+    mandelbrot.height = images[0].getHeight();
+    effects.push_back(mandelbrot);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
