@@ -341,3 +341,7 @@ Inspired by some any Warhol paintings I have started trying to split up my image
 ### Day 79
 
 Tried some different colors for the warhol effect today and I also changed so the sobel effect so it wasn't additive. I'd like to create a system of "color priority" to mimic screen printing. This might be next time!
+
+### Day 80
+
+Decided to treat myself and do something mathematical today, specifically I'm looking at fractals and the mandelbrot set! I'm just created a method called mandelbrot and used it as a mask for the image (nothing special yet!) but I plan to do more exciting stuff with the mandelbrot set soon!
