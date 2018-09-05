@@ -345,3 +345,7 @@ Tried some different colors for the warhol effect today and I also changed so th
 ### Day 80
 
 Decided to treat myself and do something mathematical today, specifically I'm looking at fractals and the mandelbrot set! I'm just created a method called mandelbrot and used it as a mask for the image (nothing special yet!) but I plan to do more exciting stuff with the mandelbrot set soon!
+
+### Day 81
+
+Shifted gears today to take a cool crosshatch effect from shadertoy. The effect is originally by [doomedbunnies](https://www.shadertoy.com/user/doomedbunnies). The effect can be found [here](https://www.shadertoy.com/view/MdX3Dr). I'm keen to hack on it to learn more.
