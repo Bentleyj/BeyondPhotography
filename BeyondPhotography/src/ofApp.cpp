@@ -943,6 +943,15 @@ void ofApp::setup(){
     mandelbrot.height = images[0].getHeight();
     effects.push_back(mandelbrot);
     
+    Effect crosshatch;
+    crosshatch.loadShader("Shaders/crosshatch");
+    crosshatch.addUniform("resolution", &screenResolution);
+    crosshatch.addUniform("inputTexture", &images[0]);
+    crosshatch.addUniform("thresh", &thresh);
+    crosshatch.width = images[0].getWidth();
+    crosshatch.height = images[0].getHeight();
+    effects.push_back(crosshatch);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
