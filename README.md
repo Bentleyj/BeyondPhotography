@@ -349,3 +349,7 @@ Decided to treat myself and do something mathematical today, specifically I'm lo
 ### Day 81
 
 Shifted gears today to take a cool crosshatch effect from shadertoy. The effect is originally by [doomedbunnies](https://www.shadertoy.com/user/doomedbunnies). The effect can be found [here](https://www.shadertoy.com/view/MdX3Dr). I'm keen to hack on it to learn more.
+
+### Day 82
+
+Took the crosshatch effect and tried to go down a more roylichtenstein route by ammending it to do points instead of cross-hatched lines. It's made me think that a good approach would be to do more stuff with brightness-gated effects, ie different effects are different brightness thresholds. Gonna try more of this coming up!
