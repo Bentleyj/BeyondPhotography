@@ -952,6 +952,15 @@ void ofApp::setup(){
     crosshatch.height = images[0].getHeight();
     effects.push_back(crosshatch);
     
+    Effect lichtenstein;
+    lichtenstein.loadShader("Shaders/lichtenstein");
+    lichtenstein.addUniform("resolution", &screenResolution);
+    lichtenstein.addUniform("inputTexture", &images[0]);
+    lichtenstein.addUniform("thresh", &thresh);
+    lichtenstein.width = images[0].getWidth();
+    lichtenstein.height = images[0].getHeight();
+    effects.push_back(lichtenstein);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
