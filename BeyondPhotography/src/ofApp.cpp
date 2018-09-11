@@ -961,6 +961,15 @@ void ofApp::setup(){
     lichtenstein.height = images[0].getHeight();
     effects.push_back(lichtenstein);
     
+    Effect selfSimilar;
+    selfSimilar.loadShader("Shaders/selfSimilar");
+    selfSimilar.addUniform("resolution", &screenResolution);
+    selfSimilar.addUniform("inputTexture", &images[0]);
+    selfSimilar.addUniform("thresh", &thresh);
+    selfSimilar.width = images[0].getWidth();
+    selfSimilar.height = images[0].getHeight();
+    effects.push_back(selfSimilar);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
