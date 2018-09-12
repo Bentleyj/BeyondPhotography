@@ -357,3 +357,7 @@ Took the crosshatch effect and tried to go down a more roylichtenstein route by 
 ### Day 83
 
 Today I wanted to do a self-similarity test. I'm interested in fractals like the following [effect](https://www.shadertoy.com/view/XltcWB) by [kristoflovas](https://www.shadertoy.com/user/kristoflovas). They are extremely simple self-referencial effects which could yield cool effects if applied to an image in interesting ways. My first thinking was that the effect is to recursively apply a function to itself,  but on a smaller and smaller scale, so how could I do that with my image? I can consider the whole image an a non-continuos 2D function which maps a vec2 to a vec3. So my recursively adding the image to itself (reduced by a constant) we should end up with the same self-similar effect. This is in-fact exactly what we get, however I think that we could make more interesting effects by perhaps taking different PARTS of the image and doing the recursion with that. We'll just have to see!
+
+### Day 84
+
+Quick one today as I'm busy with a client project. Did the same effect but instead of adding all the values together and reducing their value I alternated adding and subtracting them as I reduce their size. Very simple effect with nice results!
