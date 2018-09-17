@@ -361,3 +361,7 @@ Today I wanted to do a self-similarity test. I'm interested in fractals like the
 ### Day 84
 
 Quick one today as I'm busy with a client project. Did the same effect but instead of adding all the values together and reducing their value I alternated adding and subtracting them as I reduce their size. Very simple effect with nice results!
+
+### Day 85
+
+First step on a journey today, I want to do the same thing that we did with the self-similarity but make it even more self similar. I want to take the upper left corner of the image and duplicate it in a grid of 4 within itself and do the same with the upper right, bottom left and bottom right. My ultimate goal is to create a recursive function which does this over and over again in a grid. Starting off by building the base case and will try to add the recursion tomorrow.
