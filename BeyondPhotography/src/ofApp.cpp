@@ -979,6 +979,15 @@ void ofApp::setup(){
     selfSimilarNeg.height = images[0].getHeight();
     effects.push_back(selfSimilarNeg);
     
+    Effect selfSimilarArea;
+    selfSimilarArea.loadShader("Shaders/selfSimilarArea");
+    selfSimilarArea.addUniform("resolution", &screenResolution);
+    selfSimilarArea.addUniform("inputTexture", &images[0]);
+    selfSimilarArea.addUniform("thresh", &thresh);
+    selfSimilarArea.width = images[0].getWidth();
+    selfSimilarArea.height = images[0].getHeight();
+    effects.push_back(selfSimilarArea);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
