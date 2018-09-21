@@ -365,3 +365,7 @@ Quick one today as I'm busy with a client project. Did the same effect but inste
 ### Day 85
 
 First step on a journey today, I want to do the same thing that we did with the self-similarity but make it even more self similar. I want to take the upper left corner of the image and duplicate it in a grid of 4 within itself and do the same with the upper right, bottom left and bottom right. My ultimate goal is to create a recursive function which does this over and over again in a grid. Starting off by building the base case and will try to add the recursion tomorrow.
+
+### Day 86
+
+Messed around with the Droste effect agaiun today. Just screwing with some parameters but you get good effects! Today I made Droste3 which is like a droste tunnel effect.
