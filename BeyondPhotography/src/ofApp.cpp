@@ -988,6 +988,14 @@ void ofApp::setup(){
     selfSimilarArea.height = images[0].getHeight();
     effects.push_back(selfSimilarArea);
     
+    Effect droste3;
+    droste3.loadShader("Shaders/droste3");
+    droste3.addUniform("resolution", &screenResolution);
+    droste3.addUniform("inputTexture", &images[0]);
+    droste3.width = images[0].getWidth();
+    droste3.height = images[0].getHeight();
+    effects.push_back(droste3);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
