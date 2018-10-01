@@ -46,7 +46,8 @@ void main() {
     int iterations = 1;
     vec3 tc = texture2DRect(inputTexture, uvAbs).rgb;
     vec2 center = coord;
-    vec2 res = vec2(dx * 2);
+    vec2 res = vec2(dx, dy);
+    
     tc = getColor(uvAbs, center, res);
 //
 //    vec3 col = getColor(uvAbs, center);
