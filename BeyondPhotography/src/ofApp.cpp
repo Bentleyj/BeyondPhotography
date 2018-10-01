@@ -996,6 +996,15 @@ void ofApp::setup(){
     droste3.height = images[0].getHeight();
     effects.push_back(droste3);
     
+    Effect selfSimilarArea2;
+    selfSimilarArea2.loadShader("Shaders/selfSimilarArea2");
+    selfSimilarArea2.addUniform("resolution", &screenResolution);
+    selfSimilarArea2.addUniform("inputTexture", &images[0]);
+    selfSimilarArea2.addUniform("thresh", &thresh);
+    selfSimilarArea2.width = images[0].getWidth();
+    selfSimilarArea2.height = images[0].getHeight();
+    effects.push_back(selfSimilarArea2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
