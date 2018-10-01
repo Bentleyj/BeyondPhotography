@@ -368,4 +368,8 @@ First step on a journey today, I want to do the same thing that we did with the 
 
 ### Day 86
 
-Messed around with the Droste effect agaiun today. Just screwing with some parameters but you get good effects! Today I made Droste3 which is like a droste tunnel effect.
+Messed around with the Droste effect again today. Just screwing with some parameters but you get good effects! Today I made Droste3 which is like a droste tunnel effect.
+
+### Day 87
+
+Followed up on my promise from day 85 to build in the recursion. Which quickly taubght me that GLSL DOES NOT SUPORT RECURSION! WHAT JOY! Instead I went ahead and unwrapped my recursion in to an iteration which gave me some really cool effects with fun parameters to play around with. Loving these looks. I'm calling it "self-similar" but I want to do with with a pixelation map instead so the pixelation amount changes as you go across the image. Something for tomorrow!
