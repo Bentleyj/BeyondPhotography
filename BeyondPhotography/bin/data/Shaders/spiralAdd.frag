@@ -38,8 +38,8 @@ void main() {
     
     uvAbs = cartToPol(uvAbs);
     
-    int radStep = 10;
-    float thetaStep = PI / 10.0;
+    int radStep = -20;
+    float thetaStep = 2 * PI / 20;
     
     
     vec2 pos[NUM_STEPS];
