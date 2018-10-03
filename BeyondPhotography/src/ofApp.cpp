@@ -1005,6 +1005,15 @@ void ofApp::setup(){
     selfSimilarArea2.height = images[0].getHeight();
     effects.push_back(selfSimilarArea2);
     
+    Effect spiralAdd;
+    spiralAdd.loadShader("Shaders/spiralAdd");
+    spiralAdd.addUniform("resolution", &screenResolution);
+    spiralAdd.addUniform("inputTexture", &images[0]);
+    spiralAdd.addUniform("thresh", &thresh);
+    spiralAdd.width = images[0].getWidth();
+    spiralAdd.height = images[0].getHeight();
+    effects.push_back(spiralAdd);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
