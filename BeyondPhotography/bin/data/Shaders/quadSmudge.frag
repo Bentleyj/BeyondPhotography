@@ -3,9 +3,6 @@
 uniform sampler2DRect inputTexture;
 uniform vec2 resolution;
 
-float _DeltaX = 0.2;
-float _DeltaY = 0.2;
-
 float length(vec3 v) {
     return v.x + v.y + v.z;
 }
