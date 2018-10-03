@@ -373,3 +373,7 @@ Messed around with the Droste effect again today. Just screwing with some parame
 ### Day 87
 
 Followed up on my promise from day 85 to build in the recursion. Which quickly taubght me that GLSL DOES NOT SUPORT RECURSION! WHAT JOY! Instead I went ahead and unwrapped my recursion in to an iteration which gave me some really cool effects with fun parameters to play around with. Loving these looks. I'm calling it "self-similar" but I want to do with with a pixelation map instead so the pixelation amount changes as you go across the image. Something for tomorrow!
+
+### Day 88
+
+Having trouble sticking to a single subject recently! Went back to my "Quad-Smudge" idea and did it with polar coordinates. This has a cool swirling effect which is a load of fun to play with. I want to set it up so that the image isn't rotated but the place the image is drawn is rotated in a spiral.
