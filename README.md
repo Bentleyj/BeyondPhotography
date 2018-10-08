@@ -356,7 +356,7 @@ Took the crosshatch effect and tried to go down a more roylichtenstein route by 
 
 ### Day 83
 
-Today I wanted to do a self-similarity test. I'm interested in fractals like the following [effect](https://www.shadertoy.com/view/XltcWB) by [kristoflovas](https://www.shadertoy.com/user/kristoflovas). They are extremely simple self-referencial effects which could yield cool effects if applied to an image in interesting ways. My first thinking was that the effect is to recursively apply a function to itself,  but on a smaller and smaller scale, so how could I do that with my image? I can consider the whole image an a non-continuos 2D function which maps a vec2 to a vec3. So my recursively adding the image to itself (reduced by a constant) we should end up with the same self-similar effect. This is in-fact exactly what we get, however I think that we could make more interesting effects by perhaps taking different PARTS of the image and doing the recursion with that. We'll just have to see!
+Today I wanted to do a self-similarity test. I'm interested in fractals like the following [effect](https://www.shadertoy.com/view/XltcWB) by [kristoflovas](https://www.shadertoy.com/user/kristoflovas). They are extremely simple self-referencial effects which could yield cool effects if applied to an image in interesting ways. My first thinking was that the effect is to recursively apply a function to itself,  but on a smaller and smaller scale, so how could I do that with my image? I can consider the whole image an a non-continuous 2D function which maps a vec2 to a vec3. So my recursively adding the image to itself (reduced by a constant) we should end up with the same self-similar effect. This is in-fact exactly what we get, however I think that we could make more interesting effects by perhaps taking different PARTS of the image and doing the recursion with that. We'll just have to see!
 
 ### Day 84
 
@@ -372,8 +372,12 @@ Messed around with the Droste effect again today. Just screwing with some parame
 
 ### Day 87
 
-Followed up on my promise from day 85 to build in the recursion. Which quickly taubght me that GLSL DOES NOT SUPORT RECURSION! WHAT JOY! Instead I went ahead and unwrapped my recursion in to an iteration which gave me some really cool effects with fun parameters to play around with. Loving these looks. I'm calling it "self-similar" but I want to do with with a pixelation map instead so the pixelation amount changes as you go across the image. Something for tomorrow!
+Followed up on my promise from day 85 to build in the recursion. Which quickly taubght me that GLSL DOES NOT SUPPORT RECURSION! WHAT JOY! Instead I went ahead and unwrapped my recursion in to an iteration which gave me some really cool effects with fun parameters to play around with. Loving these looks. I'm calling it "self-similar" but I want to do with with a pixelation map instead so the pixelation amount changes as you go across the image. Something for tomorrow!
 
 ### Day 88
 
 Having trouble sticking to a single subject recently! Went back to my "Quad-Smudge" idea and did it with polar coordinates. This has a cool swirling effect which is a load of fun to play with. I want to set it up so that the image isn't rotated but the place the image is drawn is rotated in a spiral.
+
+### Day 89
+
+I want to try different effects on thresholds. today I revistied my Swirl effect and made us turn one way below a brightness threshold and the other way above it. The effect isn't very nice but I want to experiment with more effects on thresholds to get a feel for what might be cool.
