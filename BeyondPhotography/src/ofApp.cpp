@@ -1014,6 +1014,14 @@ void ofApp::setup(){
     spiralAdd.height = images[0].getHeight();
     effects.push_back(spiralAdd);
     
+    Effect swirlThresh;
+    swirlThresh.loadShader("Shaders/swirlThresh");
+    swirlThresh.addUniform("resolution", &screenResolution);
+    swirlThresh.addUniform("inputTexture", &images[0]);
+    swirlThresh.width = images[0].getWidth();
+    swirlThresh.height = images[0].getHeight();
+    effects.push_back(swirlThresh);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));

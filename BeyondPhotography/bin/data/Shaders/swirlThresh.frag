@@ -1,6 +1,6 @@
 #version 120
 
-#define PI 3.14159265
+#define PI 3.14159265358
 
 uniform sampler2DRect inputTexture;
 uniform vec2 resolution;
@@ -25,31 +25,43 @@ vec2 polToCart(vec2 v) {
     return vec2(x, y);
 }
 
+float hatch_2 = 0.2;
+
 void main() {
     
     vec2 uv = gl_FragCoord.xy / resolution;
-
+    
     uv.y = 1.0 - uv.y;
-
+    
     vec2 uvAbs = uv * resolution;
-
+    
     vec3 tc = texture2DRect(inputTexture, uvAbs).rgb;
+    
+    float brightness = (0.2126*tc.x) + (0.7152*tc.y) + (0.0722*tc.z);
     
     uv.x -= 0.5;
     uv.y -= 0.5;
-
+    
     vec2 pol = cartToPol(uv);
 
-    pol.y -= map(length(tc),0.0, 1.0, 0.00, 2*PI);
 
+    if (brightness < hatch_2)
+    {
+        pol.y += 2.0 * pol.x;
+
+    } else {
+        pol.y -= 2.0 * pol.x;
+    }
+    
     uv = polToCart(pol);
-
+    
     uv.x += 0.5;
     uv.y += 0.5;
-
+    
     uvAbs = uv * resolution;
-
+    
     tc = texture2DRect(inputTexture, uvAbs).rgb;
-        
+
+    
     gl_FragColor = vec4(tc, 1.0);
 }
