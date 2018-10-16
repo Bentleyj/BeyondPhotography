@@ -24,15 +24,15 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
     
-    ofxPanel gui;
-    ofParameter<int> imageIndex;
-    ofParameter<int> effectIndex;
-    ofParameter<bool> camOn;
-    ofParameter<float> thresh;
+        ofxPanel gui;
+        ofParameter<int> imageIndex;
+        ofParameter<int> effectIndex;
+        ofParameter<bool> camOn;
+        ofParameter<float> thresh;
+        
+        ofVec2f screenResolution;
+        ofVideoGrabber grabber;
     
-    ofVec2f screenResolution;
-    ofVideoGrabber grabber;
-    
-    vector<ofImage> images;
-    vector<Effect> effects;
+        vector<ofImage> images;
+        vector<Effect> effects;
 };
