@@ -381,3 +381,7 @@ Having trouble sticking to a single subject recently! Went back to my "Quad-Smud
 ### Day 89
 
 I want to try different effects on thresholds. today I revistied my Swirl effect and made us turn one way below a brightness threshold and the other way above it. The effect isn't very nice but I want to experiment with more effects on thresholds to get a feel for what might be cool.
+
+### Day 90
+
+Exciting day today! Been busy at work so not updating as much as I normally would but today I had some time so I went for a fun effect, a pixelSorting algorithm in Y. What I've done is for each column of the image I've pixelated the space in to evenly sized chunks and then sorted the pixels by their size. I'm using the GLSL built-in min function and I'm not sure how that compares vec3s but I'm assuming by length/brightness. Really digging this effect, want to try sorting on different values.
