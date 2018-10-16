@@ -1022,6 +1022,14 @@ void ofApp::setup(){
     swirlThresh.height = images[0].getHeight();
     effects.push_back(swirlThresh);
     
+    Effect pixelSort;
+    pixelSort.loadShader("Shaders/pixelSort");
+    pixelSort.addUniform("resolution", &screenResolution);
+    pixelSort.addUniform("inputTexture", &images[0]);
+    pixelSort.width = images[0].getWidth();
+    pixelSort.height = images[0].getHeight();
+    effects.push_back(pixelSort);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
