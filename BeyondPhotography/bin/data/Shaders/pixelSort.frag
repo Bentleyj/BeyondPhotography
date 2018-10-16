@@ -1,6 +1,6 @@
 #version 120
 
-#define SEARCH_REGION 100
+#define SEARCH_REGION 10
 // SEARCH_REGION should be closer to 100 for cool effects
 
 uniform sampler2DRect inputTexture;
