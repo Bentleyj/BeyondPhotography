@@ -1030,6 +1030,14 @@ void ofApp::setup(){
     pixelSort.height = images[0].getHeight();
     effects.push_back(pixelSort);
     
+    Effect pixelSortH;
+    pixelSortH.loadShader("Shaders/pixelSortH");
+    pixelSortH.addUniform("resolution", &screenResolution);
+    pixelSortH.addUniform("inputTexture", &images[0]);
+    pixelSortH.width = images[0].getWidth();
+    pixelSortH.height = images[0].getHeight();
+    effects.push_back(pixelSortH);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
@@ -1053,7 +1061,9 @@ void ofApp::update(){
 void ofApp::draw(){
     effects[effectIndex].applyEffect();
     ofDrawBitmapStringHighlight(effects[effectIndex].name, gui.getPosition().x + 5, gui.getPosition().y + gui.getHeight() + 15);
-    gui.draw();
+    if(showGui) {
+        gui.draw();
+    }
 }
 
 //--------------------------------------------------------------
@@ -1067,6 +1077,9 @@ void ofApp::keyPressed(int key){
         effectIndex--;
         if(effectIndex < 0)
             effectIndex = 0;
+    }
+    if(key == 'g') {
+        showGui = !showGui;
     }
 }
 
