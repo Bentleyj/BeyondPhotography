@@ -385,3 +385,7 @@ I want to try different effects on thresholds. today I revisited my Swirl effect
 ### Day 90
 
 Exciting day today! Been busy at work so not updating as much as I normally would but today I had some time so I went for a fun effect, a pixelSorting algorithm in Y. What I've done is for each column of the image I've pixelated the space in to evenly sized chunks and then sorted the pixels by their size. I'm using the GLSL built-in min function and I'm not sure how that compares vec3s but I'm assuming by length/brightness. Really digging this effect, want to try sorting on different values.
+
+### Day 91
+
+Took a break from working on these to go up to Glasgow to see my brother graduate! It was a lovely trip but now I'm back and decided to apply the principles of thresholding to my pixel sorting looks for very cool results. I'm applying the pixel sorting effects to the imagery but only on pixels with a brightness above and below a certain threshold of brightness. This means that features that are distinct get picked out to sit overtop of the pixel sorting effects.
