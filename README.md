@@ -380,7 +380,7 @@ Having trouble sticking to a single subject recently! Went back to my "Quad-Smud
 
 ### Day 89
 
-I want to try different effects on thresholds. today I revistied my Swirl effect and made us turn one way below a brightness threshold and the other way above it. The effect isn't very nice but I want to experiment with more effects on thresholds to get a feel for what might be cool.
+I want to try different effects on thresholds. today I revisited my Swirl effect and made us turn one way below a brightness threshold and the other way above it. The effect isn't very nice but I want to experiment with more effects on thresholds to get a feel for what might be cool.
 
 ### Day 90
 

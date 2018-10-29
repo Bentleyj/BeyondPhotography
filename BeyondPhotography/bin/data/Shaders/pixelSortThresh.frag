@@ -1,6 +1,6 @@
 #version 120
 
-#define SEARCH_REGION 60
+#define SEARCH_REGION 100
 // SEARCH_REGION should be closer to 100 for cool effects
 
 uniform sampler2DRect inputTexture;
@@ -22,6 +22,10 @@ vec3 hsv2rgb(vec3 c) {
     return c.z * mix(K.xxx, clamp(p - K.xxx, 0.0, 1.0), c.y);
 }
 
+float length(vec3 v) {
+    return (v.x + v.y + v.z) / 3.0;
+}
+
 void main() {
     
     vec2 uv = gl_FragCoord.xy / resolution;
@@ -30,12 +34,20 @@ void main() {
     
     vec2 uvAbs = uv * resolution;
     
-    float coord = SEARCH_REGION*floor(uvAbs.x/SEARCH_REGION);
+    float dy = SEARCH_REGION;
     
-    int index =int(uvAbs.x) - int(coord);
+    float coord = dy*floor(uvAbs.y/dy);
+    
+    int index =int(uvAbs.y) - int(coord);
+    
+    vec3 c = texture2DRect(inputTexture, vec2(uvAbs)).rgb;
+    if(length(c) < 0.5) {
+        gl_FragColor = vec4(c, 1.0);
+        return;
+    }
     
     for(int i = 0; i < SEARCH_REGION; i++) {
-        pix[i] = rgb2hsv(texture2DRect(inputTexture, vec2(coord, uvAbs.y)).rgb);
+        pix[i] = texture2DRect(inputTexture, vec2(uvAbs.x, coord)).rgb;
         coord++;
     }
     
@@ -47,7 +59,7 @@ void main() {
         }
     }
     
-    vec3 tc = hsv2rgb(pix[index]);
+    vec3 tc = pix[index];
     
     gl_FragColor = vec4(tc, 1.0);
 }
