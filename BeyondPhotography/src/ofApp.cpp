@@ -1046,6 +1046,14 @@ void ofApp::setup(){
     pixelSortThresh.height = images[0].getHeight();
     effects.push_back(pixelSortThresh);
     
+    Effect drosteThresh;
+    drosteThresh.loadShader("Shaders/drosteThresh");
+    drosteThresh.addUniform("resolution", &screenResolution);
+    drosteThresh.addUniform("inputTexture", &images[0]);
+    drosteThresh.width = images[0].getWidth();
+    drosteThresh.height = images[0].getHeight();
+    effects.push_back(drosteThresh);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
