@@ -389,3 +389,7 @@ Exciting day today! Been busy at work so not updating as much as I normally woul
 ### Day 91
 
 Took a break from working on these to go up to Glasgow to see my brother graduate! It was a lovely trip but now I'm back and decided to apply the principles of thresholding to my pixel sorting looks for very cool results. I'm applying the pixel sorting effects to the imagery but only on pixels with a brightness above and below a certain threshold of brightness. This means that features that are distinct get picked out to sit overtop of the pixel sorting effects.
+
+### Day 92
+
+Going back over my old effects and adding the threshold to them. Just mixing my previous effects with the existing image on a threshold is proving really fruitful. Did this first with the Droste Effect.
