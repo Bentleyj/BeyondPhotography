@@ -1054,6 +1054,14 @@ void ofApp::setup(){
     drosteThresh.height = images[0].getHeight();
     effects.push_back(drosteThresh);
     
+    Effect weaveThresh;
+    weaveThresh.loadShader("Shaders/weaveThresh");
+    weaveThresh.addUniform("resolution", &screenResolution);
+    weaveThresh.addUniform("inputTexture", &images[0]);
+    weaveThresh.width = images[0].getWidth();
+    weaveThresh.height = images[0].getHeight();
+    effects.push_back(weaveThresh);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
