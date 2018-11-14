@@ -400,4 +400,4 @@ Today I used my thresholding filter to filter the weave effect which was origina
 
 ### Day 94
 
-Today I added an effect called polarpixelswobble which basically pixelates the image along radial lines like I did with my polar coordinate pixelation however the borders of that pixelation are all altered by perlin noise. You can modify the parameters of the perlin noise to no end to create exciting effects!
+Today I added an effect called polarpixelswobble which basically pixelates the image along radial lines like I did with my polar coordinate pixelation however the borders of that pixelation are all altered by perlin noise. You can modify the parameters of the perlin noise to no end to create exciting effects! Also added another effect based on the 2nd polar wobble.
