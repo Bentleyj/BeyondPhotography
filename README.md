@@ -397,3 +397,7 @@ Going back over my old effects and adding the threshold to them. Just mixing my 
 ### Day 93
 
 Today I used my thresholding filter to filter the weave effect which was originally actually a mistaken bug effect but now looks really cool! Because the imagery of the weave effect was primarily one that overlapped in to the black parts of the image, if I applied the theshold on the dark side (ie applied the weave effect to the dark parts of the image) I found it ended up looking a lot like I had simply pasted the bright image over the dark one. The other way around however was very effective which is essentially only applying the weave effect to the brightest parts of the image. Perhaps doing both would be cool? One thing I'm starting to realize about this thresholding is that the important components stick out like eyeballs etc. because they are darker.
+
+### Day 94
+
+Today I added an effect called polarpixelswobble which basically pixelates the image along radial lines like I did with my polar coordinate pixelation however the borders of that pixelation are all altered by perlin noise. You can modify the parameters of the perlin noise to no end to create exciting effects!
