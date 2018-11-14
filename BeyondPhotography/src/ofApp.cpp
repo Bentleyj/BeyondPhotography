@@ -1070,6 +1070,14 @@ void ofApp::setup(){
     polarPixelNoise.height = images[0].getHeight();
     effects.push_back(polarPixelNoise);
     
+    Effect polarPixelNoise2;
+    polarPixelNoise2.loadShader("Shaders/polarPixelNoise2");
+    polarPixelNoise2.addUniform("resolution", &screenResolution);
+    polarPixelNoise2.addUniform("inputTexture", &images[0]);
+    polarPixelNoise2.width = images[0].getWidth();
+    polarPixelNoise2.height = images[0].getHeight();
+    effects.push_back(polarPixelNoise2);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
