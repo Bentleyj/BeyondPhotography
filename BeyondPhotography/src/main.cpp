@@ -4,8 +4,7 @@
 //========================================================================
 int main( ){
     ofGLFWWindowSettings settings;
-    settings.width = 1080;
-    settings.height = 540;
+    settings.setSize(1080, 540);
     settings.decorated = true;
     settings.setPosition(ofVec2f(0, 0));
     settings.windowMode = OF_WINDOW;

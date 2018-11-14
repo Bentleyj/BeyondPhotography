@@ -1062,6 +1062,14 @@ void ofApp::setup(){
     weaveThresh.height = images[0].getHeight();
     effects.push_back(weaveThresh);
     
+    Effect polarPixelNoise;
+    polarPixelNoise.loadShader("Shaders/polarPixelNoise");
+    polarPixelNoise.addUniform("resolution", &screenResolution);
+    polarPixelNoise.addUniform("inputTexture", &images[0]);
+    polarPixelNoise.width = images[0].getWidth();
+    polarPixelNoise.height = images[0].getHeight();
+    effects.push_back(polarPixelNoise);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
