@@ -401,3 +401,7 @@ Today I used my thresholding filter to filter the weave effect which was origina
 ### Day 94
 
 Today I added an effect called polarpixelswobble which basically pixelates the image along radial lines like I did with my polar coordinate pixelation however the borders of that pixelation are all altered by perlin noise. You can modify the parameters of the perlin noise to no end to create exciting effects! Also added another effect based on the 2nd polar wobble.
+
+### Day 95
+
+After a significant break for Xmas + projects + general lack of inspiration I decided I wanted to pick this back up again! I decided to start by manipulating color through various functions. To start I have just created a basic Sepia effect which makes her look all sepia-like. I want to try all kinds of things with this sinple kind of color manipulation and I figured this was a good place to start. To do this I found an algorithm online for converting to Sepia. It turns out that Sepia is just a kind of weighted RGB mixture. It also turns out that sepia was originally created using a chemical found in the ink sacks of cuttlefish! Super cool stuff.
