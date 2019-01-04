@@ -1078,6 +1078,22 @@ void ofApp::setup(){
     polarPixelNoise2.height = images[0].getHeight();
     effects.push_back(polarPixelNoise2);
     
+    Effect polarPixelNoiseVar;
+    polarPixelNoiseVar.loadShader("Shaders/polarPixelNoiseVar");
+    polarPixelNoiseVar.addUniform("resolution", &screenResolution);
+    polarPixelNoiseVar.addUniform("inputTexture", &images[0]);
+    polarPixelNoiseVar.width = images[0].getWidth();
+    polarPixelNoiseVar.height = images[0].getHeight();
+    effects.push_back(polarPixelNoiseVar);
+    
+    Effect sepia;
+    sepia.loadShader("Shaders/sepia");
+    sepia.addUniform("resolution", &screenResolution);
+    sepia.addUniform("inputTexture", &images[0]);
+    sepia.width = images[0].getWidth();
+    sepia.height = images[0].getHeight();
+    effects.push_back(sepia);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
