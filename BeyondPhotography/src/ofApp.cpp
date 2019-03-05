@@ -1062,6 +1062,38 @@ void ofApp::setup(){
     weaveThresh.height = images[0].getHeight();
     effects.push_back(weaveThresh);
     
+    Effect polarPixelNoise;
+    polarPixelNoise.loadShader("Shaders/polarPixelNoise");
+    polarPixelNoise.addUniform("resolution", &screenResolution);
+    polarPixelNoise.addUniform("inputTexture", &images[0]);
+    polarPixelNoise.width = images[0].getWidth();
+    polarPixelNoise.height = images[0].getHeight();
+    effects.push_back(polarPixelNoise);
+    
+    Effect polarPixelNoise2;
+    polarPixelNoise2.loadShader("Shaders/polarPixelNoise2");
+    polarPixelNoise2.addUniform("resolution", &screenResolution);
+    polarPixelNoise2.addUniform("inputTexture", &images[0]);
+    polarPixelNoise2.width = images[0].getWidth();
+    polarPixelNoise2.height = images[0].getHeight();
+    effects.push_back(polarPixelNoise2);
+    
+    Effect polarPixelNoiseVar;
+    polarPixelNoiseVar.loadShader("Shaders/polarPixelNoiseVar");
+    polarPixelNoiseVar.addUniform("resolution", &screenResolution);
+    polarPixelNoiseVar.addUniform("inputTexture", &images[0]);
+    polarPixelNoiseVar.width = images[0].getWidth();
+    polarPixelNoiseVar.height = images[0].getHeight();
+    effects.push_back(polarPixelNoiseVar);
+    
+    Effect sepia;
+    sepia.loadShader("Shaders/sepia");
+    sepia.addUniform("resolution", &screenResolution);
+    sepia.addUniform("inputTexture", &images[0]);
+    sepia.width = images[0].getWidth();
+    sepia.height = images[0].getHeight();
+    effects.push_back(sepia);
+    
     Effect brightnessSquare;
     brightnessSquare.loadShader("Shaders/brightnessSquare");
     brightnessSquare.addUniform("resolution", &screenResolution);
@@ -1069,7 +1101,7 @@ void ofApp::setup(){
     brightnessSquare.width = images[0].getWidth();
     brightnessSquare.height = images[0].getHeight();
     effects.push_back(brightnessSquare);
-
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
