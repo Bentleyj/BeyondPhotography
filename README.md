@@ -397,3 +397,7 @@ Going back over my old effects and adding the threshold to them. Just mixing my 
 ### Day 93
 
 Today I used my thresholding filter to filter the weave effect which was originally actually a mistaken bug effect but now looks really cool! Because the imagery of the weave effect was primarily one that overlapped in to the black parts of the image, if I applied the theshold on the dark side (ie applied the weave effect to the dark parts of the image) I found it ended up looking a lot like I had simply pasted the bright image over the dark one. The other way around however was very effective which is essentially only applying the weave effect to the brightest parts of the image. Perhaps doing both would be cool? One thing I'm starting to realize about this thresholding is that the important components stick out like eyeballs etc. because they are darker.
+
+### Day 94
+
+After a long hiatus I am back after starting a new job. Today I decided to look at my old square drawing effect and see if I could do anything interesting with that. I decided to apply the effect in a grid using the brightness of the center pixel to determine the size of the square. It's come out nicely! I also did it using the brightness of each individual pixel which creates a more "cracked" look. Hope more is to come!
