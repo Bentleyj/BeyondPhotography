@@ -30,56 +30,56 @@ void ofApp::setup(){
     diagonal.width = images[0].getWidth();
     diagonal.height = images[0].getHeight();
     effects.push_back(diagonal);
-    
+
     Effect modulo;
     modulo.loadShader("Shaders/modulo");
     modulo.addUniform("resolution", &screenResolution);
     modulo.width = images[0].getWidth();
     modulo.height = images[0].getHeight();
     effects.push_back(modulo);
-    
+
     Effect sine;
     sine.loadShader("Shaders/sine");
     sine.addUniform("resolution", &screenResolution);
     sine.width = images[0].getWidth();
     sine.height = images[0].getHeight();
     effects.push_back(sine);
-    
+
     Effect atan;
     atan.loadShader("Shaders/atan");
     atan.addUniform("resolution", &screenResolution);
     atan.width = images[0].getWidth();
     atan.height = images[0].getHeight();
     effects.push_back(atan);
-    
+
     Effect cond1;
     cond1.loadShader("Shaders/cond1");
     cond1.addUniform("resolution", &screenResolution);
     cond1.width = images[0].getWidth();
     cond1.height = images[0].getHeight();
     effects.push_back(cond1);
-    
+
     Effect cond2;
     cond2.loadShader("Shaders/cond2");
     cond2.addUniform("resolution", &screenResolution);
     cond2.width = images[0].getWidth();
     cond2.height = images[0].getHeight();
     effects.push_back(cond2);
-    
+
     Effect pol1;
     pol1.loadShader("Shaders/pol1");
     pol1.addUniform("resolution", &screenResolution);
     pol1.width = images[0].getWidth();
     pol1.height = images[0].getHeight();
     effects.push_back(pol1);
-    
+
     Effect spiral;
     spiral.loadShader("Shaders/spiral");
     spiral.addUniform("resolution", &screenResolution);
     spiral.width = images[0].getWidth();
     spiral.height = images[0].getHeight();
     effects.push_back(spiral);
-    
+
     Effect negative;
     negative.loadShader("Shaders/negative");
     negative.addUniform("resolution", &screenResolution);
@@ -87,7 +87,7 @@ void ofApp::setup(){
     negative.width = images[0].getWidth();
     negative.height = images[0].getHeight();
     effects.push_back(negative);
-    
+
     Effect solarize;
     solarize.loadShader("Shaders/solarize");
     solarize.addUniform("resolution", &screenResolution);
@@ -95,7 +95,7 @@ void ofApp::setup(){
     solarize.width = images[0].getWidth();
     solarize.height = images[0].getHeight();
     effects.push_back(solarize);
-    
+
     Effect solarizeFade;
     solarizeFade.loadShader("Shaders/solarizeFade");
     solarizeFade.addUniform("resolution", &screenResolution);
@@ -103,7 +103,7 @@ void ofApp::setup(){
     solarizeFade.width = images[0].getWidth();
     solarizeFade.height = images[0].getHeight();
     effects.push_back(solarizeFade);
-    
+
     Effect blur;
     blur.loadShader("Shaders/blur");
     blur.addUniform("resolution", &screenResolution);
@@ -111,7 +111,7 @@ void ofApp::setup(){
     blur.width = images[0].getWidth();
     blur.height = images[0].getHeight();
     effects.push_back(blur);
-    
+
     Effect sharpen;
     sharpen.loadShader("Shaders/sharpen");
     sharpen.addUniform("resolution", &screenResolution);
@@ -119,7 +119,7 @@ void ofApp::setup(){
     sharpen.width = images[0].getWidth();
     sharpen.height = images[0].getHeight();
     effects.push_back(sharpen);
-    
+
     Effect relief;
     relief.loadShader("Shaders/relief");
     relief.addUniform("resolution", &screenResolution);
@@ -127,7 +127,7 @@ void ofApp::setup(){
     relief.width = images[0].getWidth();
     relief.height = images[0].getHeight();
     effects.push_back(relief);
-    
+
     Effect mirrorY;
     mirrorY.loadShader("Shaders/mirrorY");
     mirrorY.addUniform("resolution", &screenResolution);
@@ -135,7 +135,7 @@ void ofApp::setup(){
     mirrorY.width = images[0].getWidth();
     mirrorY.height = images[0].getHeight();
     effects.push_back(mirrorY);
-    
+
     Effect rotate90;
     rotate90.loadShader("Shaders/rotate90");
     rotate90.addUniform("resolution", &screenResolution);
@@ -143,7 +143,7 @@ void ofApp::setup(){
     rotate90.width = images[0].getWidth();
     rotate90.height = images[0].getHeight();
     effects.push_back(rotate90);
-    
+
     Effect stretchX;
     stretchX.loadShader("Shaders/stretchX");
     stretchX.addUniform("resolution", &screenResolution);
@@ -151,7 +151,7 @@ void ofApp::setup(){
     stretchX.width = images[0].getWidth();
     stretchX.height = images[0].getHeight();
     effects.push_back(stretchX);
-    
+
     Effect shrink;
     shrink.loadShader("Shaders/shrink");
     shrink.addUniform("resolution", &screenResolution);
@@ -159,7 +159,7 @@ void ofApp::setup(){
     shrink.width = images[0].getWidth();
     shrink.height = images[0].getHeight();
     effects.push_back(shrink);
-    
+
     Effect mirrorX;
     mirrorX.loadShader("Shaders/mirrorX");
     mirrorX.addUniform("resolution", &screenResolution);
@@ -167,7 +167,7 @@ void ofApp::setup(){
     mirrorX.width = images[0].getWidth();
     mirrorX.height = images[0].getHeight();
     effects.push_back(mirrorX);
-    
+
     Effect mirrorX2;
     mirrorX2.loadShader("Shaders/mirrorX2");
     mirrorX2.addUniform("resolution", &screenResolution);
@@ -175,7 +175,7 @@ void ofApp::setup(){
     mirrorX2.width = images[0].getWidth();
     mirrorX2.height = images[0].getHeight();
     effects.push_back(mirrorX2);
-    
+
     Effect blend;
     blend.loadShader("Shaders/blend");
     blend.addUniform("resolution", &screenResolution);
@@ -184,7 +184,7 @@ void ofApp::setup(){
     blend.width = images[0].getWidth();
     blend.height = images[0].getHeight();
     effects.push_back(blend);
-    
+
     Effect blendLinear;
     blendLinear.loadShader("Shaders/blendLinear");
     blendLinear.addUniform("resolution", &screenResolution);
@@ -193,7 +193,7 @@ void ofApp::setup(){
     blendLinear.width = images[0].getWidth();
     blendLinear.height = images[0].getHeight();
     effects.push_back(blendLinear);
-    
+
     Effect blendCenter;
     blendCenter.loadShader("Shaders/blendCenter");
     blendCenter.addUniform("resolution", &screenResolution);
@@ -202,7 +202,7 @@ void ofApp::setup(){
     blendCenter.width = images[0].getWidth();
     blendCenter.height = images[0].getHeight();
     effects.push_back(blendCenter);
-    
+
     Effect blendBrightness;
     blendBrightness.loadShader("Shaders/blendBrightness");
     blendBrightness.addUniform("resolution", &screenResolution);
@@ -211,7 +211,7 @@ void ofApp::setup(){
     blendBrightness.width = images[0].getWidth();
     blendBrightness.height = images[0].getHeight();
     effects.push_back(blendBrightness);
-    
+
     Effect blendBrightnessSmooth;
     blendBrightnessSmooth.loadShader("Shaders/blendBrightnessSmooth");
     blendBrightnessSmooth.addUniform("resolution", &screenResolution);
@@ -220,7 +220,7 @@ void ofApp::setup(){
     blendBrightnessSmooth.width = images[0].getWidth();
     blendBrightnessSmooth.height = images[0].getHeight();
     effects.push_back(blendBrightnessSmooth);
-    
+
     Effect sinStretch;
     sinStretch.loadShader("Shaders/sinStretch");
     sinStretch.addUniform("resolution", &screenResolution);
@@ -228,7 +228,7 @@ void ofApp::setup(){
     sinStretch.width = images[0].getWidth();
     sinStretch.height = images[0].getHeight();
     effects.push_back(sinStretch);
-    
+
     Effect cone;
     cone.loadShader("Shaders/cone");
     cone.addUniform("resolution", &screenResolution);
@@ -236,7 +236,7 @@ void ofApp::setup(){
     cone.width = images[0].getWidth();
     cone.height = images[0].getHeight();
     effects.push_back(cone);
-    
+
     Effect shear;
     shear.loadShader("Shaders/shear");
     shear.addUniform("resolution", &screenResolution);
@@ -244,7 +244,7 @@ void ofApp::setup(){
     shear.width = images[0].getWidth();
     shear.height = images[0].getHeight();
     effects.push_back(shear);
-    
+
     Effect Bentley;
     Bentley.loadShader("Shaders/Bentley");
     Bentley.addUniform("resolution", &screenResolution);
@@ -252,7 +252,7 @@ void ofApp::setup(){
     Bentley.width = images[0].getWidth();
     Bentley.height = images[0].getHeight();
     effects.push_back(Bentley);
-    
+
     Effect BentleyRand;
     BentleyRand.loadShader("Shaders/BentleyRand");
     BentleyRand.addUniform("resolution", &screenResolution);
@@ -260,7 +260,7 @@ void ofApp::setup(){
     BentleyRand.width = images[0].getWidth();
     BentleyRand.height = images[0].getHeight();
     effects.push_back(BentleyRand);
-    
+
     Effect Melt;
     Melt.loadShader("Shaders/Melt");
     Melt.addUniform("resolution", &screenResolution);
@@ -268,7 +268,7 @@ void ofApp::setup(){
     Melt.width = images[0].getWidth();
     Melt.height = images[0].getHeight();
     effects.push_back(Melt);
-    
+
     Effect Split;
     Split.loadShader("Shaders/Split");
     Split.addUniform("resolution", &screenResolution);
@@ -276,7 +276,7 @@ void ofApp::setup(){
     Split.width = images[0].getWidth();
     Split.height = images[0].getHeight();
     effects.push_back(Split);
-    
+
     Effect IBM;
     IBM.loadShader("Shaders/IBM");
     IBM.addUniform("resolution", &screenResolution);
@@ -284,7 +284,7 @@ void ofApp::setup(){
     IBM.width = images[0].getWidth();
     IBM.height = images[0].getHeight();
     effects.push_back(IBM);
-    
+
     Effect Swirl;
     Swirl.loadShader("Shaders/Swirl");
     Swirl.addUniform("resolution", &screenResolution);
@@ -292,7 +292,7 @@ void ofApp::setup(){
     Swirl.width = images[0].getWidth();
     Swirl.height = images[0].getHeight();
     effects.push_back(Swirl);
-    
+
     Effect oilPaint;
     oilPaint.loadShader("Shaders/oilPaint");
     oilPaint.addUniform("resolution", &screenResolution);
@@ -300,7 +300,7 @@ void ofApp::setup(){
     oilPaint.width = images[0].getWidth();
     oilPaint.height = images[0].getHeight();
     effects.push_back(oilPaint);
-    
+
     Effect CylinderProj;
     CylinderProj.loadShader("Shaders/CylinderProj");
     CylinderProj.addUniform("resolution", &screenResolution);
@@ -308,7 +308,7 @@ void ofApp::setup(){
     CylinderProj.width = images[0].getWidth();
     CylinderProj.height = images[0].getHeight();
     effects.push_back(CylinderProj);
-    
+
     Effect BlockShift;
     BlockShift.loadShader("Shaders/BlockShift");
     BlockShift.addUniform("resolution", &screenResolution);
@@ -316,7 +316,7 @@ void ofApp::setup(){
     BlockShift.width = images[0].getWidth();
     BlockShift.height = images[0].getHeight();
     effects.push_back(BlockShift);
-    
+
     Effect warp;
     warp.loadShader("Shaders/warp");
     warp.addUniform("resolution", &screenResolution);
@@ -325,7 +325,7 @@ void ofApp::setup(){
     warp.width = images[0].getWidth();
     warp.height = images[0].getHeight();
     effects.push_back(warp);
-    
+
     Effect LSD;
     LSD.loadShader("Shaders/LSD");
     LSD.addUniform("resolution", &screenResolution);
@@ -333,7 +333,7 @@ void ofApp::setup(){
     LSD.width = images[0].getWidth();
     LSD.height = images[0].getHeight();
     effects.push_back(LSD);
-    
+
     Effect stretchXY;
     stretchXY.loadShader("Shaders/stretchXY");
     stretchXY.addUniform("resolution", &screenResolution);
@@ -341,7 +341,7 @@ void ofApp::setup(){
     stretchXY.width = images[0].getWidth();
     stretchXY.height = images[0].getHeight();
     effects.push_back(stretchXY);
-    
+
     Effect glassVertical;
     glassVertical.loadShader("Shaders/glassVertical");
     glassVertical.addUniform("resolution", &screenResolution);
@@ -349,7 +349,7 @@ void ofApp::setup(){
     glassVertical.width = images[0].getWidth();
     glassVertical.height = images[0].getHeight();
     effects.push_back(glassVertical);
-    
+
     Effect glassSpiral;
     glassSpiral.loadShader("Shaders/glassSpiral");
     glassSpiral.addUniform("resolution", &screenResolution);
@@ -357,7 +357,7 @@ void ofApp::setup(){
     glassSpiral.width = images[0].getWidth();
     glassSpiral.height = images[0].getHeight();
     effects.push_back(glassSpiral);
-    
+
     Effect fishEye;
     fishEye.loadShader("Shaders/fishEye");
     fishEye.addUniform("resolution", &screenResolution);
@@ -365,7 +365,7 @@ void ofApp::setup(){
     fishEye.width = images[0].getWidth();
     fishEye.height = images[0].getHeight();
     effects.push_back(fishEye);
-    
+
     Effect randomPixels;
     randomPixels.loadShader("Shaders/randomPixels");
     randomPixels.addUniform("resolution", &screenResolution);
@@ -373,7 +373,7 @@ void ofApp::setup(){
     randomPixels.width = images[0].getWidth();
     randomPixels.height = images[0].getHeight();
     effects.push_back(randomPixels);
-    
+
     Effect pixelate;
     pixelate.loadShader("Shaders/pixelate");
     pixelate.addUniform("resolution", &screenResolution);
@@ -381,7 +381,7 @@ void ofApp::setup(){
     pixelate.width = images[0].getWidth();
     pixelate.height = images[0].getHeight();
     effects.push_back(pixelate);
-    
+
     Effect weave;
     weave.loadShader("Shaders/weave");
     weave.addUniform("resolution", &screenResolution);
@@ -389,7 +389,7 @@ void ofApp::setup(){
     weave.width = images[0].getWidth();
     weave.height = images[0].getHeight();
     effects.push_back(weave);
-    
+
     Effect tileFlip;
     tileFlip.loadShader("Shaders/tileFlip");
     tileFlip.addUniform("resolution", &screenResolution);
@@ -397,7 +397,7 @@ void ofApp::setup(){
     tileFlip.width = images[0].getWidth();
     tileFlip.height = images[0].getHeight();
     effects.push_back(tileFlip);
-    
+
     Effect tileExplode;
     tileExplode.loadShader("Shaders/tileExplode");
     tileExplode.addUniform("resolution", &screenResolution);
@@ -405,7 +405,7 @@ void ofApp::setup(){
     tileExplode.width = images[0].getWidth();
     tileExplode.height = images[0].getHeight();
     effects.push_back(tileExplode);
-    
+
     Effect gridExplode;
     gridExplode.loadShader("Shaders/gridExplode");
     gridExplode.addUniform("resolution", &screenResolution);
@@ -413,7 +413,7 @@ void ofApp::setup(){
     gridExplode.width = images[0].getWidth();
     gridExplode.height = images[0].getHeight();
     effects.push_back(gridExplode);
-    
+
     Effect thresholdRGB;
     thresholdRGB.loadShader("Shaders/thresholdRGB");
     thresholdRGB.addUniform("resolution", &screenResolution);
@@ -421,7 +421,7 @@ void ofApp::setup(){
     thresholdRGB.width = images[0].getWidth();
     thresholdRGB.height = images[0].getHeight();
     effects.push_back(thresholdRGB);
-    
+
     Effect thresholdRGBSoft;
     thresholdRGBSoft.loadShader("Shaders/thresholdRGBSoft");
     thresholdRGBSoft.addUniform("resolution", &screenResolution);
@@ -429,7 +429,7 @@ void ofApp::setup(){
     thresholdRGBSoft.width = images[0].getWidth();
     thresholdRGBSoft.height = images[0].getHeight();
     effects.push_back(thresholdRGBSoft);
-    
+
     Effect pixelsRandY;
     pixelsRandY.loadShader("Shaders/pixelsRandY");
     pixelsRandY.addUniform("resolution", &screenResolution);
@@ -437,7 +437,7 @@ void ofApp::setup(){
     pixelsRandY.width = images[0].getWidth();
     pixelsRandY.height = images[0].getHeight();
     effects.push_back(pixelsRandY);
-    
+
     Effect pixelsRandX;
     pixelsRandX.loadShader("Shaders/pixelsRandX");
     pixelsRandX.addUniform("resolution", &screenResolution);
@@ -445,7 +445,7 @@ void ofApp::setup(){
     pixelsRandX.width = images[0].getWidth();
     pixelsRandX.height = images[0].getHeight();
     effects.push_back(pixelsRandX);
-    
+
     Effect pixelsSlant;
     pixelsSlant.loadShader("Shaders/pixelsSlant");
     pixelsSlant.addUniform("resolution", &screenResolution);
@@ -453,7 +453,7 @@ void ofApp::setup(){
     pixelsSlant.width = images[0].getWidth();
     pixelsSlant.height = images[0].getHeight();
     effects.push_back(pixelsSlant);
-    
+
     Effect pixelsStep;
     pixelsStep.loadShader("Shaders/pixelsStep");
     pixelsStep.addUniform("resolution", &screenResolution);
@@ -461,7 +461,7 @@ void ofApp::setup(){
     pixelsStep.width = images[0].getWidth();
     pixelsStep.height = images[0].getHeight();
     effects.push_back(pixelsStep);
-    
+
     Effect pixelsFade;
     pixelsFade.loadShader("Shaders/pixelsFade");
     pixelsFade.addUniform("resolution", &screenResolution);
@@ -469,7 +469,7 @@ void ofApp::setup(){
     pixelsFade.width = images[0].getWidth();
     pixelsFade.height = images[0].getHeight();
     effects.push_back(pixelsFade);
-    
+
 //    Effect oilPaintColor;
 //    oilPaintColor.loadShader("Shaders/oilPaintColor");
 //    oilPaintColor.addUniform("resolution", &screenResolution);
@@ -477,7 +477,7 @@ void ofApp::setup(){
 //    oilPaintColor.width = images[0].getWidth();
 //    oilPaintColor.height = images[0].getHeight();
 //    effects.push_back(oilPaintColor);
-    
+
     Effect pixelsLegoFade;
     pixelsLegoFade.loadShader("Shaders/pixelsLegoFade");
     pixelsLegoFade.addUniform("resolution", &screenResolution);
@@ -485,7 +485,7 @@ void ofApp::setup(){
     pixelsLegoFade.width = images[0].getWidth();
     pixelsLegoFade.height = images[0].getHeight();
     effects.push_back(pixelsLegoFade);
-    
+
     Effect woodWarp;
     woodWarp.loadShader("Shaders/woodWarp");
     woodWarp.addUniform("resolution", &screenResolution);
@@ -494,7 +494,7 @@ void ofApp::setup(){
     woodWarp.width = images[0].getWidth();
     woodWarp.height = images[0].getHeight();
     effects.push_back(woodWarp);
-    
+
     Effect woodSwirl;
     woodSwirl.loadShader("Shaders/woodSwirl");
     woodSwirl.addUniform("resolution", &screenResolution);
@@ -503,7 +503,7 @@ void ofApp::setup(){
     woodSwirl.width = images[0].getWidth();
     woodSwirl.height = images[0].getHeight();
     effects.push_back(woodSwirl);
-    
+
     Effect selfSwirl;
     selfSwirl.loadShader("Shaders/selfSwirl");
     selfSwirl.addUniform("resolution", &screenResolution);
@@ -511,7 +511,7 @@ void ofApp::setup(){
     selfSwirl.width = images[0].getWidth();
     selfSwirl.height = images[0].getHeight();
     effects.push_back(selfSwirl);
-    
+
     Effect selfWarp;
     selfWarp.loadShader("Shaders/selfWarp");
     selfWarp.addUniform("resolution", &screenResolution);
@@ -519,7 +519,7 @@ void ofApp::setup(){
     selfWarp.width = images[0].getWidth();
     selfWarp.height = images[0].getHeight();
     effects.push_back(selfWarp);
-    
+
     Effect swizzleI;
     swizzleI.loadShader("Shaders/swizzleI");
     swizzleI.addUniform("resolution", &screenResolution);
@@ -527,7 +527,7 @@ void ofApp::setup(){
     swizzleI.width = images[0].getWidth();
     swizzleI.height = images[0].getHeight();
     effects.push_back(swizzleI);
-    
+
     Effect cubed;
     cubed.loadShader("Shaders/cubed");
     cubed.addUniform("resolution", &screenResolution);
@@ -535,7 +535,7 @@ void ofApp::setup(){
     cubed.width = images[0].getWidth();
     cubed.height = images[0].getHeight();
     effects.push_back(cubed);
-    
+
     Effect peak;
     peak.loadShader("Shaders/peak");
     peak.addUniform("resolution", &screenResolution);
@@ -543,7 +543,7 @@ void ofApp::setup(){
     peak.width = images[0].getWidth();
     peak.height = images[0].getHeight();
     effects.push_back(peak);
-    
+
     Effect moduloBackground;
     moduloBackground.loadShader("Shaders/moduloBackground");
     moduloBackground.addUniform("resolution", &screenResolution);
@@ -551,7 +551,7 @@ void ofApp::setup(){
     moduloBackground.width = images[0].getWidth();
     moduloBackground.height = images[0].getHeight();
     effects.push_back(moduloBackground);
-    
+
     Effect zigzag;
     zigzag.loadShader("Shaders/zigzag");
     zigzag.addUniform("resolution", &screenResolution);
@@ -559,7 +559,7 @@ void ofApp::setup(){
     zigzag.width = images[0].getWidth();
     zigzag.height = images[0].getHeight();
     effects.push_back(zigzag);
-    
+
     Effect zigzagX;
     zigzagX.loadShader("Shaders/zigzagX");
     zigzagX.addUniform("resolution", &screenResolution);
@@ -567,7 +567,7 @@ void ofApp::setup(){
     zigzagX.width = images[0].getWidth();
     zigzagX.height = images[0].getHeight();
     effects.push_back(zigzagX);
-    
+
     Effect polarPixel;
     polarPixel.loadShader("Shaders/polarPixel");
     polarPixel.addUniform("resolution", &screenResolution);
@@ -575,7 +575,7 @@ void ofApp::setup(){
     polarPixel.width = images[0].getWidth();
     polarPixel.height = images[0].getHeight();
     effects.push_back(polarPixel);
-    
+
     Effect polarPixel2;
     polarPixel2.loadShader("Shaders/polarPixel2");
     polarPixel2.addUniform("resolution", &screenResolution);
@@ -583,7 +583,7 @@ void ofApp::setup(){
     polarPixel2.width = images[0].getWidth();
     polarPixel2.height = images[0].getHeight();
     effects.push_back(polarPixel2);
-    
+
     Effect polarPixel3;
     polarPixel3.loadShader("Shaders/polarPixel3");
     polarPixel3.addUniform("resolution", &screenResolution);
@@ -591,7 +591,7 @@ void ofApp::setup(){
     polarPixel3.width = images[0].getWidth();
     polarPixel3.height = images[0].getHeight();
     effects.push_back(polarPixel3);
-    
+
     Effect lenticular;
     lenticular.loadShader("Shaders/lenticular");
     lenticular.addUniform("resolution", &screenResolution);
@@ -600,7 +600,7 @@ void ofApp::setup(){
     lenticular.width = images[0].getWidth();
     lenticular.height = images[0].getHeight();
     effects.push_back(lenticular);
-    
+
     Effect lenticularWide;
     lenticularWide.loadShader("Shaders/lenticularWide");
     lenticularWide.addUniform("resolution", &screenResolution);
@@ -609,7 +609,7 @@ void ofApp::setup(){
     lenticularWide.width = images[0].getWidth();
     lenticularWide.height = images[0].getHeight();
     effects.push_back(lenticularWide);
-    
+
     Effect lenticularX;
     lenticularX.loadShader("Shaders/lenticularX");
     lenticularX.addUniform("resolution", &screenResolution);
@@ -618,7 +618,7 @@ void ofApp::setup(){
     lenticularX.width = images[0].getWidth();
     lenticularX.height = images[0].getHeight();
     effects.push_back(lenticularX);
-    
+
     Effect checker;
     checker.loadShader("Shaders/checker");
     checker.addUniform("resolution", &screenResolution);
@@ -627,7 +627,7 @@ void ofApp::setup(){
     checker.width = images[0].getWidth();
     checker.height = images[0].getHeight();
     effects.push_back(checker);
-    
+
     Effect checkerNegative;
     checkerNegative.loadShader("Shaders/checkerNegative");
     checkerNegative.addUniform("resolution", &screenResolution);
@@ -635,7 +635,7 @@ void ofApp::setup(){
     checkerNegative.width = images[0].getWidth();
     checkerNegative.height = images[0].getHeight();
     effects.push_back(checkerNegative);
-    
+
     Effect opArt1;
     opArt1.loadShader("Shaders/opArt1");
     opArt1.addUniform("resolution", &screenResolution);
@@ -643,7 +643,7 @@ void ofApp::setup(){
     opArt1.width = images[0].getWidth();
     opArt1.height = images[0].getHeight();
     effects.push_back(opArt1);
-    
+
     Effect sinCity;
     sinCity.loadShader("Shaders/sinCity");
     sinCity.addUniform("resolution", &screenResolution);
@@ -651,7 +651,7 @@ void ofApp::setup(){
     sinCity.width = images[0].getWidth();
     sinCity.height = images[0].getHeight();
     effects.push_back(sinCity);
-    
+
     Effect rThresh;
     rThresh.loadShader("Shaders/rThresh");
     rThresh.addUniform("resolution", &screenResolution);
@@ -659,7 +659,7 @@ void ofApp::setup(){
     rThresh.width = images[0].getWidth();
     rThresh.height = images[0].getHeight();
     effects.push_back(rThresh);
-    
+
     Effect hsvMix;
     hsvMix.loadShader("Shaders/hsvMix");
     hsvMix.addUniform("resolution", &screenResolution);
@@ -667,7 +667,7 @@ void ofApp::setup(){
     hsvMix.width = images[0].getWidth();
     hsvMix.height = images[0].getHeight();
     effects.push_back(hsvMix);
-    
+
     Effect redWeight;
     redWeight.loadShader("Shaders/redWeight");
     redWeight.addUniform("resolution", &screenResolution);
@@ -675,7 +675,7 @@ void ofApp::setup(){
     redWeight.width = images[0].getWidth();
     redWeight.height = images[0].getHeight();
     effects.push_back(redWeight);
-    
+
     Effect sobel;
     sobel.loadShader("Shaders/sobel");
     sobel.addUniform("resolution", &screenResolution);
@@ -683,7 +683,7 @@ void ofApp::setup(){
     sobel.width = images[0].getWidth();
     sobel.height = images[0].getHeight();
     effects.push_back(sobel);
-    
+
     Effect sobelColor;
     sobelColor.loadShader("Shaders/sobelColor");
     sobelColor.addUniform("resolution", &screenResolution);
@@ -691,7 +691,7 @@ void ofApp::setup(){
     sobelColor.width = images[0].getWidth();
     sobelColor.height = images[0].getHeight();
     effects.push_back(sobelColor);
-    
+
     Effect sobelStretch;
     sobelStretch.loadShader("Shaders/sobelStretch");
     sobelStretch.addUniform("resolution", &screenResolution);
@@ -699,7 +699,7 @@ void ofApp::setup(){
     sobelStretch.width = images[0].getWidth();
     sobelStretch.height = images[0].getHeight();
     effects.push_back(sobelStretch);
-    
+
     Effect sobelStretchXY;
     sobelStretchXY.loadShader("Shaders/sobelStretchXY");
     sobelStretchXY.addUniform("resolution", &screenResolution);
@@ -707,7 +707,7 @@ void ofApp::setup(){
     sobelStretchXY.width = images[0].getWidth();
     sobelStretchXY.height = images[0].getHeight();
     effects.push_back(sobelStretchXY);
-    
+
     Effect sobelStretchCenter;
     sobelStretchCenter.loadShader("Shaders/sobelStretchCenter");
     sobelStretchCenter.addUniform("resolution", &screenResolution);
@@ -715,7 +715,7 @@ void ofApp::setup(){
     sobelStretchCenter.width = images[0].getWidth();
     sobelStretchCenter.height = images[0].getHeight();
     effects.push_back(sobelStretchCenter);
-    
+
     Effect sobelStretchY;
     sobelStretchY.loadShader("Shaders/sobelStretchY");
     sobelStretchY.addUniform("resolution", &screenResolution);
@@ -723,7 +723,7 @@ void ofApp::setup(){
     sobelStretchY.width = images[0].getWidth();
     sobelStretchY.height = images[0].getHeight();
     effects.push_back(sobelStretchY);
-    
+
     Effect sobelNegative;
     sobelNegative.loadShader("Shaders/sobelNegative");
     sobelNegative.addUniform("resolution", &screenResolution);
@@ -731,7 +731,7 @@ void ofApp::setup(){
     sobelNegative.width = images[0].getWidth();
     sobelNegative.height = images[0].getHeight();
     effects.push_back(sobelNegative);
-    
+
     Effect sobelStretchRadial;
     sobelStretchRadial.loadShader("Shaders/sobelStretchRadial");
     sobelStretchRadial.addUniform("resolution", &screenResolution);
@@ -739,7 +739,7 @@ void ofApp::setup(){
     sobelStretchRadial.width = images[0].getWidth();
     sobelStretchRadial.height = images[0].getHeight();
     effects.push_back(sobelStretchRadial);
-    
+
     Effect LogarithmicCorrection;
     LogarithmicCorrection.loadShader("Shaders/LogarithmicCorrection");
     LogarithmicCorrection.addUniform("resolution", &screenResolution);
@@ -747,7 +747,7 @@ void ofApp::setup(){
     LogarithmicCorrection.width = images[0].getWidth();
     LogarithmicCorrection.height = images[0].getHeight();
     effects.push_back(LogarithmicCorrection);
-    
+
     Effect drawingCircle;
     drawingCircle.loadShader("Shaders/drawingCircle");
     drawingCircle.addUniform("resolution", &screenResolution);
@@ -755,7 +755,7 @@ void ofApp::setup(){
     drawingCircle.width = images[0].getWidth();
     drawingCircle.height = images[0].getHeight();
     effects.push_back(drawingCircle);
-    
+
     Effect drawingLine;
     drawingLine.loadShader("Shaders/drawingLine");
     drawingLine.addUniform("resolution", &screenResolution);
@@ -763,7 +763,7 @@ void ofApp::setup(){
     drawingLine.width = images[0].getWidth();
     drawingLine.height = images[0].getHeight();
     effects.push_back(drawingLine);
-    
+
     Effect HypnoTarget;
     HypnoTarget.loadShader("Shaders/HypnoTarget");
     HypnoTarget.addUniform("resolution", &screenResolution);
@@ -771,7 +771,7 @@ void ofApp::setup(){
     HypnoTarget.width = images[0].getWidth();
     HypnoTarget.height = images[0].getHeight();
     effects.push_back(HypnoTarget);
-    
+
     Effect HypnoFan;
     HypnoFan.loadShader("Shaders/HypnoFan");
     HypnoFan.addUniform("resolution", &screenResolution);
@@ -779,7 +779,7 @@ void ofApp::setup(){
     HypnoFan.width = images[0].getWidth();
     HypnoFan.height = images[0].getHeight();
     effects.push_back(HypnoFan);
-    
+
     Effect sobelPix;
     sobelPix.loadShader("Shaders/sobelPix");
     sobelPix.addUniform("resolution", &screenResolution);
@@ -787,7 +787,7 @@ void ofApp::setup(){
     sobelPix.width = images[0].getWidth();
     sobelPix.height = images[0].getHeight();
     effects.push_back(sobelPix);
-    
+
     Effect sobelPixBlocks;
     sobelPixBlocks.loadShader("Shaders/sobelPixBlocks");
     sobelPixBlocks.addUniform("resolution", &screenResolution);
@@ -795,7 +795,7 @@ void ofApp::setup(){
     sobelPixBlocks.width = images[0].getWidth();
     sobelPixBlocks.height = images[0].getHeight();
     effects.push_back(sobelPixBlocks);
-    
+
     Effect colorPix;
     colorPix.loadShader("Shaders/colorPix");
     colorPix.addUniform("resolution", &screenResolution);
@@ -803,7 +803,7 @@ void ofApp::setup(){
     colorPix.width = images[0].getWidth();
     colorPix.height = images[0].getHeight();
     effects.push_back(colorPix);
-    
+
     Effect brightnessPix;
     brightnessPix.loadShader("Shaders/brightnessPix");
     brightnessPix.addUniform("resolution", &screenResolution);
@@ -811,7 +811,7 @@ void ofApp::setup(){
     brightnessPix.width = images[0].getWidth();
     brightnessPix.height = images[0].getHeight();
     effects.push_back(brightnessPix);
-    
+
     Effect drawingArcGrid;
     drawingArcGrid.loadShader("Shaders/drawingArcGrid");
     drawingArcGrid.addUniform("resolution", &screenResolution);
@@ -819,7 +819,7 @@ void ofApp::setup(){
     drawingArcGrid.width = images[0].getWidth();
     drawingArcGrid.height = images[0].getHeight();
     effects.push_back(drawingArcGrid);
-    
+
     Effect circleCrochette;
     circleCrochette.loadShader("Shaders/circleCrochette");
     circleCrochette.addUniform("resolution", &screenResolution);
@@ -827,7 +827,7 @@ void ofApp::setup(){
     circleCrochette.width = images[0].getWidth();
     circleCrochette.height = images[0].getHeight();
     effects.push_back(circleCrochette);
-    
+
     Effect circleGrid;
     circleGrid.loadShader("Shaders/circleGrid");
     circleGrid.addUniform("resolution", &screenResolution);
@@ -835,7 +835,7 @@ void ofApp::setup(){
     circleGrid.width = images[0].getWidth();
     circleGrid.height = images[0].getHeight();
     effects.push_back(circleGrid);
-    
+
     Effect crossGrid;
     crossGrid.loadShader("Shaders/crossGrid");
     crossGrid.addUniform("resolution", &screenResolution);
@@ -843,7 +843,7 @@ void ofApp::setup(){
     crossGrid.width = images[0].getWidth();
     crossGrid.height = images[0].getHeight();
     effects.push_back(crossGrid);
-    
+
     Effect drawingSquare;
     drawingSquare.loadShader("Shaders/drawingSquare");
     drawingSquare.addUniform("resolution", &screenResolution);
@@ -851,7 +851,7 @@ void ofApp::setup(){
     drawingSquare.width = images[0].getWidth();
     drawingSquare.height = images[0].getHeight();
     effects.push_back(drawingSquare);
-    
+
     Effect triangleGrid;
     triangleGrid.loadShader("Shaders/triangleGrid");
     triangleGrid.addUniform("resolution", &screenResolution);
@@ -859,7 +859,7 @@ void ofApp::setup(){
     triangleGrid.width = images[0].getWidth();
     triangleGrid.height = images[0].getHeight();
     effects.push_back(triangleGrid);
-    
+
     Effect quadSmudge;
     quadSmudge.loadShader("Shaders/quadSmudge");
     quadSmudge.addUniform("resolution", &screenResolution);
@@ -867,7 +867,7 @@ void ofApp::setup(){
     quadSmudge.width = images[0].getWidth();
     quadSmudge.height = images[0].getHeight();
     effects.push_back(quadSmudge);
-    
+
     Effect searchSmudge;
     searchSmudge.loadShader("Shaders/searchSmudge");
     searchSmudge.addUniform("resolution", &screenResolution);
@@ -875,7 +875,7 @@ void ofApp::setup(){
     searchSmudge.width = images[0].getWidth();
     searchSmudge.height = images[0].getHeight();
     effects.push_back(searchSmudge);
-    
+
     Effect pixelLines;
     pixelLines.loadShader("Shaders/pixelLines");
     pixelLines.addUniform("resolution", &screenResolution);
@@ -883,7 +883,7 @@ void ofApp::setup(){
     pixelLines.width = images[0].getWidth();
     pixelLines.height = images[0].getHeight();
     effects.push_back(pixelLines);
-    
+
     Effect sobelLines;
     sobelLines.loadShader("Shaders/sobelLines");
     sobelLines.addUniform("resolution", &screenResolution);
@@ -891,7 +891,7 @@ void ofApp::setup(){
     sobelLines.width = images[0].getWidth();
     sobelLines.height = images[0].getHeight();
     effects.push_back(sobelLines);
-    
+
     Effect droste;
     droste.loadShader("Shaders/droste");
     droste.addUniform("resolution", &screenResolution);
@@ -899,7 +899,7 @@ void ofApp::setup(){
     droste.width = images[0].getWidth();
     droste.height = images[0].getHeight();
     effects.push_back(droste);
-    
+
     Effect droste2;
     droste2.loadShader("Shaders/droste2");
     droste2.addUniform("resolution", &screenResolution);
@@ -907,7 +907,7 @@ void ofApp::setup(){
     droste2.width = images[0].getWidth();
     droste2.height = images[0].getHeight();
     effects.push_back(droste2);
-    
+
     Effect warhol;
     warhol.loadShader("Shaders/warhol");
     warhol.addUniform("resolution", &screenResolution);
@@ -915,7 +915,7 @@ void ofApp::setup(){
     warhol.width = images[0].getWidth();
     warhol.height = images[0].getHeight();
     effects.push_back(warhol);
-    
+
     Effect warhol2;
     warhol2.loadShader("Shaders/warhol2");
     warhol2.addUniform("resolution", &screenResolution);
@@ -924,7 +924,7 @@ void ofApp::setup(){
     warhol2.width = images[0].getWidth();
     warhol2.height = images[0].getHeight();
     effects.push_back(warhol2);
-    
+
     Effect warhol3;
     warhol3.loadShader("Shaders/warhol3");
     warhol3.addUniform("resolution", &screenResolution);
@@ -933,7 +933,7 @@ void ofApp::setup(){
     warhol3.width = images[0].getWidth();
     warhol3.height = images[0].getHeight();
     effects.push_back(warhol3);
-    
+
     Effect mandelbrot;
     mandelbrot.loadShader("Shaders/mandelbrot");
     mandelbrot.addUniform("resolution", &screenResolution);
@@ -942,7 +942,7 @@ void ofApp::setup(){
     mandelbrot.width = images[0].getWidth();
     mandelbrot.height = images[0].getHeight();
     effects.push_back(mandelbrot);
-    
+
     Effect crosshatch;
     crosshatch.loadShader("Shaders/crosshatch");
     crosshatch.addUniform("resolution", &screenResolution);
@@ -951,7 +951,7 @@ void ofApp::setup(){
     crosshatch.width = images[0].getWidth();
     crosshatch.height = images[0].getHeight();
     effects.push_back(crosshatch);
-    
+
     Effect lichtenstein;
     lichtenstein.loadShader("Shaders/lichtenstein");
     lichtenstein.addUniform("resolution", &screenResolution);
@@ -960,7 +960,7 @@ void ofApp::setup(){
     lichtenstein.width = images[0].getWidth();
     lichtenstein.height = images[0].getHeight();
     effects.push_back(lichtenstein);
-    
+
     Effect selfSimilar;
     selfSimilar.loadShader("Shaders/selfSimilar");
     selfSimilar.addUniform("resolution", &screenResolution);
@@ -969,7 +969,7 @@ void ofApp::setup(){
     selfSimilar.width = images[0].getWidth();
     selfSimilar.height = images[0].getHeight();
     effects.push_back(selfSimilar);
-    
+
     Effect selfSimilarNeg;
     selfSimilarNeg.loadShader("Shaders/selfSimilarNeg");
     selfSimilarNeg.addUniform("resolution", &screenResolution);
@@ -978,7 +978,7 @@ void ofApp::setup(){
     selfSimilarNeg.width = images[0].getWidth();
     selfSimilarNeg.height = images[0].getHeight();
     effects.push_back(selfSimilarNeg);
-    
+
     Effect selfSimilarArea;
     selfSimilarArea.loadShader("Shaders/selfSimilarArea");
     selfSimilarArea.addUniform("resolution", &screenResolution);
@@ -987,7 +987,7 @@ void ofApp::setup(){
     selfSimilarArea.width = images[0].getWidth();
     selfSimilarArea.height = images[0].getHeight();
     effects.push_back(selfSimilarArea);
-    
+
     Effect droste3;
     droste3.loadShader("Shaders/droste3");
     droste3.addUniform("resolution", &screenResolution);
@@ -995,7 +995,7 @@ void ofApp::setup(){
     droste3.width = images[0].getWidth();
     droste3.height = images[0].getHeight();
     effects.push_back(droste3);
-    
+
     Effect selfSimilarArea2;
     selfSimilarArea2.loadShader("Shaders/selfSimilarArea2");
     selfSimilarArea2.addUniform("resolution", &screenResolution);
@@ -1004,7 +1004,7 @@ void ofApp::setup(){
     selfSimilarArea2.width = images[0].getWidth();
     selfSimilarArea2.height = images[0].getHeight();
     effects.push_back(selfSimilarArea2);
-    
+
     Effect spiralAdd;
     spiralAdd.loadShader("Shaders/spiralAdd");
     spiralAdd.addUniform("resolution", &screenResolution);
@@ -1013,7 +1013,7 @@ void ofApp::setup(){
     spiralAdd.width = images[0].getWidth();
     spiralAdd.height = images[0].getHeight();
     effects.push_back(spiralAdd);
-    
+
     Effect swirlThresh;
     swirlThresh.loadShader("Shaders/swirlThresh");
     swirlThresh.addUniform("resolution", &screenResolution);
@@ -1021,7 +1021,7 @@ void ofApp::setup(){
     swirlThresh.width = images[0].getWidth();
     swirlThresh.height = images[0].getHeight();
     effects.push_back(swirlThresh);
-    
+
     Effect pixelSort;
     pixelSort.loadShader("Shaders/pixelSort");
     pixelSort.addUniform("resolution", &screenResolution);
@@ -1029,7 +1029,7 @@ void ofApp::setup(){
     pixelSort.width = images[0].getWidth();
     pixelSort.height = images[0].getHeight();
     effects.push_back(pixelSort);
-    
+
     Effect pixelSortH;
     pixelSortH.loadShader("Shaders/pixelSortH");
     pixelSortH.addUniform("resolution", &screenResolution);
@@ -1037,7 +1037,7 @@ void ofApp::setup(){
     pixelSortH.width = images[0].getWidth();
     pixelSortH.height = images[0].getHeight();
     effects.push_back(pixelSortH);
-    
+
     Effect pixelSortThresh;
     pixelSortThresh.loadShader("Shaders/pixelSortThresh");
     pixelSortThresh.addUniform("resolution", &screenResolution);
@@ -1045,7 +1045,7 @@ void ofApp::setup(){
     pixelSortThresh.width = images[0].getWidth();
     pixelSortThresh.height = images[0].getHeight();
     effects.push_back(pixelSortThresh);
-    
+
     Effect drosteThresh;
     drosteThresh.loadShader("Shaders/drosteThresh");
     drosteThresh.addUniform("resolution", &screenResolution);
@@ -1053,7 +1053,7 @@ void ofApp::setup(){
     drosteThresh.width = images[0].getWidth();
     drosteThresh.height = images[0].getHeight();
     effects.push_back(drosteThresh);
-    
+
     Effect weaveThresh;
     weaveThresh.loadShader("Shaders/weaveThresh");
     weaveThresh.addUniform("resolution", &screenResolution);
@@ -1062,6 +1062,14 @@ void ofApp::setup(){
     weaveThresh.height = images[0].getHeight();
     effects.push_back(weaveThresh);
     
+    Effect brightnessSquare;
+    brightnessSquare.loadShader("Shaders/brightnessSquare");
+    brightnessSquare.addUniform("resolution", &screenResolution);
+    brightnessSquare.addUniform("inputTexture", &images[0]);
+    brightnessSquare.width = images[0].getWidth();
+    brightnessSquare.height = images[0].getHeight();
+    effects.push_back(brightnessSquare);
+
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
