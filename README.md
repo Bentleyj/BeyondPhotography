@@ -409,3 +409,7 @@ After a significant break for Xmas + projects + general lack of inspiration I de
 ### Day 96
 
 After a long hiatus I am back after starting a new job. Today I decided to look at my old square drawing effect and see if I could do anything interesting with that. I decided to apply the effect in a grid using the brightness of the center pixel to determine the size of the square. It's come out nicely! I also did it using the brightness of each individual pixel which creates a more "cracked" look. Hope more is to come!
+
+### Day 97
+
+Inspired by [Kensuki Koike](https://www.widewalls.ch/artist/kensuke-koike/)'s paper art I'm converting some of his effects in the GLSL shaders! Ideally we want to create a generalist system for cutting chnks of these images out and re-arranging them. In this first instance I'm looking at simply swapping strips with the spliceV shader but ultimately I want to make a general function for mapping pixels from one part of the image to another and vice-versa!
