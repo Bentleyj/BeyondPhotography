@@ -1102,6 +1102,14 @@ void ofApp::setup(){
     brightnessSquare.height = images[0].getHeight();
     effects.push_back(brightnessSquare);
     
+    Effect spliceV;
+    spliceV.loadShader("Shaders/spliceV");
+    spliceV.addUniform("resolution", &screenResolution);
+    spliceV.addUniform("inputTexture", &images[0]);
+    spliceV.width = images[0].getWidth();
+    spliceV.height = images[0].getHeight();
+    effects.push_back(spliceV);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
