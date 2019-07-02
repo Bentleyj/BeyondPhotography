@@ -88,16 +88,10 @@ void main() {
     
     uv.y = 1.0 - uv.y;
     
-    uv -= 0.5;
-    
-    uv /= 2.0;
-    
-    uv += 0.5;
-    
     uv *= resolution;
     
-    fullScreen.upperLeft = resolution / 4.0;
-    fullScreen.size = resolution / 2.0;
+    fullScreen.upperLeft = vec2(0, 0);
+    fullScreen.size = resolution;
     
     Region majorRegion = computeRegion(uv, fullScreen);
     Region minorRegion = computeRegion(uv, majorRegion);
