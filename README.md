@@ -413,3 +413,7 @@ After a long hiatus I am back after starting a new job. Today I decided to look 
 ### Day 97
 
 Inspired by [Kensuki Koike](https://www.widewalls.ch/artist/kensuke-koike/)'s paper art I'm converting some of his effects in the GLSL shaders! Ideally we want to create a generalist system for cutting chnks of these images out and re-arranging them. In this first instance I'm looking at simply swapping strips with the spliceV shader but ultimately I want to make a general function for mapping pixels from one part of the image to another and vice-versa!
+
+### Day 98
+
+Took a very loooong break but again back and inpired by [Kensuki Koike](https://www.widewalls.ch/artist/kensuke-koike/). Put together an effect where you splice together the top left corners of each Quadrant in to the top left quadrant. the top right corners of each quadrant go in to the top right quadrant etc. It looks a lot cooler with a face more zoomed in. It's a bit of a tricky effect and I'm pleased to say that I learned a lot putting it together and I think I almost certainly couldn't have tackled it 6 months ago before I had started my new job. Breaking everything in to functions helped a lot and coming at it from a more methodical perspective was invaluable.
