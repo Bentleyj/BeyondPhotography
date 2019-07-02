@@ -1110,6 +1110,14 @@ void ofApp::setup(){
     spliceV.height = images[0].getHeight();
     effects.push_back(spliceV);
     
+    Effect spliceQuad;
+    spliceQuad.loadShader("Shaders/spliceQuad");
+    spliceQuad.addUniform("resolution", &screenResolution);
+    spliceQuad.addUniform("inputTexture", &images[0]);
+    spliceQuad.width = images[0].getWidth();
+    spliceQuad.height = images[0].getHeight();
+    effects.push_back(spliceQuad);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
