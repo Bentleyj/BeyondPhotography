@@ -417,3 +417,7 @@ Inspired by [Kensuki Koike](https://www.widewalls.ch/artist/kensuke-koike/)'s pa
 ### Day 98
 
 Took a very loooong break but again back and inpired by [Kensuki Koike](https://www.widewalls.ch/artist/kensuke-koike/). Put together an effect where you splice together the top left corners of each Quadrant in to the top left quadrant. the top right corners of each quadrant go in to the top right quadrant etc. It looks a lot cooler with a face more zoomed in. It's a bit of a tricky effect and I'm pleased to say that I learned a lot putting it together and I think I almost certainly couldn't have tackled it 6 months ago before I had started my new job. Breaking everything in to functions helped a lot and coming at it from a more methodical perspective was invaluable.
+
+### Day 99
+
+1 Day short of day 100! how ironic that this should be my big fun day! Found some amazing blend modes by [invinixity](twitter.com/invinixity) on instagram which I applied to my muse and BOY were they interesting! Created over 40 images based off their effects. Very happy with them and I'm only just begun to mix-and-match!
