@@ -1118,6 +1118,15 @@ void ofApp::setup(){
     spliceQuad.height = images[0].getHeight();
     effects.push_back(spliceQuad);
     
+    Effect blendMult;
+    blendMult.loadShader("Shaders/blend_Mult");
+    blendMult.addUniform("resolution", &screenResolution);
+    blendMult.addUniform("inputTexture1", &images[0]);
+    blendMult.addUniform("inputTexture2", &images[2]);
+    blendMult.width = images[0].getWidth();
+    blendMult.height = images[0].getHeight();
+    effects.push_back(blendMult);
+    
     string settingsPath = "settings/settings.xml";
     gui.setup("Effects", settingsPath);
     gui.add(effectIndex.set("Effect Index", 0, 0, effects.size()-1));
